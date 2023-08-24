@@ -13,24 +13,26 @@ const FAQ = (props) => {
       >
         <div className="faq-details">
           <span className="faq-text">
-            What is sit amet, consectetur adipiscing elit, sed do?
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+            <span className="faq-text01"> Hogyan lehet befizetni?</span>
+            <br className="faq-text02"></br>
+            <span className="faq-text03">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
           </span>
-          <span data-role="accordion-content" className="faq-text01">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span data-role="accordion-content" className="faq-text04">
+            <span className="">Simplepay-en keresztül, bankkártyával.</span>
+            <br className=""></br>
+            <span className="">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
           </span>
         </div>
         <div data-role="accordion-icon" className="">
@@ -47,21 +49,23 @@ const FAQ = (props) => {
         className="faq-element1 accordion-element"
       >
         <div className="faq-details1">
-          <span className="faq-text02">
-            We&apos;ll update amet, consectetur adipiscing elit until
-            you&apos;re 100% happy.
+          <span className="faq-text08">
+            <span className="">Mikor érdemes kezdeni?</span>
+            <br className=""></br>
           </span>
-          <span data-role="accordion-content" className="faq-text03">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span data-role="accordion-content" className="faq-text11">
+            <span className="">
+              Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
+              kiugró szériáról maradsz le éppen.
+            </span>
+            <br className=""></br>
+            <span className="">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
           </span>
         </div>
         <div data-role="accordion-icon" className="">
@@ -78,20 +82,23 @@ const FAQ = (props) => {
         className="faq-element2 accordion-element"
       >
         <div className="faq-details2">
-          <span className="faq-text04">
-            Is it really sit amet, consectetur adipiscing elit, sed do?
+          <span className="faq-text15">
+            <span className="">Csomag vásárlás után egyből él a tagságom?</span>
+            <br className=""></br>
           </span>
-          <span data-role="accordion-content" className="faq-text05">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span data-role="accordion-content" className="faq-text18">
+            <span className="">
+              Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy Telegram
+              linket tőlünk, amivel csatlakozni tudsz a csoporthoz.
+            </span>
+            <br className=""></br>
+            <span className="">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
           </span>
         </div>
         <div data-role="accordion-icon" className="">
@@ -108,21 +115,9 @@ const FAQ = (props) => {
         className="faq-element3 accordion-element"
       >
         <div className="faq-details3">
-          <span className="faq-text06">
-            We work, what is sit amet, consectetur adipiscing elit, sed do sint
-            occaecat cupidatat non proident
-          </span>
-          <span data-role="accordion-content" className="faq-text07">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span className="faq-text22">Hol fogom kapni a tippeket?</span>
+          <span data-role="accordion-content" className="faq-text23">
+            Telegram alkalmazásban, egy privát csoportban.
           </span>
         </div>
         <div data-role="accordion-icon" className="">
@@ -139,20 +134,22 @@ const FAQ = (props) => {
         className="faq-element4 accordion-element"
       >
         <div className="faq-details4">
-          <span className="faq-text08">
-            What is sit amet, consectetur adipiscing elit, sed do?
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span className="faq-text24">
+            <span className="faq-text25">Mi az a Telegram?</span>
+            <br className="faq-text26"></br>
+            <span className="faq-text27">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
           </span>
-          <span data-role="accordion-content" className="faq-text09">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
+          <span data-role="accordion-content" className="faq-text28">
+            A Telegram egy alkalmazás, amit bármilyen készülékre letölthetsz. Az
+            alkalmazás letöltéséhez az adott áruházban (App Store/Google Play) a
+            Telegram applikációra kell rákeresned, majd azt letölteni. A
+            letöltést követően a telefonszámod megadásával regisztrálhatsz.
             <span
               dangerouslySetInnerHTML={{
                 __html: ' ',
@@ -174,24 +171,89 @@ const FAQ = (props) => {
         className="faq-element5 accordion-element"
       >
         <div className="faq-details5">
-          <span className="faq-text10">
-            Amet, consectetur adipiscing elit mollit anim id est laborum.
+          <span className="faq-text29">
+            <span className="">Garancia van?</span>
+            <br className=""></br>
           </span>
-          <span data-role="accordion-content" className="faq-text11">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
+          <span data-role="accordion-content" className="faq-text32">
+            <span className="">
+              Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati arány
+              nem éri el a 60%-ot. Ez azokra az előfizetőkre vonatkozik, akik
+              teljes hónapra fizettek elő.
+            </span>
+            <br className=""></br>
           </span>
         </div>
         <div data-role="accordion-icon" className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon10">
+            <path
+              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+              className=""
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        data-role="accordion-container"
+        className="faq-element6 accordion-element"
+      >
+        <div className="faq-details6">
+          <span className="faq-text35">
+            <span className="">Mi az a teljes hónap?</span>
+            <br className=""></br>
+          </span>
+          <span data-role="accordion-content" className="faq-text38">
+            <span className="">
+              Nálunk rendszerben zajlik a befizetés, minden hónap tizedikén
+              délig várjuk az előfizetések megújítását.
+            </span>
+            <br className=""></br>
+          </span>
+        </div>
+        <div data-role="accordion-icon" className="">
+          <svg viewBox="0 0 1024 1024" className="faq-icon12">
+            <path
+              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+              className=""
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        data-role="accordion-container"
+        className="faq-element7 accordion-element"
+      >
+        <div className="faq-details7">
+          <span className="faq-text41">Másik napon elő se tudok fizetni?</span>
+          <span data-role="accordion-content" className="faq-text42">
+            De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk neked.
+          </span>
+        </div>
+        <div data-role="accordion-icon" className="">
+          <svg viewBox="0 0 1024 1024" className="faq-icon14">
+            <path
+              d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+              className=""
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        data-role="accordion-container"
+        className="faq-element8 accordion-element"
+      >
+        <div className="faq-details8">
+          <span className="faq-text43">
+            Milyen tőke szükséges az indulásomhoz?
+          </span>
+          <span data-role="accordion-content" className="faq-text44">
+            Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
+            kivételt képez a Silver-Pong csomagunk, amit az előbb említett tőke
+            összegyűjtésére hoztunk létre neked.
+          </span>
+        </div>
+        <div data-role="accordion-icon" className="">
+          <svg viewBox="0 0 1024 1024" className="faq-icon16">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""

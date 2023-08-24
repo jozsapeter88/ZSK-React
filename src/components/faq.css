@@ -29,7 +29,15 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text01 {
+.faq-text02 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+}
+.faq-text04 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -55,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.faq-text02 {
+.faq-text08 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -64,7 +72,7 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text03 {
+.faq-text11 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -90,7 +98,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.faq-text04 {
+.faq-text15 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -99,7 +107,7 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text05 {
+.faq-text18 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -125,7 +133,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.faq-text06 {
+.faq-text22 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -134,7 +142,7 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text07 {
+.faq-text23 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -160,7 +168,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.faq-text08 {
+.faq-text24 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -169,7 +177,15 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text09 {
+.faq-text26 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+}
+.faq-text28 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -195,7 +211,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.faq-text10 {
+.faq-text29 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -204,7 +220,7 @@
   font-weight: 500;
   line-height: 28px;
 }
-.faq-text11 {
+.faq-text32 {
   color: rgb(204, 204, 204);
   width: 100%;
   font-family: Poppins;
@@ -216,21 +232,122 @@
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+.faq-element6 {
+  width: 100%;
+  max-width: 800px;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.faq-details6 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-text35 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+}
+.faq-text38 {
+  color: rgb(204, 204, 204);
+  width: 100%;
+  font-family: Poppins;
+  line-height: 28px;
+  user-select: text;
+}
+.faq-icon12 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.faq-element7 {
+  width: 100%;
+  max-width: 800px;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.faq-details7 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-text41 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+}
+.faq-text42 {
+  color: rgb(204, 204, 204);
+  width: 100%;
+  font-family: Poppins;
+  line-height: 28px;
+  user-select: text;
+}
+.faq-icon14 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.faq-element8 {
+  width: 100%;
+  max-width: 800px;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.faq-details8 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-text43 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 28px;
+}
+.faq-text44 {
+  color: rgb(204, 204, 204);
+  width: 100%;
+  font-family: Poppins;
+  line-height: 28px;
+  user-select: text;
+}
+.faq-icon16 {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
 
 @media(max-width: 767px) {
   .faq-text {
     font-size: 16px;
     line-height: 24px;
   }
-  .faq-text02 {
+  .faq-text01 {
     font-size: 16px;
     line-height: 24px;
   }
-  .faq-text04 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .faq-text06 {
+  .faq-text03 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -238,7 +355,39 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .faq-text10 {
+  .faq-text15 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text22 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text24 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text25 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text27 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text29 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text35 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text41 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq-text43 {
     font-size: 16px;
     line-height: 24px;
   }

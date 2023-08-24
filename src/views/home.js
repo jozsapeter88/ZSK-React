@@ -70,14 +70,14 @@ const Home = (props) => {
           <div className="home-image">
             <img
               alt="image"
-              src="/SectionImages/laptop-700w.png"
+              src="/SectionImages/heroimage-600h.png"
               className="home-image01"
             />
           </div>
           <div className="home-image02">
             <img
               alt="image"
-              src="/SectionImages/laptop-700w.png"
+              src="/SectionImages/heroimage-600h.png"
               className="home-image03"
             />
           </div>
@@ -170,20 +170,44 @@ const Home = (props) => {
         </p>
       </section>
       <section className="home-section02">
+        <main className="home-content1">
+          <header className="home-header01">
+            <h2 className="home-heading01 section-heading">
+              Csatlakozz Telegram csoportunkhoz!
+            </h2>
+            <div className="home-buttons1">
+              <div className="home-ios button">
+                <img
+                  alt="pastedImage"
+                  src="/Icons/telegram-200h.png"
+                  className="home-pasted-image"
+                />
+                <span className="home-text043">Csatlakozok</span>
+              </div>
+            </div>
+          </header>
+          <img
+            alt="image"
+            src="/SectionImages/telegram1-600w.png"
+            className="home-image04"
+          />
+        </main>
+      </section>
+      <section className="home-section03">
         <section className="home-note">
-          <div className="home-image04">
+          <div className="home-image05">
             <img
               alt="image"
               src="/SectionImages/guarantee-400w.png"
-              className="home-image05"
+              className="home-image06"
             />
           </div>
-          <div className="home-content1">
+          <div className="home-content2">
             <div className="home-main1">
               <div className="home-caption1">
                 <span className="section-head">Biztonság</span>
               </div>
-              <div className="home-heading01">
+              <div className="home-heading02">
                 <h2 className="section-heading">Pénzvisszatérítési garancia</h2>
                 <p className="section-description">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -194,27 +218,27 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-get-started2 button">
-              <span className="home-text043">Csomagjaink</span>
+              <span className="home-text044">Csomagjaink</span>
             </div>
           </div>
         </section>
         <section className="home-note1">
-          <div className="home-image06">
+          <div className="home-image07">
             <img
               alt="image"
-              src="/SectionImages/chat-1200w.png"
-              className="home-image07"
+              src="/SectionImages/chat-2100h.png"
+              className="home-image08"
             />
           </div>
-          <div className="home-content2">
+          <div className="home-content3">
             <main className="home-main2">
               <header className="home-caption2">
-                <span className="home-section04 section-head">
+                <span className="home-section05 section-head">
                   Ügyfélszolgálat
                 </span>
               </header>
-              <main className="home-heading03">
-                <header className="home-header01">
+              <main className="home-heading04">
+                <header className="home-header02">
                   <h2 className="section-heading">
                     Rendelkezésedre állunk, ha segítség kell.
                   </h2>
@@ -231,26 +255,26 @@ const Home = (props) => {
               </main>
             </main>
             <div className="home-get-started3 button">
-              <span className="home-text044">Tudj meg többet</span>
+              <span className="home-text045">Tudj meg többet</span>
             </div>
           </div>
         </section>
       </section>
-      <section className="home-section05">
+      <section className="home-section06">
         <section className="home-note2">
-          <div className="home-image08">
+          <div className="home-image09">
             <img
               alt="image"
               src="/SectionImages/consultation-600w.png"
-              className="home-image09"
+              className="home-image10"
             />
             <main className="home-main3">
               <header className="home-caption3">
-                <span className="home-section06 section-head">Konzultáció</span>
+                <span className="home-section07 section-head">Konzultáció</span>
               </header>
-              <main className="home-heading05">
-                <header className="home-header02">
-                  <h2 className="home-heading06 section-heading">
+              <main className="home-heading06">
+                <header className="home-header03">
+                  <h2 className="home-heading07 section-heading">
                     Kinek ajánljuk?
                   </h2>
                 </header>
@@ -270,12 +294,12 @@ const Home = (props) => {
           </div>
         </section>
       </section>
-      <section className="home-section07">
+      <section className="home-section08">
         <main className="home-pricing">
-          <header className="home-header03">
+          <header className="home-header04">
             <header className="home-left">
               <span className="section-head">Csomagjaink</span>
-              <h2 className="section-heading home-heading07">
+              <h2 className="section-heading home-heading08">
                 Segítünk választani
               </h2>
             </header>
@@ -289,16 +313,16 @@ const Home = (props) => {
           <div className="home-plans-container">
             <div className="home-switch">
               <div className="switch">
-                <label className="home-text045">Havi</label>
+                <label className="home-text046">Havi</label>
               </div>
               <div className="home-switch2 switch">
-                <label className="home-text046">Éves</label>
+                <label className="home-text047">Éves</label>
               </div>
             </div>
             <main className="home-plans">
               <div className="home-plan">
                 <div className="home-details">
-                  <div className="home-header04">
+                  <div className="home-header05">
                     <label className="home-name">Silver-Pong</label>
                     <div className="home-pricing1">
                       <h1 className="home-price">50.000FT</h1>
@@ -324,7 +348,7 @@ const Home = (props) => {
                 </div>
                 <div className="home-buy-details">
                   <div className="home-features">
-                    <span className="home-heading08">Tartalmazza:</span>
+                    <span className="home-heading09">Tartalmazza:</span>
                     <div className="home-list">
                       <Includes
                         Label="Pénzvisszatéritési garancia"
@@ -346,7 +370,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy button">
-                  <span className="home-text049">
+                  <span className="home-text050">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -354,7 +378,7 @@ const Home = (props) => {
               </div>
               <div className="home-plan1">
                 <div className="home-details1">
-                  <div className="home-header05">
+                  <div className="home-header06">
                     <label className="home-name1">Ping-Gold</label>
                     <div className="home-pricing2">
                       <h1 className="home-price01">75.000FT</h1>
@@ -374,7 +398,7 @@ const Home = (props) => {
                 </div>
                 <div className="home-buy-details1">
                   <div className="home-features1">
-                    <span className="home-heading09">Tartalmazza:</span>
+                    <span className="home-heading10">Tartalmazza:</span>
                     <div className="home-list1">
                       <Includes
                         Label="Pénzvisszatéritési garancia"
@@ -401,7 +425,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy1 button">
-                  <span className="home-text054">
+                  <span className="home-text055">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -409,7 +433,7 @@ const Home = (props) => {
               </div>
               <div className="home-plan2">
                 <div className="home-details2">
-                  <div className="home-header06">
+                  <div className="home-header07">
                     <label className="home-name2">Safety-Days</label>
                     <div className="home-pricing3">
                       <span className="home-price02">50.000</span>
@@ -436,7 +460,7 @@ const Home = (props) => {
                 </div>
                 <div className="home-buy-details2">
                   <div className="home-features2">
-                    <span className="home-heading10">Tartalmazza:</span>
+                    <span className="home-heading11">Tartalmazza:</span>
                     <div className="home-list2">
                       <Includes
                         Label="Pénzvisszatítési garancia"
@@ -462,7 +486,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy2 button">
-                  <span className="home-text060">
+                  <span className="home-text061">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -472,7 +496,7 @@ const Home = (props) => {
             <main className="home-plans1">
               <div className="home-plan3">
                 <div className="home-details3">
-                  <div className="home-header07">
+                  <div className="home-header08">
                     <label className="home-name3">Mr. Connection</label>
                     <div className="home-pricing4">
                       <h1 className="home-price03">40.000FT</h1>
@@ -504,7 +528,7 @@ const Home = (props) => {
                 </div>
                 <div className="home-buy-details3">
                   <div className="home-features3">
-                    <span className="home-heading11">Tartalmazza:</span>
+                    <span className="home-heading12">Tartalmazza:</span>
                     <div className="home-list3">
                       <Includes
                         Label="Mindenféle sportot, ahol információhoz jutunk (érdemi hiányzók, sérültek, B kerettel való kiállás, stb.)"
@@ -518,7 +542,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy3 button">
-                  <span className="home-text067">
+                  <span className="home-text068">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -526,7 +550,7 @@ const Home = (props) => {
               </div>
               <div className="home-plan4">
                 <div className="home-details4">
-                  <div className="home-header08">
+                  <div className="home-header09">
                     <label className="home-name4">Green-Health</label>
                     <div className="home-pricing5">
                       <h1 className="home-price06">120.000FT</h1>
@@ -549,16 +573,16 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text075">Ping-Gold</span>
+                    <span className="home-text076">Ping-Gold</span>
                     <span> csomagot és </span>
-                    <span className="home-text077">30 perc konzultációt</span>
+                    <span className="home-text078">30 perc konzultációt</span>
                     <span>. Egyszeri előfizetésnek ajánlott.</span>
                     <br></br>
                   </p>
                 </div>
                 <div className="home-buy-details4">
                   <div className="home-features4">
-                    <span className="home-heading12">Tartalmazza:</span>
+                    <span className="home-heading13">Tartalmazza:</span>
                     <div className="home-list4">
                       <Includes
                         Label="Ping-Gold csomag"
@@ -572,7 +596,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy4 button">
-                  <span className="home-text080">
+                  <span className="home-text081">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -580,7 +604,7 @@ const Home = (props) => {
               </div>
               <div className="home-plan5">
                 <div className="home-details5">
-                  <div className="home-header09">
+                  <div className="home-header10">
                     <label className="home-name5">Green-Harmony</label>
                     <div className="home-pricing6">
                       <span className="home-price08">80.000FT</span>
@@ -603,7 +627,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text088">Silver-Pong</span>
+                    <span className="home-text089">Silver-Pong</span>
                     <span>
                       {' '}
                       és a
@@ -613,7 +637,7 @@ const Home = (props) => {
                         }}
                       />
                     </span>
-                    <span className="home-text090">
+                    <span className="home-text091">
                       Safety-Days
                       <span
                         dangerouslySetInnerHTML={{
@@ -630,7 +654,7 @@ const Home = (props) => {
                 </div>
                 <div className="home-buy-details5">
                   <div className="home-features5">
-                    <span className="home-heading13">Tartalmazza:</span>
+                    <span className="home-heading14">Tartalmazza:</span>
                     <div className="home-list5">
                       <Includes
                         Label="Silver-Pong csomag"
@@ -644,7 +668,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy5 button">
-                  <span className="home-text093">
+                  <span className="home-text094">
                     <span>Megvásárolom</span>
                     <br></br>
                   </span>
@@ -654,39 +678,39 @@ const Home = (props) => {
           </div>
         </main>
         <div className="home-help">
-          <span className="home-text096">
+          <span className="home-text097">
             <span>Segítségre van szükséged?</span>
             <br></br>
           </span>
           <div className="home-contact-support">
-            <p className="home-text099">Lépj velünk kapcsolatba  -&gt;</p>
+            <p className="home-text100">Lépj velünk kapcsolatba  -&gt;</p>
           </div>
         </div>
       </section>
-      <section className="home-section09">
-        <h2 className="home-text100">Kinek ajánljuk szolgáltatásainkat?</h2>
+      <section className="home-section10">
+        <h2 className="home-text101">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph4">
           <span> • K</span>
           <span>ezdő, illetve haladó sportfogadóknak</span>
-          <br className="home-text103"></br>
+          <br className="home-text104"></br>
           <br></br>
           <span>• Sportszeretőknek</span>
-          <br className="home-text106"></br>
+          <br className="home-text107"></br>
           <br></br>
           <span>
             • Olyanoknak, akik hisznek a mottónkban. „Sportfogadás=befektetés.”
           </span>
-          <br className="home-text109"></br>
+          <br className="home-text110"></br>
           <br></br>
           <span>• Olyanoknak, akik képesek hosszútávon gondolkodni.</span>
-          <br className="home-text112"></br>
+          <br className="home-text113"></br>
           <br></br>
           <span>
             • Olyanoknak, akik képesek betartani tipp és tét javaslatainkat.
           </span>
           <br></br>
         </p>
-        <h2 className="home-text116">Kinek nem ajánljuk szolgáltatásainkat?</h2>
+        <h2 className="home-text117">Kinek nem ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph5">
           <span>
             <span
@@ -699,24 +723,24 @@ const Home = (props) => {
             • Aki azt gondolja, hogy minden beküldött tipp a forgatókönyv
             szerint alakul.
           </span>
-          <br className="home-text119"></br>
+          <br className="home-text120"></br>
           <br></br>
           <span>
             • Aki megkérdőjelezi Tippmesterünk és Tippkuktánk
             munkáját/elemzéseit.
           </span>
-          <br className="home-text122"></br>
+          <br className="home-text123"></br>
           <br></br>
           <span>
             • Aki nem ért egyet a mottónkkal. „Sportfogadás=befektetés.”
           </span>
-          <br className="home-text125"></br>
+          <br className="home-text126"></br>
           <br></br>
           <span>
             • Aki azt gondolja, hogy 10-20 ezer forintból egy két héten belul
             milliókat fog nyerni.
           </span>
-          <br className="home-text128"></br>
+          <br className="home-text129"></br>
           <br></br>
           <span>
             • Aki egy esetleges rossz szériában nyomdafestéket nem tűrő módon
@@ -727,16 +751,16 @@ const Home = (props) => {
               }}
             />
           </span>
-          <br className="home-text131"></br>
+          <br className="home-text132"></br>
           <br></br>
           <span>EZEK MEGSÉRTÉSE AZONNALI KIZÁRÁSSAL JÁR!</span>
-          <br className="home-text134"></br>
+          <br className="home-text135"></br>
           <br></br>
           <br></br>
         </p>
       </section>
-      <section className="home-section10">
-        <header className="home-header10">
+      <section className="home-section11">
+        <header className="home-header11">
           <header className="home-left1">
             <span className="section-head">Kik vagyunk mi?</span>
             <h2 className="section-heading">Ismerd meg profi csapatunkat</h2>
@@ -756,21 +780,21 @@ const Home = (props) => {
           ></Card>
         </main>
       </section>
-      <section className="home-section12">
+      <section className="home-section13">
         <div className="home-note3">
-          <div className="home-image10">
+          <div className="home-image11">
             <img
               alt="image"
               src="/SectionImages/iphone%2014%20pro%20max-1200w.png"
-              className="home-image11"
+              className="home-image12"
             />
           </div>
-          <div className="home-content3">
+          <div className="home-content4">
             <div className="home-caption4">
               <span className="section-head">Tempor incididunt</span>
             </div>
-            <div className="home-heading15">
-              <div className="home-header11">
+            <div className="home-heading16">
+              <div className="home-header12">
                 <h2 className="section-heading">
                   Tips to get care, answers and advice faster
                 </h2>
@@ -780,14 +804,14 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-section14">
+      <section className="home-section15">
         <div className="home-cube">
           <div className="home-top side"></div>
           <div className="home-front side"></div>
           <div className="home-left2 side"></div>
         </div>
         <main className="home-banner">
-          <div className="home-header12">
+          <div className="home-header13">
             <h2 className="section-heading">
               Planical makes online doctor visits easier
             </h2>
@@ -795,21 +819,21 @@ const Home = (props) => {
               Lorem ipsum dolor sit amet!
             </p>
           </div>
-          <div className="home-buttons1">
+          <div className="home-buttons2">
             <div className="home-get-started4 button">
-              <span className="home-text137">Get started</span>
+              <span className="home-text138">Get started</span>
             </div>
             <div className="home-book-demo button">
-              <span className="home-text138">Book a demo</span>
+              <span className="home-text139">Book a demo</span>
             </div>
           </div>
         </main>
       </section>
-      <section className="home-section15">
-        <header className="home-header13">
+      <section className="home-section16">
+        <header className="home-header14">
           <header className="home-left3">
             <span className="section-head">Vélemények</span>
-            <h2 className="home-heading18 section-heading">
+            <h2 className="home-heading19 section-heading">
               Amiket ügyfeleink mondanak rólunk
             </h2>
           </header>
@@ -850,13 +874,13 @@ const Home = (props) => {
           </div>
         </main>
         <div className="home-view-more">
-          <p className="home-text139">View more</p>
+          <p className="home-text140">View more</p>
         </div>
       </section>
-      <section className="home-section17">
-        <header className="home-header14">
+      <section className="home-section18">
+        <header className="home-header15">
           <span className="section-head">Articles about us</span>
-          <h2 className="home-heading19 section-heading">
+          <h2 className="home-heading20 section-heading">
             We’re the app on everyone’s lips
           </h2>
         </header>
@@ -873,39 +897,15 @@ const Home = (props) => {
           ></Article>
         </main>
       </section>
-      <section className="home-section19">
-        <header className="home-header15">
+      <section className="home-section20">
+        <header className="home-header16">
           <span className="section-head">GYIK</span>
-          <h2 className="home-heading20 section-heading">
+          <h2 className="home-heading21 section-heading">
             Gyakran Ismételt Kérdések
           </h2>
         </header>
         <main className="home-accordion">
           <FAQ rootClassName="faq-root-class-name"></FAQ>
-        </main>
-      </section>
-      <section className="home-section21">
-        <main className="home-content4">
-          <header className="home-header16">
-            <h2 className="home-heading21 section-heading">
-              Csatlakozz Telegram csoportunkhoz!
-            </h2>
-            <div className="home-buttons2">
-              <div className="home-ios button">
-                <img
-                  alt="pastedImage"
-                  src="/Icons/telegram-200h.png"
-                  className="home-pasted-image"
-                />
-                <span className="home-text140">Csatlakozok</span>
-              </div>
-            </div>
-          </header>
-          <img
-            alt="image"
-            src="/SectionImages/telegram1-1200w.png"
-            className="home-image12"
-          />
         </main>
       </section>
       <footer className="home-footer">
