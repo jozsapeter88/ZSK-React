@@ -15,7 +15,9 @@ const Navbar = (props) => {
       />
       <div className="navbar-nav-content">
         <div className="navbar-nav-links">
-          <span className="navbar-link nav-link">Rólunk</span>
+          <a href="#about" className="navbar-link nav-link">
+            Rólunk
+          </a>
           <span className="nav-link">Csomagok</span>
           <span className="nav-link">GYIK</span>
           <span className="nav-link">Kapcsolat</span>
