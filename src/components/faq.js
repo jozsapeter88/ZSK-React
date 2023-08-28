@@ -19,6 +19,7 @@ const FAQ = (props) => {
       <div
         id="1"
         data-role="accordion-container"
+        onClick={() => setIsVisible1(!isVisible1)}
         className="faq-element accordion-element"
       >
         <div className="faq-details">
@@ -47,7 +48,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div onClick={() => setIsVisible1(!isVisible1)} className="faq-icons">
+        <div className="faq-icons">
           <svg viewBox="0 0 1024 1024" className="faq-icon">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"

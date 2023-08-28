@@ -115,25 +115,25 @@ listenForUrlChangesMobileMenu()
 }
 
 Navbar.defaultProps = {
+  link_text: 'https://example.com',
+  text: 'Link',
   image_alt: 'image',
   image_src1: 'https://i.imgur.com/92TCidp.png',
   image_src: '/Icons/hamburger-200h.png',
   image_alt1: 'image',
   rootClassName: '',
   BrandingLogo: 'https://i.imgur.com/92TCidp.png',
-  text: 'Link',
-  link_text: 'https://example.com',
 }
 
 Navbar.propTypes = {
+  link_text: PropTypes.string,
+  text: PropTypes.string,
   image_alt: PropTypes.string,
   image_src1: PropTypes.string,
   image_src: PropTypes.string,
   image_alt1: PropTypes.string,
   rootClassName: PropTypes.string,
   BrandingLogo: PropTypes.string,
-  text: PropTypes.string,
-  link_text: PropTypes.string,
 }
 
 export default Navbar
