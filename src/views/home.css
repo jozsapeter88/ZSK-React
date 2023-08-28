@@ -93,10 +93,10 @@
   line-height: 24px;
 }
 .home-image {
-  top: 153px;
-  right: 18px;
-  width: 726px;
-  height: 784px;
+  top: 399px;
+  left: 1028px;
+  width: auto;
+  height: auto;
   margin: auto;
   display: flex;
   position: absolute;
@@ -112,7 +112,6 @@
   margin: auto;
   position: absolute;
   object-fit: cover;
-  margin-right: auto;
 }
 .home-image2 {
   display: none;
@@ -145,7 +144,7 @@
   color: rgb(204, 204, 204);
   width: 1190px;
   height: 807px;
-  font-size: 30px;
+  font-size: 24;
   align-self: center;
   text-align: left;
   font-family: Poppins;
@@ -208,13 +207,11 @@
 .home-text036 {
   color: rgb(198, 255, 75);
   height: 120px;
-}
-.home-text037 {
-  font-size: 35px;
+  font-size: 40;
 }
 .home-text039 {
   color: rgb(255, 255, 255);
-  font-size: 26px;
+  font-size: 30;
   align-self: center;
   margin-top: 30px;
   text-align: center;
@@ -230,16 +227,13 @@
 .home-text040 {
   color: rgb(198, 255, 75);
   height: 120px;
-  font-size: 50px;
+  font-size: 40;
   align-self: center;
   text-align: center;
 }
-.home-text041 {
-  font-size: 35px;
-}
 .home-text043 {
   color: rgb(255, 255, 255);
-  font-size: 26px;
+  font-size: 30;
   margin-top: 30;
   text-align: center;
 }
@@ -254,14 +248,15 @@
 .home-text044 {
   color: rgb(198, 255, 75);
   height: 120px;
+  font-size: 40;
   text-align: center;
 }
 .home-text045 {
-  font-size: 35px;
+  font-size: 40px;
 }
 .home-text047 {
   color: rgb(255, 255, 255);
-  font-size: 26px;
+  font-size: 30;
   margin-top: 30;
   text-align: center;
 }
@@ -740,7 +735,9 @@
 .home-name3 {
   color: rgb(255, 255, 255);
   font-size: 24px;
+  font-style: normal;
   font-family: Poppins;
+  font-weight: 700;
   line-height: 36px;
 }
 .home-buy-details3 {
@@ -826,7 +823,9 @@
 .home-name4 {
   color: rgb(255, 255, 255);
   font-size: 24px;
+  font-style: normal;
   font-family: Poppins;
+  font-weight: 700;
   line-height: 36px;
 }
 .home-buy-details4 {
@@ -908,7 +907,9 @@
 .home-name5 {
   color: rgb(255, 255, 255);
   font-size: 24px;
+  font-style: normal;
   font-family: Poppins;
+  font-weight: 700;
   line-height: 36px;
 }
 .home-buy-details5 {
@@ -1813,11 +1814,19 @@
   line-height: 21px;
 }
 @media(max-width: 1600px) {
+  .home-heading {
+    width: 670px;
+  }
+  .home-image {
+    left: 830;
+  }
   .home-image1 {
-    top: 173px;
-    left: -3px;
-    width: 707px;
-    height: 438px;
+    top: 0px;
+    left: 0px;
+    right: 200px;
+    width: 538px;
+    bottom: 20;
+    height: 369px;
   }
   .home-image4 {
     top: -69px;
@@ -1825,14 +1834,28 @@
   }
 }
 @media(max-width: 1200px) {
+  .home-hero {
+    width: 670;
+  }
   .home-heading {
-    width: 564px;
+    width: 664px;
+  }
+  .home-image {
+    position: sticky;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .home-image1 {
-    top: 222px;
-    left: 100px;
-    width: 590px;
-    height: 355px;
+    width: 670;
+    height: 400px;
+    padding-bottom: 60px;
+  }
+  .home-paragraph {
+    padding: 30;
+  }
+  .home-section02 {
+    padding-left: 30;
+    padding-right: 30;
   }
   .home-image4 {
     top: -72px;
@@ -1912,25 +1935,44 @@
     flex-direction: column;
   }
   .home-image3 {
-    width: 839px;
-    height: 100%;
+    width: 100%;
+    height: 401px;
+    padding-left: 0px;
   }
   .home-section01 {
-    padding-bottom: 300px;
+    padding-bottom: 120;
   }
   .home-text008 {
     text-align: center;
   }
   .home-paragraph {
     width: 800px;
+    height: auto;
+    padding: 0;
+  }
+  .home-section02 {
+    gap: var(--dl-space-space-unit);
+    width: 100%;
+  }
+  .home-text036 {
+    color: rgb(198, 255, 75);
+    font-size: 30px;
+  }
+  .home-text037 {
+    font-size: 40px;
   }
   .home-content1 {
     width: 1000px;
+    height: 538px;
+    padding: none;
     align-items: center;
     flex-direction: column;
   }
   .home-header01 {
     height: 272px;
+    padding: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .home-buttons1 {
     width: 100%;
@@ -1940,10 +1982,12 @@
     justify-content: center;
   }
   .home-image4 {
-    width: 466px;
-    height: 578px;
+    width: 267px;
+    height: 385px;
+    display: none;
     position: static;
     align-self: flex-end;
+    object-fit: none;
   }
   .home-plans {
     flex-direction: column;
@@ -2046,6 +2090,9 @@
   }
 }
 @media(max-width: 767px) {
+  .home-hero {
+    padding-bottom: 30;
+  }
   .home-content {
     gap: var(--dl-space-space-threeunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2084,13 +2131,36 @@
     text-align: center;
   }
   .home-paragraph {
-    width: 700px;
-    height: 1000px;
+    width: 660;
+    height: auto;
     line-height: 24px;
   }
   .home-section02 {
     gap: var(--dl-space-space-fourunits);
-    padding-bottom: var(--dl-space-space-twounits);
+    padding-bottom: 120;
+  }
+  .home-text036 {
+    font-size: 26;
+    text-align: center;
+  }
+  .home-text039 {
+    font-size: 24;
+  }
+  .home-text040 {
+    color: rgb(198, 255, 75);
+    font-size: 26;
+  }
+  .home-text041 {
+    font-size: 40px;
+  }
+  .home-text043 {
+    font-size: 24;
+  }
+  .home-text044 {
+    font-size: 26;
+  }
+  .home-text047 {
+    font-size: 24;
   }
   .home-section03 {
     padding-top: var(--dl-space-space-fourunits);
@@ -2105,25 +2175,39 @@
   .home-image4 {
     align-self: center;
   }
+  .home-plans {
+    flex-direction: column;
+  }
   .home-plan {
+    width: 100%;
+    height: 650;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .home-plan1 {
+    width: 100%;
+    height: 650;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .home-plan2 {
+    width: 100%;
+    height: 100%;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
   }
+  .home-plans1 {
+    flex-direction: column;
+  }
   .home-plan3 {
+    width: 100%;
+    height: 100%;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -2133,12 +2217,16 @@
     height: 75px;
   }
   .home-plan4 {
+    width: 100%;
+    height: 100%;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .home-plan5 {
+    width: 100%;
+    height: 100%;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -2169,6 +2257,7 @@
   }
   .home-paragraph2 {
     width: 100%;
+    font-size: 20px;
     line-height: 24px;
   }
   .home-text093 {
@@ -2177,6 +2266,7 @@
   }
   .home-paragraph3 {
     width: 100%;
+    font-size: 20px;
     line-height: 24px;
   }
   .home-left1 {
@@ -2220,18 +2310,28 @@
   }
 }
 @media(max-width: 479px) {
+  .home-main {
+    width: auto;
+  }
   .home-header {
+    width: 449px;
     align-items: flex-start;
   }
   .home-heading {
+    width: 100%;
     max-width: 280px;
+  }
+  .home-buttons {
+    width: 60%;
   }
   .home-image2 {
     height: 289px;
+    flex-direction: unset;
   }
   .home-image3 {
-    width: 479px;
+    width: 450;
     height: 289px;
+    padding-bottom: 40px;
   }
   .home-section01 {
     height: 1570px;
@@ -2241,7 +2341,23 @@
     height: 100%;
   }
   .home-section02 {
+    gap: var(--dl-space-space-unit);
     height: 2079px;
+  }
+  .home-text036 {
+    font-size: 22;
+  }
+  .home-text040 {
+    font-size: 22;
+  }
+  .home-text041 {
+    font-size: 24px;
+  }
+  .home-text044 {
+    font-size: 22;
+  }
+  .home-text045 {
+    font-size: 24px;
   }
   .home-section03 {
     height: 840px;
@@ -2249,7 +2365,7 @@
     padding-bottom: 130px;
   }
   .home-content1 {
-    height: 734px;
+    height: auto;
   }
   .home-header01 {
     width: 383px;
@@ -2270,6 +2386,10 @@
     font-size: 16px;
   }
   .home-buy3 {
+    height: 100%;
+  }
+  .home-plan5 {
+    width: 100%;
     height: 100%;
   }
   .home-image6 {

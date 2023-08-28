@@ -18,12 +18,14 @@ const Navbar = (props) => {
           <a href="#about" className="navbar-link nav-link">
             Rólunk
           </a>
-          <span className="nav-link">Csomagok</span>
           <span className="nav-link">GYIK</span>
           <span className="nav-link">Kapcsolat</span>
         </div>
         <div className="get-started navbar-get-started">
-          <span className="navbar-text">Get started</span>
+          <span className="navbar-text">
+            <span className="navbar-text1">Csomagok</span>
+            <br className=""></br>
+          </span>
         </div>
         <div id="open-mobile-menu" className="navbar-hamburger get-started">
           <img
@@ -56,7 +58,7 @@ const Navbar = (props) => {
           <span className="nav-link">Contact</span>
         </div>
         <div className="get-started">
-          <span className="navbar-text1">Get started</span>
+          <span className="navbar-text3">Get started</span>
         </div>
       </div>
       <div className="">

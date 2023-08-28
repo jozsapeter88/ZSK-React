@@ -71,7 +71,7 @@ const Home = (props) => {
             <div className="home-image">
               <img
                 alt="image"
-                src="/SectionImages/heroimage-600h.png"
+                src="/SectionImages/heroimage-1200w.png"
                 className="home-image1"
               />
             </div>
@@ -79,7 +79,7 @@ const Home = (props) => {
           <div className="home-image2">
             <img
               alt="image"
-              src="/SectionImages/heroimage-600h.png"
+              src="/SectionImages/heroimage-1200w.png"
               className="home-image3"
             />
           </div>

@@ -119,11 +119,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible3(!isVisible3)}
-          className=""
-        >
+        <div onClick={() => setIsVisible3(!isVisible3)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon04">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -145,11 +141,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible4(!isVisible4)}
-          className=""
-        >
+        <div onClick={() => setIsVisible4(!isVisible4)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon06">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -189,11 +181,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible5(!isVisible5)}
-          className=""
-        >
+        <div onClick={() => setIsVisible5(!isVisible5)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon08">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -223,11 +211,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible6(!isVisible6)}
-          className=""
-        >
+        <div onClick={() => setIsVisible6(!isVisible6)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon10">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -256,11 +240,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible7(!isVisible7)}
-          className=""
-        >
+        <div onClick={() => setIsVisible7(!isVisible7)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon12">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -283,11 +263,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible8(!isVisible8)}
-          className=""
-        >
+        <div onClick={() => setIsVisible8(!isVisible8)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon14">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
@@ -313,11 +289,7 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div
-          data-role="accordion-icon"
-          onClick={() => setIsVisible9(!isVisible9)}
-          className=""
-        >
+        <div onClick={() => setIsVisible9(!isVisible9)} className="">
           <svg viewBox="0 0 1024 1024" className="faq-icon16">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
