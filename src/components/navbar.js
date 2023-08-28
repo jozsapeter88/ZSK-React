@@ -3,6 +3,7 @@ import React from 'react'
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
+import NavLinks from './nav-links'
 import './navbar.css'
 
 const Navbar = (props) => {
@@ -14,13 +15,7 @@ const Navbar = (props) => {
         className="navbar-branding-logo"
       />
       <div className="navbar-nav-content">
-        <div className="navbar-nav-links">
-          <a href="#about" className="navbar-link nav-link">
-            Rólunk
-          </a>
-          <span className="nav-link">GYIK</span>
-          <span className="nav-link">Kapcsolat</span>
-        </div>
+        <NavLinks className=""></NavLinks>
         <div className="get-started navbar-get-started">
           <span className="navbar-text">
             <span className="navbar-text1">Csomagok</span>
@@ -51,7 +46,7 @@ const Navbar = (props) => {
             </svg>
           </div>
         </div>
-        <div className="navbar-nav-links1">
+        <div className="navbar-nav-links">
           <span className="nav-link">Features</span>
           <span className="nav-link">Why us</span>
           <span className="nav-link">Prices</span>

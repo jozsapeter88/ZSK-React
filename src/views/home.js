@@ -67,21 +67,12 @@ const Home = (props) => {
                   </span>
                 </div>
               </div>
-            </main>
-            <div className="home-image">
               <img
                 alt="image"
-                src="/SectionImages/heroimage-1200w.png"
-                className="home-image1"
+                src="/SectionImages/heroimage-700w.png"
+                className="home-image"
               />
-            </div>
-          </div>
-          <div className="home-image2">
-            <img
-              alt="image"
-              src="/SectionImages/heroimage-1200w.png"
-              className="home-image3"
-            />
+            </main>
           </div>
         </div>
       </section>
@@ -220,7 +211,7 @@ const Home = (props) => {
           <img
             alt="image"
             src="/SectionImages/telegram1-900h.png"
-            className="home-image4"
+            className="home-image1"
           />
         </main>
       </section>
@@ -468,20 +459,17 @@ const Home = (props) => {
       </section>
       <section className="home-section06">
         <section className="home-note">
-          <div className="home-image5">
+          <div className="home-image2">
             <img
               alt="image"
               src="/SectionImages/consultation-600w.png"
-              className="home-image6"
+              className="home-image3"
             />
             <main className="home-main1">
-              <header className="home-caption1">
-                <span className="home-section07 section-head">Konzultáció</span>
-              </header>
               <main className="home-heading09">
                 <header className="home-header09">
                   <h2 className="home-heading10 section-heading">
-                    Kinek ajánljuk?
+                    Konzultáció
                   </h2>
                 </header>
                 <div className="home-checkmarks">
@@ -500,7 +488,7 @@ const Home = (props) => {
           </div>
         </section>
       </section>
-      <section className="home-section08">
+      <section className="home-section07">
         <h2 className="home-text073">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph2">
           <span>✅ K</span>
@@ -575,7 +563,7 @@ const Home = (props) => {
           <br></br>
         </p>
       </section>
-      <section className="home-section09">
+      <section className="home-section08">
         <header className="home-header10">
           <header className="home-left1">
             <span className="section-head">Kik vagyunk mi?</span>
@@ -596,17 +584,17 @@ const Home = (props) => {
           ></Card>
         </main>
       </section>
-      <section className="home-section11">
+      <section className="home-section10">
         <div className="home-note1">
-          <div className="home-image7">
+          <div className="home-image4">
             <img
               alt="image"
               src="/SectionImages/iphone%2014%20pro%20max-1200w.png"
-              className="home-image8"
+              className="home-image5"
             />
           </div>
           <div className="home-content2">
-            <div className="home-caption2">
+            <div className="home-caption1">
               <span className="section-head">Tempor incididunt</span>
             </div>
             <div className="home-heading12">
@@ -620,7 +608,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-section13">
+      <section className="home-section12">
         <div className="home-cube">
           <div className="home-top side"></div>
           <div className="home-front side"></div>
@@ -645,7 +633,7 @@ const Home = (props) => {
           </div>
         </main>
       </section>
-      <section className="home-section14">
+      <section className="home-section13">
         <header className="home-header13">
           <header className="home-left3">
             <span className="section-head">Vélemények</span>
@@ -693,7 +681,7 @@ const Home = (props) => {
           <p className="home-text116">View more</p>
         </div>
       </section>
-      <section className="home-section16">
+      <section className="home-section15">
         <header className="home-header14">
           <span className="section-head">Articles about us</span>
           <h2 className="home-heading16 section-heading">
@@ -713,7 +701,7 @@ const Home = (props) => {
           ></Article>
         </main>
       </section>
-      <section className="home-section18">
+      <section className="home-section17">
         <header className="home-header15">
           <span className="section-head">GYIK</span>
           <h2 className="home-heading17 section-heading">

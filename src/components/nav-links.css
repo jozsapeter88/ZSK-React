@@ -1,0 +1,15 @@
+.nav-links-nav-links {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.nav-links-link {
+  text-decoration: none;
+}
+@media(max-width: 767px) {
+  .nav-links-nav-links {
+    display: none;
+  }
+}
