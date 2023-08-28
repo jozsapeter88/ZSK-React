@@ -1,0 +1,8 @@
+.icons-icons {
+  position: relative;
+}
+.icons-icon {
+  fill: var(--dl-color-gray-white);
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
