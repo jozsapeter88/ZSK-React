@@ -1,25 +1,18 @@
-.nav-links-nav-links {
+.nav-links1-nav-links {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   position: relative;
   align-items: flex-start;
   border-color: transparent;
 }
-.nav-links-link {
+.nav-links1-link {
   text-decoration: none;
 }
-.nav-links-link1 {
+.nav-links1-link3 {
   text-decoration: none;
 }
-.nav-links-link2 {
-  text-decoration: none;
-}
-.nav-links-link3 {
-  text-decoration: none;
-}
-
 @media(max-width: 767px) {
-  .nav-links-nav-links {
+  .nav-links1-nav-links {
     display: none;
   }
 }

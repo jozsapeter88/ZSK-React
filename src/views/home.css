@@ -10,7 +10,7 @@
 }
 .home-section {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   border-color: #51515A;
@@ -22,6 +22,7 @@
 }
 .home-hero {
   width: 100%;
+  height: auto;
   display: flex;
   max-width: 1200px;
   align-items: center;
@@ -31,14 +32,15 @@
 .home-content {
   gap: var(--dl-space-space-fiveunits);
   width: 100%;
+  height: auto;
   display: flex;
-  max-width: 600px;
   align-items: flex-start;
   flex-direction: column;
 }
 .home-main {
   gap: var(--dl-space-space-threeunits);
   width: 664px;
+  height: 500;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -94,19 +96,18 @@
   line-height: 24px;
 }
 .home-image {
-  left: 1000;
   width: auto;
   height: 370;
   margin: auto;
-  position: absolute;
+  position: relative;
   object-fit: cover;
-  margin-right: auto;
   align-content: center;
   flex-direction: column;
 }
 .home-section01 {
   flex: 1;
   width: 100%;
+  height: 90vh;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -173,14 +174,12 @@
   flex: 1;
   width: 1200px;
   display: flex;
-  align-items: center;
   padding-top: 120px;
   border-color: #51515A;
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
   padding-bottom: 120px;
   justify-content: center;
-  border-bottom-width: 1px;
 }
 .home-container1 {
   width: 500;
@@ -197,7 +196,7 @@
 }
 .home-text039 {
   color: rgb(255, 255, 255);
-  font-size: 30;
+  font-size: 26;
   align-self: center;
   margin-top: 30px;
   text-align: center;
@@ -219,7 +218,7 @@
 }
 .home-text043 {
   color: rgb(255, 255, 255);
-  font-size: 30;
+  font-size: 26;
   margin-top: 30;
   text-align: center;
 }
@@ -242,7 +241,7 @@
 }
 .home-text047 {
   color: rgb(255, 255, 255);
-  font-size: 30;
+  font-size: 26;
   margin-top: 30;
   text-align: center;
 }
@@ -261,7 +260,7 @@
 }
 .home-content1 {
   gap: var(--dl-space-space-oneandhalfunits);
-  width: 110%;
+  width: 100%;
   display: flex;
   position: relative;
   align-self: center;
@@ -1055,7 +1054,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 110px;
   border-color: #51515A;
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
@@ -1805,6 +1804,7 @@
 @media(max-width: 1200px) {
   .home-hero {
     width: 670;
+    display: block;
   }
   .home-heading {
     width: 664px;
@@ -1812,6 +1812,10 @@
   .home-image {
     width: 670;
     height: 400px;
+    padding: 0;
+    margin-top: 40;
+    object-fit: contain;
+    margin-bottom: 40;
     padding-bottom: 60px;
   }
   .home-paragraph {
@@ -2258,6 +2262,9 @@
   }
   .home-buttons {
     width: 60%;
+  }
+  .home-image {
+    width: 400;
   }
   .home-section01 {
     height: 1570px;

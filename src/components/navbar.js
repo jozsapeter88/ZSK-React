@@ -15,13 +15,18 @@ const Navbar = (props) => {
         className="navbar-branding-logo"
       />
       <div className="navbar-nav-content">
-        <NavLinks className=""></NavLinks>
-        <div className="get-started navbar-get-started">
-          <span className="navbar-text">
-            <span className="navbar-text1">Csomagok</span>
-            <br className=""></br>
-          </span>
-        </div>
+        <NavLinks
+          rootClassName="nav-links-root-class-name"
+          className=""
+        ></NavLinks>
+        <a href="#packages" className="navbar-link">
+          <div className="navbar-packages get-started">
+            <span className="navbar-text">
+              <span className="navbar-text1">Csomagok</span>
+              <br className=""></br>
+            </span>
+          </div>
+        </a>
         <div id="open-mobile-menu" className="navbar-hamburger get-started">
           <img
             alt={props.image_alt}
@@ -116,6 +121,8 @@ Navbar.defaultProps = {
   image_alt1: 'image',
   rootClassName: '',
   BrandingLogo: 'https://i.imgur.com/92TCidp.png',
+  text: 'Link',
+  link_text: 'https://example.com',
 }
 
 Navbar.propTypes = {
@@ -125,6 +132,8 @@ Navbar.propTypes = {
   image_alt1: PropTypes.string,
   rootClassName: PropTypes.string,
   BrandingLogo: PropTypes.string,
+  text: PropTypes.string,
+  link_text: PropTypes.string,
 }
 
 export default Navbar

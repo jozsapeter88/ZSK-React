@@ -25,6 +25,12 @@
   flex-direction: row;
   justify-content: flex-start;
 }
+.navbar-link {
+  display: contents;
+}
+.navbar-packages {
+  text-decoration: none;
+}
 .navbar-text {
   color: rgba(255, 255, 255, 1);
   align-self: auto;
@@ -117,7 +123,7 @@
   .navbar-branding-logo {
     width: 80px;
   }
-  .navbar-get-started {
+  .navbar-packages {
     display: none;
   }
   .navbar-hamburger {

@@ -33,7 +33,7 @@ const FAQ = (props) => {
               />
             </span>
           </span>
-          {!isVisible1 && (
+          {isVisible1 && (
             <span data-role="accordion-content" className="faq-text04">
               <span className="">Simplepay-en keresztül, bankkártyával.</span>
               <br className=""></br>
@@ -66,7 +66,7 @@ const FAQ = (props) => {
             <span className="">Mikor érdemes kezdeni?</span>
             <br className=""></br>
           </span>
-          {!isVisible2 && (
+          {isVisible2 && (
             <span data-role="accordion-content" className="faq-text11">
               <span className="">
                 Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
@@ -102,7 +102,7 @@ const FAQ = (props) => {
             <span className="">Csomag vásárlás után egyből él a tagságom?</span>
             <br className=""></br>
           </span>
-          {!isVisible3 && (
+          {isVisible3 && (
             <span data-role="accordion-content" className="faq-text18">
               <span className="">
                 Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy Telegram
@@ -135,7 +135,7 @@ const FAQ = (props) => {
       >
         <div className="faq-details3">
           <span className="faq-text22">Hol fogom kapni a tippeket?</span>
-          {!isVisible4 && (
+          {isVisible4 && (
             <span data-role="accordion-content" className="faq-text23">
               Telegram alkalmazásban, egy privát csoportban.
             </span>
@@ -167,7 +167,7 @@ const FAQ = (props) => {
               />
             </span>
           </span>
-          {!isVisible5 && (
+          {isVisible5 && (
             <span data-role="accordion-content" className="faq-text28">
               A Telegram egy alkalmazás, amit bármilyen készülékre letölthetsz.
               Az alkalmazás letöltéséhez az adott áruházban (App Store/Google
@@ -200,7 +200,7 @@ const FAQ = (props) => {
             <span className="">Garancia van?</span>
             <br className=""></br>
           </span>
-          {!isVisible6 && (
+          {isVisible6 && (
             <span data-role="accordion-content" className="faq-text32">
               <span className="">
                 Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati
@@ -230,7 +230,7 @@ const FAQ = (props) => {
             <span className="">Mi az a teljes hónap?</span>
             <br className=""></br>
           </span>
-          {!isVisible7 && (
+          {isVisible7 && (
             <span data-role="accordion-content" className="faq-text38">
               <span className="">
                 Nálunk rendszerben zajlik a befizetés, minden hónap tizedikén
@@ -256,7 +256,7 @@ const FAQ = (props) => {
       >
         <div className="faq-details7">
           <span className="faq-text41">Másik napon elő se tudok fizetni?</span>
-          {!isVisible8 && (
+          {isVisible8 && (
             <span data-role="accordion-content" className="faq-text42">
               De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk
               neked.
@@ -281,7 +281,7 @@ const FAQ = (props) => {
           <span className="faq-text43">
             Milyen tőke szükséges az indulásomhoz?
           </span>
-          {!isVisible9 && (
+          {isVisible9 && (
             <span data-role="accordion-content" className="faq-text44">
               Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
               kivételt képez a Silver-Pong csomagunk, amit az előbb említett

@@ -67,13 +67,13 @@ const Home = (props) => {
                   </span>
                 </div>
               </div>
-              <img
-                alt="image"
-                src="/SectionImages/heroimage-700w.png"
-                className="home-image"
-              />
             </main>
           </div>
+          <img
+            alt="image"
+            src="/SectionImages/heroimage-700w.png"
+            className="home-image"
+          />
         </div>
       </section>
       <section id="about" className="home-section01">
@@ -191,7 +191,7 @@ const Home = (props) => {
           </span>
         </div>
       </section>
-      <section className="home-section03">
+      <section id="telegram" className="home-section03">
         <main className="home-content1">
           <header className="home-header01">
             <h2 className="home-heading01 section-heading">
@@ -215,7 +215,7 @@ const Home = (props) => {
           />
         </main>
       </section>
-      <section className="home-section04">
+      <section id="packages" className="home-section04">
         <main className="home-pricing">
           <header className="home-header02">
             <header className="home-left">
@@ -488,7 +488,7 @@ const Home = (props) => {
           </div>
         </section>
       </section>
-      <section className="home-section07">
+      <section id="forwho" className="home-section07">
         <h2 className="home-text073">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph2">
           <span>✅ K</span>
@@ -701,7 +701,7 @@ const Home = (props) => {
           ></Article>
         </main>
       </section>
-      <section className="home-section17">
+      <section id="faq" className="home-section17">
         <header className="home-header15">
           <span className="section-head">GYIK</span>
           <h2 className="home-heading17 section-heading">
