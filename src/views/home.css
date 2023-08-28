@@ -274,15 +274,16 @@
   padding-top: 120px;
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: #292929;
 }
 .home-content1 {
-  width: 100%;
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 110%;
   display: flex;
   position: relative;
-  max-width: 1200px;
+  align-self: center;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -294,6 +295,7 @@
   max-width: 600px;
   align-self: center;
   align-items: flex-start;
+  padding-top: 120px;
   flex-direction: column;
   padding-bottom: 120px;
   justify-content: flex-start;
@@ -327,8 +329,8 @@
   line-height: 24px;
 }
 .home-image4 {
-  top: -189px;
-  right: -384px;
+  top: -69px;
+  right: -1px;
   width: 470px;
   height: 550px;
   z-index: 100;
@@ -1818,8 +1820,8 @@
     height: 438px;
   }
   .home-image4 {
-    top: -193px;
-    right: -197px;
+    top: -69px;
+    right: -1px;
   }
 }
 @media(max-width: 1200px) {
@@ -1833,8 +1835,8 @@
     height: 355px;
   }
   .home-image4 {
-    top: -195px;
-    right: -19px;
+    top: -72px;
+    right: 3px;
   }
   .home-buy-details {
     height: 370;
@@ -1938,6 +1940,8 @@
     justify-content: center;
   }
   .home-image4 {
+    width: 466px;
+    height: 578px;
     position: static;
     align-self: flex-end;
   }
