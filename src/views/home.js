@@ -462,7 +462,7 @@ const Home = (props) => {
           <div className="home-image2">
             <img
               alt="image"
-              src="/SectionImages/consultation-600w.png"
+              src="/SectionImages/consultation-800h.png"
               className="home-image3"
             />
             <main className="home-main1">
