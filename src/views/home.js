@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
@@ -69,13 +68,13 @@ const Home = (props) => {
                 </div>
               </div>
             </main>
-          </div>
-          <div className="home-image">
-            <img
-              alt="image"
-              src="/SectionImages/heroimage-600h.png"
-              className="home-image1"
-            />
+            <div className="home-image">
+              <img
+                alt="image"
+                src="/SectionImages/heroimage-600h.png"
+                className="home-image1"
+              />
+            </div>
           </div>
           <div className="home-image2">
             <img
@@ -165,47 +164,40 @@ const Home = (props) => {
         </p>
       </section>
       <section className="home-section02">
-        <div className="home-container01">
-          <div className="home-container02">
-            <h1 className="home-text036">
-              <span className="home-text037">Csak dőlj hátra</span>
-              <br></br>
-            </h1>
-            <span className="home-text039">
-              TippProfesszor és TippDoktor leveszik a terhet a válladról, nem
-              kell többé a statisztikákat és eredményeket bújnod, csak az
-              elkészített terveket követni. Ők azért dolgoznak, hogy neked már
-              ne kelljen!
-            </span>
-          </div>
+        <div className="home-container1">
+          <h1 className="home-text036">
+            <span className="home-text037">Csak dőlj hátra</span>
+            <br></br>
+          </h1>
+          <span className="home-text039">
+            TippProfesszor és TippDoktor leveszik a terhet a válladról, nem kell
+            többé a statisztikákat és eredményeket bújnod, csak az elkészített
+            terveket követni. Ők azért dolgoznak, hogy neked már ne kelljen!
+          </span>
         </div>
-        <div className="home-container03">
-          <div className="home-container04">
-            <h1 className="home-text040">
-              <span>Ne legyen több kezdő hiba</span>
-              <br></br>
-            </h1>
-            <span className="home-text043">
-              TippProfesszor és TippDoktor körültekintő munkájának köszönhetően
-              a fogadásból adódó stressz a lehető legalacsonyabb legyen. Profi
-              csapatunkkal folyamatosan azon dolgozunk, hogy minden apró
-              részletet észrevegyünk és a hibafaktor minimumra csökkenjen.
-            </span>
-          </div>
+        <div className="home-container2">
+          <h1 className="home-text040">
+            <span className="home-text041">Ne legyen több kezdő hiba</span>
+            <br></br>
+          </h1>
+          <span className="home-text043">
+            TippProfesszor és TippDoktor körültekintő munkájának köszönhetően a
+            fogadásból adódó stressz a lehető legalacsonyabb legyen. Profi
+            csapatunkkal folyamatosan azon dolgozunk, hogy minden apró részletet
+            észrevegyünk és a hibafaktor minimumra csökkenjen.
+          </span>
         </div>
-        <div className="home-container05">
-          <div className="home-container06">
-            <h1 className="home-text044">
-              <span className="home-text045">Láss át rajtunk</span>
-              <br></br>
-            </h1>
-            <span className="home-text047">
-              A transzparencia nagyon fontos számunkra, így a statisztikáinkat
-              az oldal indulásától kezdve folyamatosan nyomon követheted. A jó
-              és rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert
-              nincs szükségünk rá!
-            </span>
-          </div>
+        <div className="home-container3">
+          <h1 className="home-text044">
+            <span className="home-text045">Láss át rajtunk</span>
+            <br></br>
+          </h1>
+          <span className="home-text047">
+            A transzparencia nagyon fontos számunkra, így a statisztikáinkat az
+            oldal indulásától kezdve folyamatosan nyomon követheted. A jó és
+            rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert nincs
+            szükségünk rá!
+          </span>
         </div>
       </section>
       <section className="home-section03">
@@ -669,14 +661,14 @@ const Home = (props) => {
           </div>
         </header>
         <main className="home-cards1">
-          <div className="home-container07">
+          <div className="home-container4">
             <Review rootClassName="review-root-class-name"></Review>
             <Review
               Quote="“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.\u2028\u2028Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.”"
               rootClassName="review-root-class-name"
             ></Review>
           </div>
-          <div className="home-container08">
+          <div className="home-container5">
             <Review
               Quote="“Illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
               rootClassName="review-root-class-name"
@@ -686,7 +678,7 @@ const Home = (props) => {
               rootClassName="review-root-class-name"
             ></Review>
           </div>
-          <div className="home-container09">
+          <div className="home-container6">
             <Review
               Quote="“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
               rootClassName="review-root-class-name"
@@ -851,80 +843,6 @@ const Home = (props) => {
           </section>
         </div>
       </footer>
-      <div>
-        <Script
-          html={`<script>
-    /*
-Accordion - Code Embed
-*/
-
-/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
-the Accordions will still work*/
-
-const listenForUrlChangesAccordion = () => {
-      let url = location.href;
-      document.body.addEventListener(
-        "click",
-        () => {
-          requestAnimationFrame(() => {
-            if (url !== location.href) {
-              runAccordionCodeEmbed();
-              url = location.href;
-            }
-          });
-        },
-        true
-      );
-    };
-
-
-const runAccordionCodeEmbed = () => {
-    const accordionContainers = document.querySelectorAll('[data-role="accordion-container"]'); // All accordion containers
-    const accordionContents = document.querySelectorAll('[data-role="accordion-content"]'); // All accordion content
-    const accordionIcons = document.querySelectorAll('[data-role="accordion-icon"]'); // All accordion icons
-
-    accordionContents.forEach((accordionContent) => {
-        accordionContent.style.display = "none"; //Hides all accordion contents
-    });
-
-    accordionContainers.forEach((accordionContainer, index) => {
-        accordionContainer.addEventListener("click", () => {
-            accordionContents.forEach((accordionContent) => {
-            accordionContent.style.display = "none"; //Hides all accordion contents
-            });
-
-            accordionIcons.forEach((accordionIcon) => {
-                accordionIcon.style.transform = "rotate(0deg)"; // Resets all icon transforms to 0deg (default)
-            });
-
-            accordionContents[index].style.display = "flex"; // Shows accordion content
-            accordionIcons[index].style.transform = "rotate(180deg)"; // Rotates accordion icon 180deg
-        });
-    });
-}
-
-runAccordionCodeEmbed()
-listenForUrlChangesAccordion()
-
-/*
-Here's what the above is doing:
-    1. Selects all accordion containers, contents, and icons
-    2. Hides all accordion contents
-    3. Adds an event listener to each accordion container
-    4. When an accordion container is clicked, it:
-        - Hides all accordion contents
-        - Resets all icon transforms to 0deg (default)
-        - Checks if this container has class "accordion-open"
-            - If it does, it removes class "accordion-open"
-            - If it doesn't, it:
-                - Removes class "accordion-open" from all containers
-                - Adds class "accordion-open" to this container
-                - Shows accordion content
-                - Rotates accordion icon 180deg
-*/
-</script>`}
-        ></Script>
-      </div>
     </div>
   )
 }

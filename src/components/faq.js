@@ -13,6 +13,7 @@ const FAQ = (props) => {
   const [isVisible4, setIsVisible4] = useState(false)
   const [isVisible1, setIsVisible1] = useState(false)
   const [isVisible6, setIsVisible6] = useState(false)
+  const [isVisible9, setIsVisible9] = useState(false)
   return (
     <div className={`faq-accordion ${props.rootClassName} `}>
       <div
@@ -46,12 +47,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="faq-icons">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible1(!isVisible1)}
-            className="faq-icon"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible1(!isVisible1)}
+          className="faq-icons"
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -86,12 +87,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible2(!isVisible2)}
-            className="faq-icon02"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible2(!isVisible2)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon02">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -126,12 +127,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible3(!isVisible3)}
-            className="faq-icon04"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible3(!isVisible3)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon04">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -152,12 +153,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible4(!isVisible4)}
-            className="faq-icon06"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible4(!isVisible4)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon06">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -196,12 +197,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible5(!isVisible5)}
-            className="faq-icon08"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible5(!isVisible5)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon08">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -230,12 +231,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible6(!isVisible6)}
-            className="faq-icon10"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible6(!isVisible6)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon10">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -263,12 +264,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible7(!isVisible7)}
-            className="faq-icon12"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible7(!isVisible7)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon12">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -290,12 +291,12 @@ const FAQ = (props) => {
             </span>
           )}
         </div>
-        <div data-role="accordion-icon" className="">
-          <svg
-            viewBox="0 0 1024 1024"
-            onClick={() => setIsVisible8(!isVisible8)}
-            className="faq-icon14"
-          >
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible8(!isVisible8)}
+          className=""
+        >
+          <svg viewBox="0 0 1024 1024" className="faq-icon14">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"
               className=""
@@ -312,13 +313,19 @@ const FAQ = (props) => {
           <span className="faq-text43">
             Milyen tőke szükséges az indulásomhoz?
           </span>
-          <span data-role="accordion-content" className="faq-text44">
-            Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
-            kivételt képez a Silver-Pong csomagunk, amit az előbb említett tőke
-            összegyűjtésére hoztunk létre neked.
-          </span>
+          {!isVisible9 && (
+            <span data-role="accordion-content" className="faq-text44">
+              Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
+              kivételt képez a Silver-Pong csomagunk, amit az előbb említett
+              tőke összegyűjtésére hoztunk létre neked.
+            </span>
+          )}
         </div>
-        <div data-role="accordion-icon" className="">
+        <div
+          data-role="accordion-icon"
+          onClick={() => setIsVisible9(!isVisible9)}
+          className=""
+        >
           <svg viewBox="0 0 1024 1024" className="faq-icon16">
             <path
               d="M366 708l196-196-196-196 60-60 256 256-256 256z"

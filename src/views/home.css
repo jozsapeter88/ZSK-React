@@ -38,6 +38,7 @@
 }
 .home-main {
   gap: var(--dl-space-space-threeunits);
+  width: 664px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -92,8 +93,8 @@
   line-height: 24px;
 }
 .home-image {
-  top: 150px;
-  right: 0px;
+  top: 153px;
+  right: 18px;
   width: 726px;
   height: 784px;
   margin: auto;
@@ -104,10 +105,10 @@
   justify-content: space-between;
 }
 .home-image1 {
-  top: 212px;
-  left: -100;
-  width: 722px;
-  height: 443px;
+  top: 241px;
+  left: -171px;
+  width: 524px;
+  height: 341px;
   margin: auto;
   position: absolute;
   object-fit: cover;
@@ -133,7 +134,7 @@
   border-bottom-width: 1px;
 }
 .home-text008 {
-  color: rgb(255, 255, 255);
+  color: #c6ff4b;
   font-size: 40px;
   font-style: normal;
   font-family: Poppins;
@@ -146,6 +147,7 @@
   height: 807px;
   font-size: 30px;
   align-self: center;
+  text-align: left;
   font-family: Poppins;
   line-height: 28px;
 }
@@ -159,10 +161,11 @@
   text-transform: capitalize;
 }
 .home-text018 {
+  color: #c6ff4b;
   font-weight: 700;
 }
 .home-text019 {
-  color: #cccccc;
+  color: #c6ff4b;
   font-family: Poppins;
   font-weight: 700;
   line-height: 28px;
@@ -183,27 +186,18 @@
 .home-section02 {
   gap: var(--dl-space-space-sixunits);
   flex: 1;
-  width: 100%;
+  width: 1200px;
   display: flex;
   align-items: center;
   padding-top: 120px;
   border-color: #51515A;
-  padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
   padding-bottom: 120px;
   justify-content: center;
   border-bottom-width: 1px;
 }
-.home-container01 {
-  flex: 0 0 auto;
-  width: 500;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-container02 {
+.home-container1 {
   width: 500;
   height: fit-content;
   display: flex;
@@ -216,23 +210,16 @@
   height: 120px;
 }
 .home-text037 {
-  font-size: 50px;
+  font-size: 35px;
 }
 .home-text039 {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 26px;
+  align-self: center;
   margin-top: 30px;
   text-align: center;
 }
-.home-container03 {
-  flex: 0 0 auto;
-  width: 500px;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-container04 {
+.home-container2 {
   width: 500;
   height: fit-content;
   display: flex;
@@ -247,21 +234,16 @@
   align-self: center;
   text-align: center;
 }
+.home-text041 {
+  font-size: 35px;
+}
 .home-text043 {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 30;
   text-align: center;
 }
-.home-container05 {
-  flex: 0 0 auto;
-  width: 500px;
-  height: 100px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-container06 {
+.home-container3 {
   width: 500;
   height: fit-content;
   display: flex;
@@ -275,11 +257,11 @@
   text-align: center;
 }
 .home-text045 {
-  font-size: 50px;
+  font-size: 35px;
 }
 .home-text047 {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 26px;
   margin-top: 30;
   text-align: center;
 }
@@ -310,6 +292,7 @@
   width: 100%;
   display: flex;
   max-width: 600px;
+  align-self: center;
   align-items: flex-start;
   flex-direction: column;
   padding-bottom: 120px;
@@ -1107,6 +1090,7 @@
   width: 1154px;
   height: 46px;
   font-size: 40px;
+  align-self: center;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
@@ -1475,17 +1459,17 @@
   flex-direction: row;
   grid-template-columns: auto auto auto;
 }
-.home-container07 {
+.home-container4 {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   flex-direction: column;
 }
-.home-container08 {
+.home-container5 {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   flex-direction: column;
 }
-.home-container09 {
+.home-container6 {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   flex-direction: column;
@@ -2028,7 +2012,7 @@
   .home-cards1 {
     grid-template-columns: auto;
   }
-  .home-container09 {
+  .home-container6 {
     display: none;
   }
   .home-view-more {
