@@ -218,6 +218,24 @@
   font-family: Poppins;
   line-height: 21px;
 }
+.card {
+  gap: var(--dl-space-space-threeunits);
+  flex: 1;
+  height: 75vh;
+  display: flex;
+  position: relative;
+  transform: rotateY();
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+  justify-content: flex-start;
+  background-color: #292929;
+}
+
 .Heading {
   font-size: 32px;
   font-family: Inter;
@@ -235,12 +253,26 @@
   text-decoration: none;
 }
 
+
+@media(max-width: 991px) {
+  .card {
+    width: 70%;
+  }
+}
 @media(max-width: 767px) {
   .nav-link {
     color: black;
   }
   .accordion-element {
     gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .card {
+    width: 100%;
+    height: 650;
+    padding-top: var(--dl-space-space-fourunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-fourunits);
   }
 }
 @media(max-width: 479px) {

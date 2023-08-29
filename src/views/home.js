@@ -4,12 +4,14 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Includes from '../components/includes'
+import Mark1 from '../components/mark1'
+import Mark3 from '../components/mark3'
+import FlipCard from '../components/flip-card'
 import Mark from '../components/mark'
 import Card from '../components/card'
 import Accordion from '../components/accordion'
 import Review from '../components/review'
 import Article from '../components/article'
-import FAQ from '../components/faq'
 import './home.css'
 
 const Home = (props) => {
@@ -20,7 +22,7 @@ const Home = (props) => {
         <meta property="og:title" content="Zseton Klinika" />
       </Helmet>
       <Navbar rootClassName="navbar-root-class-name"></Navbar>
-      <section className="home-section">
+      <section id="top" className="home-section">
         <div className="home-hero">
           <div className="home-content">
             <main className="home-main">
@@ -57,15 +59,19 @@ const Home = (props) => {
                 </span>
               </header>
               <div className="home-buttons">
-                <div className="home-get-started button">
-                  <span className="home-text004">Csomagok</span>
-                </div>
-                <div className="home-get-started1 button">
-                  <span className="home-text005">
-                    <span>Gyakori kérdések</span>
-                    <br></br>
-                  </span>
-                </div>
+                <a href="#packages" className="home-link">
+                  <div className="home-get-started button">
+                    <span className="home-text004">Csomagok</span>
+                  </div>
+                </a>
+                <a href="#faq" className="home-link1">
+                  <div className="home-get-started1 button">
+                    <span className="home-text005">
+                      <span>Gyakori kérdések</span>
+                      <br></br>
+                    </span>
+                  </div>
+                </a>
               </div>
             </main>
           </div>
@@ -195,7 +201,7 @@ const Home = (props) => {
         <main className="home-content1">
           <header className="home-header01">
             <h2 className="home-heading01 section-heading">
-              Csatlakozz Telegram csoportunkhoz!
+              Csatlakozz ingyenes Telegram csoportunkhoz!
             </h2>
             <div className="home-buttons1">
               <div className="home-ios button">
@@ -231,6 +237,7 @@ const Home = (props) => {
               </p>
             </div>
           </header>
+          <div className="home-container4"></div>
           <div className="home-plans-container">
             <div className="home-switch">
               <div className="switch">
@@ -241,44 +248,37 @@ const Home = (props) => {
               </div>
             </div>
             <main className="home-plans">
-              <div className="home-plan">
-                <div className="home-details">
-                  <div className="home-header03">
-                    <label className="home-name">Silver-Pong</label>
-                  </div>
-                </div>
-                <div className="home-buy-details">
-                  <div className="home-features">
-                    <span className="home-heading03">Tartalmazza:</span>
-                    <div className="home-list">
-                      <Includes
-                        Label="Pénzvisszatéritési garancia"
-                        rootClassName="includes-root-class-name"
-                      ></Includes>
-                      <Includes
-                        Label="Asztalitenisz tippek"
-                        rootClassName="includes-root-class-name"
-                      ></Includes>
-                      <Includes
-                        Label="Átlagosan napi 4-5 tipp"
-                        rootClassName="includes-root-class-name"
-                      ></Includes>
-                      <Includes
-                        Label="Oddsok 1.50 - 3.00 között"
-                        rootClassName="includes-root-class-name"
-                      ></Includes>
+              <div className="home-package1">
+                <div className="card">
+                  <div className="home-details">
+                    <div className="home-header03">
+                      <label className="home-name">Ping-Silver</label>
                     </div>
                   </div>
-                </div>
-                <div className="home-buy button">
-                  <span className="home-text051">
-                    <span className="home-text052">Megnézem</span>
-                    <br></br>
-                  </span>
+                  <div className="home-buy-details">
+                    <div className="home-features">
+                      <span className="home-heading03">Tartalmazza:</span>
+                      <div className="home-list">
+                        <Includes
+                          Label="Pénzvisszatéritési garancia"
+                          rootClassName="includes-root-class-name35"
+                        ></Includes>
+                        <Includes rootClassName="includes-root-class-name36"></Includes>
+                        <Mark1></Mark1>
+                        <Mark3></Mark3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="home-check button">
+                    <span className="home-text051">
+                      <span className="home-text052">Megnézem</span>
+                      <br></br>
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div className="home-plan1">
-                <div className="home-details1">
+              <div className="home-plan card">
+                <div className="home-details01">
                   <div className="home-header04">
                     <label className="home-name1">Ping-Gold</label>
                   </div>
@@ -289,37 +289,37 @@ const Home = (props) => {
                     <div className="home-list1">
                       <Includes
                         Label="Pénzvisszatéritési garancia"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name39"
                       ></Includes>
-                      <Includes rootClassName="includes-root-class-name"></Includes>
+                      <Includes rootClassName="includes-root-class-name40"></Includes>
                       <Includes
                         Label="Átlagosan napi 3 tipp"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name41"
                       ></Includes>
                       <Includes
                         Label="Oddsok 1.40 - 3.00 között"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name42"
                       ></Includes>
                       <Includes
                         Label="Tippmesterünk általi napi/heti formaelemzés"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name43"
                       ></Includes>
                       <Includes
                         Label="Tippek beküldési idejének meghatározása"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name44"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy1 button">
+                <div className="home-buy button">
                   <span className="home-text054">
                     <span className="home-text055">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan2">
-                <div className="home-details2">
+              <div className="home-plan1">
+                <div className="home-details02">
                   <div className="home-header05">
                     <label className="home-name2">Safety-Days</label>
                   </div>
@@ -330,28 +330,28 @@ const Home = (props) => {
                     <div className="home-list2">
                       <Includes
                         Label="Pénzvisszatítési garancia"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name45"
                       ></Includes>
                       <Includes
                         Label="Túlnyomórészt asztalitenisz tippek"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name46"
                       ></Includes>
                       <Includes
                         Label="Átlagosan napi 1 tipp"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name47"
                       ></Includes>
                       <Includes
                         Label="Oddsok 1.50 - 2.50 között"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name48"
                       ></Includes>
                       <Includes
                         Label="Legkésőbb 13:00-ig küldjük"
-                        rootClassName="includes-root-class-name"
+                        rootClassName="includes-root-class-name49"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy2 button">
+                <div className="home-buy1 button">
                   <span className="home-text057">
                     <span className="home-text058">Megnézem</span>
                     <br></br>
@@ -360,8 +360,8 @@ const Home = (props) => {
               </div>
             </main>
             <main className="home-plans1">
-              <div className="home-plan3">
-                <div className="home-details3">
+              <div className="home-plan2">
+                <div className="home-details03">
                   <div className="home-header06">
                     <label className="home-name3">Mr. Connection</label>
                   </div>
@@ -381,15 +381,15 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy3 button">
+                <div className="home-buy2 button">
                   <span className="home-text060">
                     <span className="home-text061">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan4">
-                <div className="home-details4">
+              <div className="home-plan3">
+                <div className="home-details04">
                   <div className="home-header07">
                     <label className="home-name4">Green-Health</label>
                   </div>
@@ -409,15 +409,15 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy4 button">
+                <div className="home-buy3 button">
                   <span className="home-text063">
                     <span className="home-text064">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan5">
-                <div className="home-details5">
+              <div className="home-plan4">
+                <div className="home-details05">
                   <div className="home-header08">
                     <label className="home-name5">Green-Harmony</label>
                   </div>
@@ -437,7 +437,7 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy5 button">
+                <div className="home-buy4 button">
                   <span className="home-text066">
                     <span className="home-text067">Megnézem</span>
                     <br></br>
@@ -457,7 +457,10 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-section06">
+      <section id="packages" className="home-section06">
+        <FlipCard></FlipCard>
+      </section>
+      <section className="home-section07">
         <section className="home-note">
           <div className="home-image2">
             <img
@@ -488,7 +491,7 @@ const Home = (props) => {
           </div>
         </section>
       </section>
-      <section id="forwho" className="home-section07">
+      <section id="forwho" className="home-section08">
         <h2 className="home-text073">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph2">
           <span>✅ K</span>
@@ -563,7 +566,7 @@ const Home = (props) => {
           <br></br>
         </p>
       </section>
-      <section className="home-section08">
+      <section className="home-section09">
         <header className="home-header10">
           <header className="home-left1">
             <span className="section-head">Kik vagyunk mi?</span>
@@ -584,7 +587,7 @@ const Home = (props) => {
           ></Card>
         </main>
       </section>
-      <section className="home-section10">
+      <section className="home-section11">
         <div className="home-note1">
           <div className="home-image4">
             <img
@@ -608,7 +611,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-section12">
+      <section className="home-section13">
         <div className="home-cube">
           <div className="home-top side"></div>
           <div className="home-front side"></div>
@@ -633,7 +636,7 @@ const Home = (props) => {
           </div>
         </main>
       </section>
-      <section className="home-section13">
+      <section className="home-section14">
         <header className="home-header13">
           <header className="home-left3">
             <span className="section-head">Vélemények</span>
@@ -649,14 +652,14 @@ const Home = (props) => {
           </div>
         </header>
         <main className="home-cards1">
-          <div className="home-container4">
+          <div className="home-container5">
             <Review rootClassName="review-root-class-name"></Review>
             <Review
               Quote="“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.\u2028\u2028Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.”"
               rootClassName="review-root-class-name"
             ></Review>
           </div>
-          <div className="home-container5">
+          <div className="home-container6">
             <Review
               Quote="“Illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
               rootClassName="review-root-class-name"
@@ -666,7 +669,7 @@ const Home = (props) => {
               rootClassName="review-root-class-name"
             ></Review>
           </div>
-          <div className="home-container6">
+          <div className="home-container7">
             <Review
               Quote="“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
               rootClassName="review-root-class-name"
@@ -681,7 +684,7 @@ const Home = (props) => {
           <p className="home-text116">View more</p>
         </div>
       </section>
-      <section className="home-section15">
+      <section className="home-section16">
         <header className="home-header14">
           <span className="section-head">Articles about us</span>
           <h2 className="home-heading16 section-heading">
@@ -701,7 +704,7 @@ const Home = (props) => {
           ></Article>
         </main>
       </section>
-      <section id="faq" className="home-section17">
+      <section id="faq" className="home-section18">
         <header className="home-header15">
           <span className="section-head">GYIK</span>
           <h2 className="home-heading17 section-heading">
@@ -709,7 +712,251 @@ const Home = (props) => {
           </h2>
         </header>
         <main className="home-accordion">
-          <FAQ rootClassName="faq-root-class-name"></FAQ>
+          <div className="home-accordion1">
+            <div
+              id="1"
+              data-role="accordion-container"
+              className="home-element accordion-element"
+            >
+              <div className="home-details06">
+                <span className="home-text117">
+                  <span className="home-text118"> Hogyan lehet befizetni?</span>
+                  <br className="home-text119"></br>
+                  <span className="home-text120">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </span>
+                <span data-role="accordion-content" className="home-text121">
+                  <span>Simplepay-en keresztül, bankkártyával.</span>
+                  <br></br>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </span>
+              </div>
+              <div className="home-icons">
+                <svg viewBox="0 0 1024 1024" className="home-icon">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="2"
+              data-role="accordion-container"
+              className="home-element1 accordion-element"
+            >
+              <div className="home-details07">
+                <span className="home-text125">
+                  <span>Mikor érdemes kezdeni?</span>
+                  <br></br>
+                </span>
+                <span data-role="accordion-content" className="home-text128">
+                  <span>
+                    Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
+                    kiugró szériáról maradsz le éppen.
+                  </span>
+                  <br></br>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon02">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="3"
+              data-role="accordion-container"
+              className="home-element2 accordion-element"
+            >
+              <div className="home-details08">
+                <span className="home-text132">
+                  <span>Csomag vásárlás után egyből él a tagságom?</span>
+                  <br></br>
+                </span>
+                <span data-role="accordion-content" className="home-text135">
+                  <span>
+                    Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy
+                    Telegram linket tőlünk, amivel csatlakozni tudsz a
+                    csoporthoz.
+                  </span>
+                  <br></br>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon04">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="4"
+              data-role="accordion-container"
+              className="home-element3 accordion-element"
+            >
+              <div className="home-details09">
+                <span className="home-text139">
+                  Hol fogom kapni a tippeket?
+                </span>
+                <span data-role="accordion-content" className="home-text140">
+                  Telegram alkalmazásban, egy privát csoportban.
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon06">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="5"
+              data-role="accordion-container"
+              className="home-element4 accordion-element"
+            >
+              <div className="home-details10">
+                <span className="home-text141">
+                  <span className="home-text142">Mi az a Telegram?</span>
+                  <br className="home-text143"></br>
+                  <span className="home-text144">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                </span>
+                <span data-role="accordion-content" className="home-text145">
+                  A Telegram egy alkalmazás, amit bármilyen készülékre
+                  letölthetsz. Az alkalmazás letöltéséhez az adott áruházban
+                  (App Store/Google Play) a Telegram applikációra kell
+                  rákeresned, majd azt letölteni. A letöltést követően a
+                  telefonszámod megadásával regisztrálhatsz.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon08">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="6"
+              data-role="accordion-container"
+              className="home-element5 accordion-element"
+            >
+              <div className="home-details11">
+                <span className="home-text146">
+                  <span>Garancia van?</span>
+                  <br></br>
+                </span>
+                <span data-role="accordion-content" className="home-text149">
+                  <span>
+                    Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati
+                    arány nem éri el a 60%-ot. Ez azokra az előfizetőkre
+                    vonatkozik, akik teljes hónapra fizettek elő.
+                  </span>
+                  <br></br>
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon10">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="7"
+              data-role="accordion-container"
+              className="home-element6 accordion-element"
+            >
+              <div className="home-details12">
+                <span className="home-text152">
+                  <span>Mi az a teljes hónap?</span>
+                  <br></br>
+                </span>
+                <span data-role="accordion-content" className="home-text155">
+                  <span>
+                    Nálunk rendszerben zajlik a befizetés, minden hónap
+                    tizedikén délig várjuk az előfizetések megújítását.
+                  </span>
+                  <br></br>
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon12">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="8"
+              data-role="accordion-container"
+              className="home-element7 accordion-element"
+            >
+              <div className="home-details13">
+                <span className="home-text158">
+                  Másik napon elő se tudok fizetni?
+                </span>
+                <span data-role="accordion-content" className="home-text159">
+                  De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk
+                  neked.
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon14">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              id="9"
+              data-role="accordion-container"
+              className="home-element8 accordion-element"
+            >
+              <div className="home-details14">
+                <span className="home-text160">
+                  Milyen tőke szükséges az indulásomhoz?
+                </span>
+                <span data-role="accordion-content" className="home-text161">
+                  Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével
+                  indulj, kivételt képez a Silver-Pong csomagunk, amit az előbb
+                  említett tőke összegyűjtésére hoztunk létre neked.
+                </span>
+              </div>
+              <div>
+                <svg viewBox="0 0 1024 1024" className="home-icon16">
+                  <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
         </main>
       </section>
       <footer className="home-footer">
@@ -723,7 +970,7 @@ const Home = (props) => {
                     src="https://i.imgur.com/92TCidp.png"
                     className="home-branding"
                   />
-                  <span className="home-text117">
+                  <span className="home-text162">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </span>
                 </div>
@@ -732,7 +979,7 @@ const Home = (props) => {
                     href="https://example.com"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link"
+                    className="home-link2"
                   >
                     <img
                       alt="image"
@@ -744,7 +991,7 @@ const Home = (props) => {
                     href="https://example.com"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link1"
+                    className="home-link3"
                   >
                     <img
                       alt="image"
@@ -756,7 +1003,7 @@ const Home = (props) => {
                     href="https://example.com"
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="home-link2"
+                    className="home-link4"
                   >
                     <img
                       alt="image"
@@ -796,8 +1043,11 @@ const Home = (props) => {
                 </div>
               </header>
             </div>
+            <svg viewBox="0 0 1024 1024" className="home-icon18">
+              <path d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM554.667 682.667v-238.336l97.835 97.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-170.667-170.667c-4.096-4.096-8.789-7.168-13.824-9.259s-10.539-3.243-16.341-3.243c-5.547 0-11.136 1.067-16.341 3.243-5.035 2.091-9.728 5.163-13.824 9.259l-170.667 170.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l97.835-97.835v238.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667z"></path>
+            </svg>
             <section className="home-copyright">
-              <span className="home-text131">
+              <span className="home-text176">
                 © 2022 latitude. All Rights Reserved.
               </span>
             </section>
@@ -811,9 +1061,9 @@ const Home = (props) => {
                   placeholder="Enter your email"
                   className="home-textinput input"
                 />
-                <div className="home-buy6 button">
-                  <span className="home-text132">-&gt;</span>
-                  <span className="home-text133">
+                <div className="home-buy5 button">
+                  <span className="home-text177">-&gt;</span>
+                  <span className="home-text178">
                     <span>Subscribe now</span>
                     <br></br>
                   </span>
@@ -825,12 +1075,19 @@ const Home = (props) => {
             </h1>
           </main>
           <section className="home-copyright1">
-            <span className="home-text136">
+            <span className="home-text181">
               © 2022 latitude. All Rights Reserved.
             </span>
           </section>
         </div>
       </footer>
+      <div className="home-slide-to-top">
+        <a href="#top" className="home-link5">
+          <svg viewBox="0 0 1024 1024" className="home-icon20">
+            <path d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM554.667 682.667v-238.336l97.835 97.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-170.667-170.667c-4.096-4.096-8.789-7.168-13.824-9.259s-10.539-3.243-16.341-3.243c-5.547 0-11.136 1.067-16.341 3.243-5.035 2.091-9.728 5.163-13.824 9.259l-170.667 170.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l97.835-97.835v238.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667z"></path>
+          </svg>
+        </a>
+      </div>
     </div>
   )
 }
