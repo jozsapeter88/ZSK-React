@@ -4,8 +4,6 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Includes from '../components/includes'
-import Mark1 from '../components/mark1'
-import Mark3 from '../components/mark3'
 import FlipCard from '../components/flip-card'
 import Mark from '../components/mark'
 import Card from '../components/card'
@@ -248,45 +246,16 @@ const Home = (props) => {
               </div>
             </div>
             <main className="home-plans">
-              <div className="home-package1">
-                <div className="card">
-                  <div className="home-details">
-                    <div className="home-header03">
-                      <label className="home-name">Ping-Silver</label>
-                    </div>
-                  </div>
-                  <div className="home-buy-details">
-                    <div className="home-features">
-                      <span className="home-heading03">Tartalmazza:</span>
-                      <div className="home-list">
-                        <Includes
-                          Label="Pénzvisszatéritési garancia"
-                          rootClassName="includes-root-class-name35"
-                        ></Includes>
-                        <Includes rootClassName="includes-root-class-name36"></Includes>
-                        <Mark1></Mark1>
-                        <Mark3></Mark3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="home-check button">
-                    <span className="home-text051">
-                      <span className="home-text052">Megnézem</span>
-                      <br></br>
-                    </span>
-                  </div>
-                </div>
-              </div>
               <div className="home-plan card">
-                <div className="home-details01">
-                  <div className="home-header04">
-                    <label className="home-name1">Ping-Gold</label>
+                <div className="home-details">
+                  <div className="home-header03">
+                    <label className="home-name">Ping-Gold</label>
                   </div>
                 </div>
-                <div className="home-buy-details1">
-                  <div className="home-features1">
-                    <span className="home-heading04">Tartalmazza:</span>
-                    <div className="home-list1">
+                <div className="home-buy-details">
+                  <div className="home-features">
+                    <span className="home-heading03">Tartalmazza:</span>
+                    <div className="home-list">
                       <Includes
                         Label="Pénzvisszatéritési garancia"
                         rootClassName="includes-root-class-name39"
@@ -312,13 +281,54 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy button">
+                  <span className="home-text051">
+                    <span className="home-text052">Megnézem</span>
+                    <br></br>
+                  </span>
+                </div>
+              </div>
+              <div className="home-plan1 card">
+                <div className="home-details01">
+                  <div className="home-header04">
+                    <label className="home-name1">Ping-Gold</label>
+                  </div>
+                </div>
+                <div className="home-buy-details1">
+                  <div className="home-features1">
+                    <span className="home-heading04">Tartalmazza:</span>
+                    <div className="home-list1">
+                      <Includes
+                        Label="Pénzvisszatéritési garancia"
+                        rootClassName="includes-root-class-name69"
+                      ></Includes>
+                      <Includes rootClassName="includes-root-class-name70"></Includes>
+                      <Includes
+                        Label="Átlagosan napi 3 tipp"
+                        rootClassName="includes-root-class-name71"
+                      ></Includes>
+                      <Includes
+                        Label="Oddsok 1.40 - 3.00 között"
+                        rootClassName="includes-root-class-name72"
+                      ></Includes>
+                      <Includes
+                        Label="Tippmesterünk általi napi/heti formaelemzés"
+                        rootClassName="includes-root-class-name73"
+                      ></Includes>
+                      <Includes
+                        Label="Tippek beküldési idejének meghatározása"
+                        rootClassName="includes-root-class-name74"
+                      ></Includes>
+                    </div>
+                  </div>
+                </div>
+                <div className="home-buy1 button">
                   <span className="home-text054">
                     <span className="home-text055">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan1">
+              <div className="home-plan2">
                 <div className="home-details02">
                   <div className="home-header05">
                     <label className="home-name2">Safety-Days</label>
@@ -351,7 +361,7 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy1 button">
+                <div className="home-buy2 button">
                   <span className="home-text057">
                     <span className="home-text058">Megnézem</span>
                     <br></br>
@@ -360,7 +370,7 @@ const Home = (props) => {
               </div>
             </main>
             <main className="home-plans1">
-              <div className="home-plan2">
+              <div className="home-plan3">
                 <div className="home-details03">
                   <div className="home-header06">
                     <label className="home-name3">Mr. Connection</label>
@@ -381,14 +391,14 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy2 button">
+                <div className="home-buy3 button">
                   <span className="home-text060">
                     <span className="home-text061">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan3">
+              <div className="home-plan4">
                 <div className="home-details04">
                   <div className="home-header07">
                     <label className="home-name4">Green-Health</label>
@@ -409,14 +419,14 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy3 button">
+                <div className="home-buy4 button">
                   <span className="home-text063">
                     <span className="home-text064">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
               </div>
-              <div className="home-plan4">
+              <div className="home-plan5">
                 <div className="home-details05">
                   <div className="home-header08">
                     <label className="home-name5">Green-Harmony</label>
@@ -437,7 +447,7 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy4 button">
+                <div className="home-buy5 button">
                   <span className="home-text066">
                     <span className="home-text067">Megnézem</span>
                     <br></br>
@@ -1061,7 +1071,7 @@ const Home = (props) => {
                   placeholder="Enter your email"
                   className="home-textinput input"
                 />
-                <div className="home-buy5 button">
+                <div className="home-buy6 button">
                   <span className="home-text177">-&gt;</span>
                   <span className="home-text178">
                     <span>Subscribe now</span>
