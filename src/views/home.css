@@ -59,6 +59,22 @@
   font-family: Poppins;
   font-weight: 600;
 }
+.home-text003 {
+  color: rgb(255, 255, 255);
+  width: 400px;
+  height: 63px;
+  font-size: 64px;
+  background: -webkit-linear-gradient(yellow, green);
+  font-style: normal;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 50px;
+  vertical-align: middle;
+  background-image: -webkit-linear-gradient(top, yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .home-caption {
   color: rgb(255, 255, 255);
   width: 700;
@@ -75,13 +91,8 @@
 .home-link {
   display: contents;
 }
-.home-get-started {
-  display: flex;
-  text-decoration: none;
-  background-color: #80FF44;
-}
 .home-text004 {
-  color: rgb(12, 16, 12);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
   font-family: Poppins;
@@ -128,7 +139,7 @@
   border-bottom-width: 1px;
 }
 .home-text008 {
-  color: #4be1ff;
+  color: #E4E40C;
   font-size: 40px;
   font-style: normal;
   font-family: Poppins;
@@ -191,7 +202,7 @@
 }
 .home-container1 {
   width: 500;
-  height: fit-content;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -201,17 +212,19 @@
   color: rgb(198, 255, 75);
   height: 120px;
   font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .home-text039 {
   color: rgb(255, 255, 255);
-  font-size: 26;
+  font-size: 22px;
   align-self: center;
   margin-top: 30px;
   text-align: center;
 }
 .home-container2 {
   width: 500;
-  height: fit-content;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -223,16 +236,17 @@
   font-size: 40px;
   align-self: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 .home-text043 {
   color: rgb(255, 255, 255);
-  font-size: 26;
+  font-size: 22px;
   margin-top: 30;
   text-align: center;
 }
 .home-container3 {
   width: 500;
-  height: fit-content;
+  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -243,13 +257,14 @@
   height: 120px;
   font-size: 40px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .home-text045 {
   font-size: 40px;
 }
 .home-text047 {
   color: rgb(255, 255, 255);
-  font-size: 26;
+  font-size: 22px;
   margin-top: 30;
   text-align: center;
 }
@@ -296,19 +311,13 @@
   flex-direction: row;
   justify-content: center;
 }
-.home-ios {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  flex-direction: row;
-  background-color: #289EDA;
-}
 .home-pasted-image {
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
 }
 .home-text048 {
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 25px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500;
@@ -2119,6 +2128,7 @@
   display: flex;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 40px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-unit);
   background-color: #80FF44;
@@ -2188,6 +2198,14 @@
 @media(max-width: 1600px) {
   .home-heading {
     width: 670px;
+  }
+  .home-text003 {
+    color: rgb(12, 16, 12);
+    font-size: 16px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 24px;
   }
   .home-text004 {
     color: rgb(12, 16, 12);
@@ -2329,9 +2347,6 @@
   .home-buttons {
     width: 100%;
   }
-  .home-get-started {
-    flex: 1;
-  }
   .home-get-started1 {
     flex: 1;
   }
@@ -2378,10 +2393,6 @@
   }
   .home-buttons1 {
     width: 100%;
-  }
-  .home-ios {
-    flex: 1;
-    justify-content: center;
   }
   .home-image1 {
     width: 267px;
@@ -2524,10 +2535,6 @@
     font-family: Poppins;
     line-height: 24px;
   }
-  .home-get-started {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
-  }
   .home-get-started1 {
     display: none;
   }
@@ -2576,10 +2583,6 @@
   }
   .home-buttons1 {
     flex-direction: column;
-  }
-  .home-ios {
-    flex: 0 0 auto;
-    width: 100%;
   }
   .home-image1 {
     align-self: center;

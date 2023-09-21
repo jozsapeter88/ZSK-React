@@ -61,7 +61,7 @@ const Navbar = (props) => {
           />
         </div>
       </div>
-      <div className="">
+      <div className="navbar-div">
         <Script
           html={`<script>
     /*

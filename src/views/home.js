@@ -43,8 +43,8 @@ const Home = (props) => {
                       }}
                     />
                   </span>
-                  <span>befektetés</span>
                 </h1>
+                <h1 className="home-text003">Befektetés</h1>
                 <span className="home-caption">
                   Csapatunk változást hoz annak érdekében, hogy a sportfogadás
                   többé ne csak pénz és időpazarlás, hanem fontos bevételi
@@ -58,7 +58,7 @@ const Home = (props) => {
               </header>
               <div className="home-buttons">
                 <a href="#packages" className="home-link">
-                  <div className="home-get-started button">
+                  <div className="button">
                     <span className="home-text004">Csomagok</span>
                   </div>
                 </a>
@@ -159,7 +159,7 @@ const Home = (props) => {
         </p>
       </section>
       <section className="home-section02">
-        <div className="home-container1">
+        <div className="home-container1 cardBorder">
           <h1 className="home-text036">
             <span className="home-text037">Csak dőlj hátra</span>
             <br></br>
@@ -170,7 +170,7 @@ const Home = (props) => {
             terveket követni. Ők azért dolgoznak, hogy neked már ne kelljen!
           </span>
         </div>
-        <div className="home-container2">
+        <div className="home-container2 cardBorder">
           <h1 className="home-text040">
             <span className="home-text041">Ne legyen több kezdő hiba</span>
             <br></br>
@@ -182,7 +182,7 @@ const Home = (props) => {
             észrevegyünk és a hibafaktor minimumra csökkenjen.
           </span>
         </div>
-        <div className="home-container3">
+        <div className="home-container3 cardBorder">
           <h1 className="home-text044">
             <span className="home-text045">Láss át rajtunk</span>
             <br></br>
@@ -202,7 +202,7 @@ const Home = (props) => {
               Csatlakozz ingyenes Telegram csoportunkhoz!
             </h2>
             <div className="home-buttons1">
-              <div className="home-ios button">
+              <div className="button btn">
                 <img
                   alt="pastedImage"
                   src="/Icons/telegram-200h.png"
@@ -246,7 +246,7 @@ const Home = (props) => {
               </div>
             </div>
             <main className="home-plans">
-              <div className="home-plan card">
+              <div className="home-plan cardBorder">
                 <div className="home-details">
                   <div className="home-header03">
                     <label className="home-name">Ping-Gold</label>
@@ -287,7 +287,7 @@ const Home = (props) => {
                   </span>
                 </div>
               </div>
-              <div className="home-plan1 card">
+              <div className="home-plan1 cardBorder">
                 <div className="home-details01">
                   <div className="home-header04">
                     <label className="home-name1">Ping-Gold</label>

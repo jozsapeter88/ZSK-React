@@ -11,7 +11,7 @@ const Package1 = (props) => {
   const [isTurned1, setIsTurned1] = useState(false)
   return (
     <div className="package1-package1">
-      <div className="card">
+      <div className="cardBorder">
         <div className="package1-details">
           <div className="package1-header">
             <label className="package1-name">{props.Name}</label>

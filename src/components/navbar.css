@@ -107,6 +107,9 @@
   width: 100px;
   object-fit: cover;
 }
+.navbar-div {
+  display: contents;
+}
 
 @media(max-width: 1200px) {
   .navbar-text {

@@ -35,19 +35,29 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
+  color: white;
   cursor: pointer;
-  display: flex;
-  transition: 0.3s;
+  margin: 10px;
+  display: box;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
   padding-left: var(--dl-space-space-twounits);
-  border-radius: 58px;
+  border-radius: 10px;
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-oneandhalfunits);
+  text-transform: uppercase;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%);
 }
 .button:hover {
+  color: #fff;
   opacity: 0.5;
+  text-decoration: none;
+  background-position: right center;
 }
 
 .textarea {
@@ -218,24 +228,44 @@
   font-family: Poppins;
   line-height: 21px;
 }
-.card {
-  gap: var(--dl-space-space-threeunits);
-  flex: 1;
-  height: 75vh;
-  display: flex;
-  position: relative;
-  transform: rotateY();
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-fiveunits);
-  padding-left: var(--dl-space-space-twounits);
+.cardBorder {
+  height: 300px;
+  display: text;
+  padding: 35px;
+  max-width: 500px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  min-height: 300px;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 1;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 20px;
-  padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
-  justify-content: flex-start;
-  background-color: #292929;
+  justify-content: space-between;
+  background-color: #313131;
 }
 
+.button\:hover {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  background-color: #80FF44;
+  background-position: right-center;
+}
+
+.btn {
+  gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
+  display: flex;
+  padding: OneAndHalfUnits;
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 15px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  background-color: #289EDA;
+}
 .Heading {
   font-size: 32px;
   font-family: Inter;
@@ -255,8 +285,15 @@
 
 
 @media(max-width: 991px) {
-  .card {
+  .cardBorder {
     width: 70%;
+  }
+  .button\:hover {
+    flex: 1;
+  }
+  .btn {
+    flex: 1;
+    justify-content: center;
   }
 }
 @media(max-width: 767px) {
@@ -266,13 +303,21 @@
   .accordion-element {
     gap: var(--dl-space-space-oneandhalfunits);
   }
-  .card {
+  .cardBorder {
     width: 100%;
     height: 650;
     padding-top: var(--dl-space-space-fourunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .button\:hover {
+    padding-top: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .btn {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 @media(max-width: 479px) {
