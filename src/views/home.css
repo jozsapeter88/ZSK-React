@@ -68,11 +68,13 @@ button.buyBtn:hover span:after {
 }
 
 button.primary {
+  position: absolute;
+  bottom: 10px;
   background-color: #aeff00;
   color: white;
   cursor: pointer;
   margin: 10px;
-  display: box;
+  display: flex;
   padding: 15px 45px;
   text-align: center;
   align-items: center;
@@ -623,7 +625,7 @@ button.primary:hover span:after {
 .home-plan {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -723,7 +725,7 @@ button.primary:hover span:after {
 .home-plan1 {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   position: relative;
   align-items: center;
@@ -822,7 +824,7 @@ button.primary:hover span:after {
 .home-plan2 {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   position: relative;
   align-items: center;
@@ -1130,7 +1132,7 @@ button.primary:hover span:after {
 .home-plan5 {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);
@@ -1147,7 +1149,7 @@ button.primary:hover span:after {
 .home-plan6 {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);

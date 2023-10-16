@@ -467,7 +467,7 @@ const Home = (props) => {
               <div className="home-plan3">
                 <div className="home-details04">
                   <div className="home-header07">
-                    <label className="home-name4">Green-Health</label>
+                    <label className="home-name">Green-Health</label>
                   </div>
                 </div>
                 <div className="home-buy-details4">
@@ -524,7 +524,7 @@ const Home = (props) => {
               <div className="home-plan4">
                 <div className="home-details05">
                   <div className="home-header08">
-                    <label className="home-name5">Green-Harmony</label>
+                    <label className="home-name">Green-Harmony</label>
                   </div>
                 </div>
                 <div className="home-buy-details5">
@@ -591,7 +591,7 @@ const Home = (props) => {
             <div className="home-plan5">
               <div className="home-details04">
                 <div className="home-header07">
-                <label className="home-name3">Konzultáció</label>
+                <label className="home-name">Konzultáció</label>
                   </div>
                 </div>
                 <div className="home-buy-details3">
@@ -687,7 +687,7 @@ const Home = (props) => {
             <div className="home-plan6">
               <div className="home-details05">
                 <div className="home-header08">
-                  <label className="home-name5">Study for Money</label>
+                  <label className="home-name">Study for Money</label>
                 </div>
               </div>
               <div className="home-buy-details5">
