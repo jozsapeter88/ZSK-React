@@ -13,8 +13,8 @@
   padding-bottom: var(--dl-space-space-fiveunits);
 }
 .navbar-branding-logo {
-  width: 122px;
-  height: 49px;
+  width: 150px;
+  height: 150px;
   box-sizing: content-box;
 }
 .navbar-nav-content {

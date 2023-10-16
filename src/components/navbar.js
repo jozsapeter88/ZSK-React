@@ -125,7 +125,7 @@ Navbar.defaultProps = {
   image_src1: 'https://i.imgur.com/92TCidp.png',
   image_alt1: 'image',
   rootClassName: '',
-  BrandingLogo: 'https://i.imgur.com/92TCidp.png',
+  BrandingLogo: '/Branding/Logo_szines_feketen.png',
 }
 
 Navbar.propTypes = {
