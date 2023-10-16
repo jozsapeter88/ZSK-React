@@ -71,7 +71,7 @@ button.primary {
   position: absolute;
   bottom: 10px;
   background-color: #aeff00;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   margin: 10px;
   display: flex;
@@ -88,6 +88,7 @@ button.primary {
   text-transform: uppercase;
   background-size: 200% auto;
   background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+  font-weight: 700;
 }
 
 button.primary:hover {
@@ -124,6 +125,8 @@ button.primary:hover span:after {
 
 .section-head {
   font-size: 38px;
+  padding-top: 5vh;
+  font-weight: 600;
 }
 
 .home-section {
@@ -220,12 +223,13 @@ button.primary:hover span:after {
 }
 
 .home-text004 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .home-link1 {
@@ -238,12 +242,13 @@ button.primary:hover span:after {
 }
 
 .home-text005 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .home-image {
@@ -477,7 +482,7 @@ button.primary:hover span:after {
 }
 
 .home-text051 {
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   font-style: normal;
   font-family: "Poppins";
@@ -639,8 +644,15 @@ button.primary:hover span:after {
   justify-content: flex-start;
   background-color: #292929;
   align-items: center;
+  border: 2px solid transparent;
   box-shadow: 0 0 0 transparent;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+.home-plan:hover {
+  border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details {
@@ -738,8 +750,15 @@ button.primary:hover span:after {
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
   background-color: #292929;
+  border: 2px solid transparent;
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.3s ease;
+}
+
+.home-plan1:hover {
+  border: 2px solid rgb(184, 182, 172);
+  box-shadow: 0 0 10px rgb(184, 182, 172);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details01 {
@@ -837,6 +856,19 @@ button.primary:hover span:after {
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
   background-color: #292929;
+  box-shadow: 0 0 0 transparent;
+  border: 2px solid #292929;
+  background:
+    linear-gradient(#292929, #292929) padding-box,
+    linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.home-plan2:hover {
+  border: 2px solid #0000;
+  box-shadow: 0 0 10px rgb(255, 213, 0);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details02 {
@@ -948,6 +980,19 @@ button.primary:hover span:after {
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
   background-color: #292929;
+  background-color: #292929;
+  box-shadow: 0 0 0 transparent;
+  border: 2px solid #292929;
+  background:
+    linear-gradient(#292929, #292929) padding-box,
+    linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-plan3:hover {
+  border: 2px solid #0000;
+  box-shadow: 0 0 10px rgb(238, 198, 0);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details03 {
@@ -1003,7 +1048,7 @@ button.primary:hover span:after {
 }
 
 .home-list3 {
-  gap: var(--dl-space-space-unit);
+  gap: 1vh;
   height: 135px;
   display: flex;
   align-items: flex-start;
@@ -1046,8 +1091,20 @@ button.primary:hover span:after {
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
-  background-color: #292929;
   position: relative;
+  background-color: #292929;
+  box-shadow: 0 0 0 transparent;
+  border: 2px solid #292929;
+  background:
+    linear-gradient(#292929, #292929) padding-box,
+    linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-plan4:hover {
+  border: 2px solid #0000;
+  box-shadow: 0 0 10px rgb(255, 213, 0);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details04 {
@@ -1131,37 +1188,61 @@ button.primary:hover span:after {
 }
 
 .home-plan5 {
-  gap: var(--dl-space-space-threeunits);
+  gap: 2vh;
   flex: 1;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-fiveunits);
+  padding-top: 5vh;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 20px;
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
-  background-color: #292929;
   position: relative;
+  background-color: #292929;
+  box-shadow: 0 0 0 transparent;
+  border: 2px solid #292929;
+  background:
+    linear-gradient(#292929, #292929) padding-box,
+    linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-plan5:hover {
+  border: 2px solid #0000;
+  box-shadow: 0 0 10px rgb(255, 213, 0);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-plan6 {
-  gap: var(--dl-space-space-threeunits);
+  gap: 2vh;
   flex: 1;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-fiveunits);
+  padding-top: 5vh;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 20px;
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: flex-start;
-  background-color: #292929;
   position: relative;
+  background-color: #292929;
+  box-shadow: 0 0 0 transparent;
+  border: 2px solid #292929;
+  background:
+    linear-gradient(#292929, #292929) padding-box,
+    linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-plan6:hover {
+  border: 2px solid #0000;
+  box-shadow: 0 0 10px rgb(255, 213, 0);
+  transition: border 0.5s, box-shadow 0.5s;
 }
 
 .home-details05 {
@@ -1231,7 +1312,7 @@ button.primary:hover span:after {
 }
 
 .home-text069 {
-  color: rgb(12, 16, 12);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
   font-family: Poppins;
@@ -1586,7 +1667,8 @@ button.primary:hover span:after {
   z-index: -1;
   top: -15px;
   right: -15px;
-  background: linear-gradient(to right, #F4D03F 0%, #F4D03F 51%, #F4D03F 100%);;
+  background: linear-gradient(to right, #F4D03F 0%, #F4D03F 51%, #F4D03F 100%);
+  ;
   height: 520px;
   width: 25px;
   border-radius: 32px;
@@ -2614,7 +2696,7 @@ button.primary:hover span:after {
 }
 
 .home-text181 {
-  color: rgb(12, 16, 12);
+  color: rgb(0, 0, 0);
   display: flex;
   font-size: 16px;
   font-style: normal;

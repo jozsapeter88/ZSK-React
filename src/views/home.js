@@ -958,10 +958,7 @@ const Home = (props) => {
       </section>
       <section id="faq" className="home-section18">
         <header className="home-header15">
-          <span className="section-head">GYIK</span>
-          <h2 className="home-heading17 section-heading">
-            Gyakran Ismételt Kérdések
-          </h2>
+          <span className="section-head">Gyakran Ismételt Kérdések</span>
         </header>
         <main className="home-accordion">
           <div className="home-accordion1">
@@ -1219,7 +1216,7 @@ const Home = (props) => {
                 <div className="home-header16">
                   <img
                     alt="image"
-                    src="https://i.imgur.com/92TCidp.png"
+                    src="/Branding/Logo_szines_feketen.png"
                     className="home-branding"
                   />
                   <span className="home-text165">
@@ -1300,7 +1297,7 @@ const Home = (props) => {
             </svg>
             <section className="home-copyright">
               <span className="home-text179">
-                © 2022 latitude. All Rights Reserved.
+                © 2023 ZsetonKlinika
               </span>
             </section>
           </main>
@@ -1310,13 +1307,13 @@ const Home = (props) => {
               <div className="home-input-field">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Email cím"
                   className="home-textinput input"
                 />
                 <div className="home-buy6 button">
                   <span className="home-text180">-&gt;</span>
                   <span className="home-text181">
-                    <span>Subscribe now</span>
+                    <span>Feliratkozás</span>
                     <br></br>
                   </span>
                 </div>
