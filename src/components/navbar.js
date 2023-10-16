@@ -61,9 +61,10 @@ const Navbar = (props) => {
           />
         </div>
       </div>
-      <div className="navbar-div">
-        <Script
-          html={`<script>
+      <div className="">
+        <div className="navbar-container2">
+          <Script
+            html={`<script>
     /*
 Mobile menu - Code Embed
 */
@@ -107,8 +108,9 @@ const runMobileMenuCodeEmbed = () => {
 runMobileMenuCodeEmbed()
 listenForUrlChangesMobileMenu()
 </script>`}
-          className=""
-        ></Script>
+            className=""
+          ></Script>
+        </div>
       </div>
     </nav>
   )

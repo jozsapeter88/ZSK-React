@@ -161,37 +161,52 @@ const Home = (props) => {
       <section className="home-section02">
         <div className="home-container1 cardBorder">
           <h1 className="home-text036">
-            <span className="home-text037">Csak dőlj hátra</span>
+            <span className="home-text037">Csak dőlj hátra!</span>
             <br></br>
           </h1>
           <span className="home-text039">
-            TippProfesszor és TippDoktor leveszik a terhet a válladról, nem kell
-            többé a statisztikákat és eredményeket bújnod, csak az elkészített
-            terveket követni. Ők azért dolgoznak, hogy neked már ne kelljen!
+            Tipprofesszorunk és Tippdoktorunk leveszik a terhet a válladról, nem
+            kell többé a statisztikákat és eredményeket bújnod, csak az
+            elkészített terveket követni. Ők azért dolgoznak, hogy neked már ne
+            kelljen!
           </span>
         </div>
         <div className="home-container2 cardBorder">
           <h1 className="home-text040">
-            <span className="home-text041">Ne legyen több kezdő hiba</span>
+            <span className="home-text041">Ne legyen több zöldfülű hiba!</span>
             <br></br>
           </h1>
           <span className="home-text043">
-            TippProfesszor és TippDoktor körültekintő munkájának köszönhetően a
+            Tipprofesszor és Tippdoktor körültekintő munkájának köszönhetően a
             fogadásból adódó stressz a lehető legalacsonyabb legyen. Profi
             csapatunkkal folyamatosan azon dolgozunk, hogy minden apró részletet
             észrevegyünk és a hibafaktor minimumra csökkenjen.
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
           </span>
         </div>
         <div className="home-container3 cardBorder">
           <h1 className="home-text044">
-            <span className="home-text045">Láss át rajtunk</span>
+            <span className="home-text045">Láss át rajtunk!</span>
             <br></br>
           </h1>
           <span className="home-text047">
-            A transzparencia nagyon fontos számunkra, így a statisztikáinkat az
-            oldal indulásától kezdve folyamatosan nyomon követheted. A jó és
-            rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert nincs
-            szükségünk rá!
+            <span>
+              Az átláthatóság nagyon fontos számunkra, így a statisztikáinkat az
+              oldal indulásától kezdve folyamatosan nyomon követheted. A jó és
+              rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert
+              nincs szükségünk rá!
+            </span>
+            <br></br>
+            <span>
+              Ha ezek ellenére sem hiszel a statisztikáinknak, gyere, és nézd
+              vissza! Telegram csoportunkban korábbi teljesítményünk
+              visszatekinthető. Keress fel minket Instagram-on, vagy
+              Facebook-on!
+            </span>
           </span>
         </div>
       </section>
@@ -202,13 +217,13 @@ const Home = (props) => {
               Csatlakozz ingyenes Telegram csoportunkhoz!
             </h2>
             <div className="home-buttons1">
-              <div className="button btn">
+              <div className="btn button">
                 <img
                   alt="pastedImage"
                   src="/Icons/telegram-200h.png"
                   className="home-pasted-image"
                 />
-                <span className="home-text048">Csatlakozok</span>
+                <p className="home-text051">Csatlakozom</p>
               </div>
             </div>
           </header>
@@ -239,10 +254,10 @@ const Home = (props) => {
           <div className="home-plans-container">
             <div className="home-switch">
               <div className="switch">
-                <label className="home-text049">Havi</label>
+                <label className="home-text052">Havi</label>
               </div>
               <div className="home-switch2 switch">
-                <label className="home-text050">Éves</label>
+                <label className="home-text053">Éves</label>
               </div>
             </div>
             <main className="home-plans">
@@ -281,8 +296,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy button">
-                  <span className="home-text051">
-                    <span className="home-text052">Megnézem</span>
+                  <span className="home-text054">
+                    <span className="home-text055">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -322,8 +337,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy1 button">
-                  <span className="home-text054">
-                    <span className="home-text055">Megnézem</span>
+                  <span className="home-text057">
+                    <span className="home-text058">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -362,8 +377,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy2 button">
-                  <span className="home-text057">
-                    <span className="home-text058">Megnézem</span>
+                  <span className="home-text060">
+                    <span className="home-text061">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -392,8 +407,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy3 button">
-                  <span className="home-text060">
-                    <span className="home-text061">Megnézem</span>
+                  <span className="home-text063">
+                    <span className="home-text064">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -420,8 +435,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy4 button">
-                  <span className="home-text063">
-                    <span className="home-text064">Megnézem</span>
+                  <span className="home-text066">
+                    <span className="home-text067">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -448,8 +463,8 @@ const Home = (props) => {
                   </div>
                 </div>
                 <div className="home-buy5 button">
-                  <span className="home-text066">
-                    <span className="home-text067">Megnézem</span>
+                  <span className="home-text069">
+                    <span className="home-text070">Megnézem</span>
                     <br></br>
                   </span>
                 </div>
@@ -458,12 +473,12 @@ const Home = (props) => {
           </div>
         </main>
         <div className="home-help">
-          <span className="home-text069">
+          <span className="home-text072">
             <span>Segítségre van szükséged?</span>
             <br></br>
           </span>
           <div className="home-contact-support">
-            <p className="home-text072">Lépj velünk kapcsolatba  -&gt;</p>
+            <p className="home-text075">Lépj velünk kapcsolatba  -&gt;</p>
           </div>
         </div>
       </section>
@@ -502,26 +517,26 @@ const Home = (props) => {
         </section>
       </section>
       <section id="forwho" className="home-section08">
-        <h2 className="home-text073">Kinek ajánljuk szolgáltatásainkat?</h2>
+        <h2 className="home-text076">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph2">
           <span>✅ K</span>
           <span>ezdő, illetve haladó sportfogadóknak</span>
-          <br className="home-text076"></br>
+          <br className="home-text079"></br>
           <br></br>
           <span>✅</span>
           <span> Sportszeretőknek</span>
-          <br className="home-text080"></br>
+          <br className="home-text083"></br>
           <br></br>
           <span>✅</span>
           <span>
             {' '}
             Olyanoknak, akik hisznek a mottónkban. „Sportfogadás=befektetés.”
           </span>
-          <br className="home-text084"></br>
+          <br className="home-text087"></br>
           <br></br>
           <span>✅</span>
           <span> Olyanoknak, akik képesek hosszútávon gondolkodni.</span>
-          <br className="home-text088"></br>
+          <br className="home-text091"></br>
           <br></br>
           <span>✅</span>
           <span>
@@ -530,7 +545,7 @@ const Home = (props) => {
           </span>
           <br></br>
         </p>
-        <h2 className="home-text093">Kinek nem ajánljuk szolgáltatásainkat?</h2>
+        <h2 className="home-text096">Kinek nem ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph3">
           <span> ⛔</span>
           <span>
@@ -538,24 +553,24 @@ const Home = (props) => {
             Aki azt gondolja, hogy minden beküldött tipp a forgatókönyv szerint
             alakul.
           </span>
-          <br className="home-text096"></br>
+          <br className="home-text099"></br>
           <br></br>
           <span>
             ⛔ Aki megkérdőjelezi Tippmesterünk és Tippkuktánk
             munkáját/elemzéseit.
           </span>
-          <br className="home-text099"></br>
+          <br className="home-text102"></br>
           <br></br>
           <span>
             ⛔ Aki nem ért egyet a mottónkkal. „Sportfogadás=befektetés.”
           </span>
-          <br className="home-text102"></br>
+          <br className="home-text105"></br>
           <br></br>
           <span>
             ⛔ Aki azt gondolja, hogy 10-20 ezer forintból egy két héten belul
             milliókat fog nyerni.
           </span>
-          <br className="home-text105"></br>
+          <br className="home-text108"></br>
           <br></br>
           <span>
             ⛔ Aki egy esetleges rossz szériában nyomdafestéket nem tűrő módon
@@ -566,12 +581,12 @@ const Home = (props) => {
               }}
             />
           </span>
-          <br className="home-text108"></br>
+          <br className="home-text111"></br>
           <br></br>
-          <span className="home-text110">
+          <span className="home-text113">
             EZEK MEGSÉRTÉSE AZONNALI KIZÁRÁSSAL JÁR!
           </span>
-          <br className="home-text111"></br>
+          <br className="home-text114"></br>
           <br></br>
           <br></br>
         </p>
@@ -638,10 +653,10 @@ const Home = (props) => {
           </div>
           <div className="home-buttons2">
             <div className="home-get-started2 button">
-              <span className="home-text114">Get started</span>
+              <span className="home-text117">Get started</span>
             </div>
             <div className="home-book-demo button">
-              <span className="home-text115">Book a demo</span>
+              <span className="home-text118">Book a demo</span>
             </div>
           </div>
         </main>
@@ -691,7 +706,7 @@ const Home = (props) => {
           </div>
         </main>
         <div className="home-view-more">
-          <p className="home-text116">View more</p>
+          <p className="home-text119">View more</p>
         </div>
       </section>
       <section className="home-section16">
@@ -729,10 +744,10 @@ const Home = (props) => {
               className="home-element accordion-element"
             >
               <div className="home-details06">
-                <span className="home-text117">
-                  <span className="home-text118"> Hogyan lehet befizetni?</span>
-                  <br className="home-text119"></br>
-                  <span className="home-text120">
+                <span className="home-text120">
+                  <span className="home-text121"> Hogyan lehet befizetni?</span>
+                  <br className="home-text122"></br>
+                  <span className="home-text123">
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -740,7 +755,7 @@ const Home = (props) => {
                     />
                   </span>
                 </span>
-                <span data-role="accordion-content" className="home-text121">
+                <span data-role="accordion-content" className="home-text124">
                   <span>Simplepay-en keresztül, bankkártyával.</span>
                   <br></br>
                   <span>
@@ -764,11 +779,11 @@ const Home = (props) => {
               className="home-element1 accordion-element"
             >
               <div className="home-details07">
-                <span className="home-text125">
+                <span className="home-text128">
                   <span>Mikor érdemes kezdeni?</span>
                   <br></br>
                 </span>
-                <span data-role="accordion-content" className="home-text128">
+                <span data-role="accordion-content" className="home-text131">
                   <span>
                     Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
                     kiugró szériáról maradsz le éppen.
@@ -795,11 +810,11 @@ const Home = (props) => {
               className="home-element2 accordion-element"
             >
               <div className="home-details08">
-                <span className="home-text132">
+                <span className="home-text135">
                   <span>Csomag vásárlás után egyből él a tagságom?</span>
                   <br></br>
                 </span>
-                <span data-role="accordion-content" className="home-text135">
+                <span data-role="accordion-content" className="home-text138">
                   <span>
                     Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy
                     Telegram linket tőlünk, amivel csatlakozni tudsz a
@@ -827,10 +842,10 @@ const Home = (props) => {
               className="home-element3 accordion-element"
             >
               <div className="home-details09">
-                <span className="home-text139">
+                <span className="home-text142">
                   Hol fogom kapni a tippeket?
                 </span>
-                <span data-role="accordion-content" className="home-text140">
+                <span data-role="accordion-content" className="home-text143">
                   Telegram alkalmazásban, egy privát csoportban.
                 </span>
               </div>
@@ -846,10 +861,10 @@ const Home = (props) => {
               className="home-element4 accordion-element"
             >
               <div className="home-details10">
-                <span className="home-text141">
-                  <span className="home-text142">Mi az a Telegram?</span>
-                  <br className="home-text143"></br>
-                  <span className="home-text144">
+                <span className="home-text144">
+                  <span className="home-text145">Mi az a Telegram?</span>
+                  <br className="home-text146"></br>
+                  <span className="home-text147">
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -857,7 +872,7 @@ const Home = (props) => {
                     />
                   </span>
                 </span>
-                <span data-role="accordion-content" className="home-text145">
+                <span data-role="accordion-content" className="home-text148">
                   A Telegram egy alkalmazás, amit bármilyen készülékre
                   letölthetsz. Az alkalmazás letöltéséhez az adott áruházban
                   (App Store/Google Play) a Telegram applikációra kell
@@ -882,11 +897,11 @@ const Home = (props) => {
               className="home-element5 accordion-element"
             >
               <div className="home-details11">
-                <span className="home-text146">
+                <span className="home-text149">
                   <span>Garancia van?</span>
                   <br></br>
                 </span>
-                <span data-role="accordion-content" className="home-text149">
+                <span data-role="accordion-content" className="home-text152">
                   <span>
                     Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati
                     arány nem éri el a 60%-ot. Ez azokra az előfizetőkre
@@ -907,11 +922,11 @@ const Home = (props) => {
               className="home-element6 accordion-element"
             >
               <div className="home-details12">
-                <span className="home-text152">
+                <span className="home-text155">
                   <span>Mi az a teljes hónap?</span>
                   <br></br>
                 </span>
-                <span data-role="accordion-content" className="home-text155">
+                <span data-role="accordion-content" className="home-text158">
                   <span>
                     Nálunk rendszerben zajlik a befizetés, minden hónap
                     tizedikén délig várjuk az előfizetések megújítását.
@@ -931,10 +946,10 @@ const Home = (props) => {
               className="home-element7 accordion-element"
             >
               <div className="home-details13">
-                <span className="home-text158">
+                <span className="home-text161">
                   Másik napon elő se tudok fizetni?
                 </span>
-                <span data-role="accordion-content" className="home-text159">
+                <span data-role="accordion-content" className="home-text162">
                   De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk
                   neked.
                 </span>
@@ -951,10 +966,10 @@ const Home = (props) => {
               className="home-element8 accordion-element"
             >
               <div className="home-details14">
-                <span className="home-text160">
+                <span className="home-text163">
                   Milyen tőke szükséges az indulásomhoz?
                 </span>
-                <span data-role="accordion-content" className="home-text161">
+                <span data-role="accordion-content" className="home-text164">
                   Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével
                   indulj, kivételt képez a Silver-Pong csomagunk, amit az előbb
                   említett tőke összegyűjtésére hoztunk létre neked.
@@ -980,7 +995,7 @@ const Home = (props) => {
                     src="https://i.imgur.com/92TCidp.png"
                     className="home-branding"
                   />
-                  <span className="home-text162">
+                  <span className="home-text165">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </span>
                 </div>
@@ -1057,7 +1072,7 @@ const Home = (props) => {
               <path d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM554.667 682.667v-238.336l97.835 97.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-170.667-170.667c-4.096-4.096-8.789-7.168-13.824-9.259s-10.539-3.243-16.341-3.243c-5.547 0-11.136 1.067-16.341 3.243-5.035 2.091-9.728 5.163-13.824 9.259l-170.667 170.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l97.835-97.835v238.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667z"></path>
             </svg>
             <section className="home-copyright">
-              <span className="home-text176">
+              <span className="home-text179">
                 © 2022 latitude. All Rights Reserved.
               </span>
             </section>
@@ -1072,8 +1087,8 @@ const Home = (props) => {
                   className="home-textinput input"
                 />
                 <div className="home-buy6 button">
-                  <span className="home-text177">-&gt;</span>
-                  <span className="home-text178">
+                  <span className="home-text180">-&gt;</span>
+                  <span className="home-text181">
                     <span>Subscribe now</span>
                     <br></br>
                   </span>
@@ -1085,7 +1100,7 @@ const Home = (props) => {
             </h1>
           </main>
           <section className="home-copyright1">
-            <span className="home-text181">
+            <span className="home-text184">
               © 2022 latitude. All Rights Reserved.
             </span>
           </section>
