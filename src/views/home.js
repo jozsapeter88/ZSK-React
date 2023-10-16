@@ -229,34 +229,17 @@ const Home = (props) => {
           />
         </main>
       </section>
+      <div className="home-container">
       <section id="packages" className="home-section04">
         <main className="home-pricing">
           <header className="home-header02">
             <header className="home-left">
               <span className="section-head">Csomagjaink</span>
-              <h2 className="section-heading home-heading02">
-                Segítünk választani
-              </h2>
             </header>
-            <div className="home-right">
-              <p className="home-paragraph1 section-description">
-                Csomagjaink széleskörűen rendelkezésedre állnak, így
-                kiválaszthatod a neked megfelelőt.
-              </p>
-            </div>
           </header>
-          <div className="home-container4"></div>
           <div className="home-plans-container">
-            <div className="home-switch">
-              <div className="switch">
-                <label className="home-text052">Havi</label>
-              </div>
-              <div className="home-switch2 switch">
-                <label className="home-text053">Éves</label>
-              </div>
-            </div>
             <main className="home-plans">
-              <div className="home-plan cardBorder">
+              <div className="home-plan">
                 <div className="home-details">
                   <div className="home-header03">
                     <label className="home-name">Ping-Gold</label>
@@ -267,40 +250,73 @@ const Home = (props) => {
                     <span className="home-heading03">Tartalmazza:</span>
                     <div className="home-list">
                       <Includes
-                        Label="Pénzvisszatéritési garancia"
+                        Label="több éve profitot termelő, asztalitenisz tippek"
                         rootClassName="includes-root-class-name39"
                       ></Includes>
                       <Includes rootClassName="includes-root-class-name40"></Includes>
                       <Includes
-                        Label="Átlagosan napi 3 tipp"
+                        Label="Tipprofesszorunk által heti/napi forma elemzés"
                         rootClassName="includes-root-class-name41"
                       ></Includes>
                       <Includes
-                        Label="Oddsok 1.40 - 3.00 között"
+                        Label="átlagosan napi 2 tipp (kínálat függvénye)"
                         rootClassName="includes-root-class-name42"
                       ></Includes>
                       <Includes
-                        Label="Tippmesterünk általi napi/heti formaelemzés"
+                        Label="oddsok 1.40-3.00 között, átlagosan 1.65"
                         rootClassName="includes-root-class-name43"
                       ></Includes>
                       <Includes
-                        Label="Tippek beküldési idejének meghatározása"
+                        Label="a tippek beküldési idejének meghatározása"
+                        rootClassName="includes-root-class-name44"
+                      ></Includes>
+                      <Includes
+                        Label="pénzvisszatérítési garancia másképp"
                         rootClassName="includes-root-class-name44"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy button">
-                  <span className="home-text054">
-                    <span className="home-text055">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
+
+                <button
+                  className="primary"
+                  onClick={() => window.dialog.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+                <dialog id="dialog">
+                  <h2>50.000 ft</h2>
+                  <p>
+                    Ez a csomag azoknak szól, akik hosszú távon szeretnének a
+                    sportfogadással foglalkozni, úgy, hogy az profitot is
+                    termeljen. Ebben az összeállításban Tipprofesszorunk által
+                    analizált objektív és szubjektív statisztikákra és emellett
+                    aktuális formaelemzésekre alapuló tippekhez férhetnek hozzá.
+                  </p>
+                  <button
+                    onClick={() => window.dialog.close()}
+                    aria-label="close"
+                    className="x"
+                  >
+                    ❌
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <button className="buyBtn" onClick="">
+                    <span>Vásárlás</span>
+                  </button>
+                </dialog>
+                <br />
               </div>
-              <div className="home-plan1 cardBorder">
+              <div className="home-plan1">
                 <div className="home-details01">
                   <div className="home-header04">
-                    <label className="home-name1">Ping-Gold</label>
+                    <label className="home-name1">Silver-Pong</label>
                   </div>
                 </div>
                 <div className="home-buy-details1">
@@ -308,35 +324,65 @@ const Home = (props) => {
                     <span className="home-heading04">Tartalmazza:</span>
                     <div className="home-list1">
                       <Includes
-                        Label="Pénzvisszatéritési garancia"
+                        Label="asztalitenisz tippek"
                         rootClassName="includes-root-class-name69"
                       ></Includes>
                       <Includes rootClassName="includes-root-class-name70"></Includes>
                       <Includes
-                        Label="Átlagosan napi 3 tipp"
+                        Label="Tippdoktorunk által ajánlott tippek"
                         rootClassName="includes-root-class-name71"
                       ></Includes>
                       <Includes
-                        Label="Oddsok 1.40 - 3.00 között"
+                        Label="átlagosan napi 2-3 tipp"
                         rootClassName="includes-root-class-name72"
                       ></Includes>
                       <Includes
-                        Label="Tippmesterünk általi napi/heti formaelemzés"
+                        Label="oddsok 1.50 - 3.00 között, átlagosan 1.70"
                         rootClassName="includes-root-class-name73"
-                      ></Includes>
-                      <Includes
-                        Label="Tippek beküldési idejének meghatározása"
-                        rootClassName="includes-root-class-name74"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy1 button">
-                  <span className="home-text057">
-                    <span className="home-text058">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
+                <button
+                  className="primary"
+                  onClick={() => window.dialog1.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+                <dialog id="dialog1">
+                  <h2>30.000 ft</h2>
+                  <p>
+                    Ez a csomag azoknak szól, akik kisebb tőkével rendelkeznek,
+                    de kipróbálnák magukat az asztalitenisz világában. Ezekben
+                    az összeállításokban Tippdoktorunk által analizált
+                    statisztikákra és aktuális formaelemzésekre alapuló tippjei
+                    szerint fogadhatnak, Tippmesterünk koordinációja mellett.
+                    Tökéletes kezdőcsomag ahhoz, hogy idővel szintet lépve a
+                    Ping-Gold tagjai lehessenek. E csomag fő célja, hogy
+                    fenntartsa a lehetőséget a kisebb tőkével rendelkező
+                    potenciális ügyfeleknek, a későbbi Ping-Gold csomaghoz való
+                    csatlakozáshoz. Ebből kifolyólag, ebben az előfizetésben
+                    maximum 2 hónapot lehet tölteni!
+                  </p>
+                  <button
+                    onClick={() => window.dialog1.close()}
+                    aria-label="close"
+                    className="x"
+                  >
+                    ❌
+                  </button>
+                  <button className="buyBtn" onClick="">
+                    <span>Vásárlás</span>
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </dialog>
+                <br />
               </div>
               <div className="home-plan2">
                 <div className="home-details02">
@@ -349,66 +395,76 @@ const Home = (props) => {
                     <span className="home-heading05">Tartalmazza:</span>
                     <div className="home-list2">
                       <Includes
-                        Label="Pénzvisszatítési garancia"
+                        Label="túlnyomó részben tenisztippek"
                         rootClassName="includes-root-class-name45"
                       ></Includes>
                       <Includes
-                        Label="Túlnyomórészt asztalitenisz tippek"
+                        Label="Tipprofesszorunk és Tippdoktorunk általi formaelemzés"
                         rootClassName="includes-root-class-name46"
                       ></Includes>
                       <Includes
-                        Label="Átlagosan napi 1 tipp"
+                        Label="napi 1 tipp "
                         rootClassName="includes-root-class-name47"
                       ></Includes>
                       <Includes
-                        Label="Oddsok 1.50 - 2.50 között"
+                        Label="odds 1.50-2.30 között, átlagosan 1.60"
                         rootClassName="includes-root-class-name48"
                       ></Includes>
                       <Includes
-                        Label="Legkésőbb 13:00-ig küldjük"
+                        Label="legkésőbb délután 1-ig küldjük a tippet"
+                        rootClassName="includes-root-class-name49"
+                      ></Includes>
+                      <Includes
+                        Label="pénzvisszatérítési garancia másképp"
                         rootClassName="includes-root-class-name49"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy2 button">
-                  <span className="home-text060">
-                    <span className="home-text061">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
+                <button
+                  className="primary"
+                  onClick={() => window.dialog2.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+                <dialog id="dialog2">
+                  <h2>50.000</h2>
+                  <p>
+                    Ez a csomag azoknak szól, akik lassabban és
+                    biztonságosabban, hosszú távon szeretnének a sportfogadással
+                    foglalkozni, úgy, hogy az profitot is termeljen. Ebben az
+                    összeállításban Tipprofesszorunk és 👀Tippdoktorunk által
+                    közösen analizált statisztikákra és aktuális
+                    formaelemzésekre alapuló tippjeire fogadhatnak. Mivel napi 1
+                    tipp ajánlás érkezik a délelőtt folyamán, így akinek esetleg
+                    kevesebb ideje van a hétköznapokban a sportfogadással
+                    foglalkozni, annak ez a csomag tökéletes választás lehet.
+                    Ettől függetlenül kiegészítő csomagként ajánljuk bármelyik
+                    asztalitenisz csoportunk mellé.
+                  </p>
+                  <button
+                    onClick={() => window.dialog2.close()}
+                    aria-label="close"
+                    className="x"
+                  >
+                    ❌
+                  </button>
+                  <button className="buyBtn" onClick="">
+                    <span>Vásárlás</span>
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </dialog>
+                <br />
               </div>
             </main>
             <main className="home-plans1">
               <div className="home-plan3">
-                <div className="home-details03">
-                  <div className="home-header06">
-                    <label className="home-name3">Mr. Connection</label>
-                  </div>
-                </div>
-                <div className="home-buy-details3">
-                  <div className="home-features3">
-                    <span className="home-heading06">Tartalmazza:</span>
-                    <div className="home-list3">
-                      <Includes
-                        Label="Mindenféle sportot, ahol információhoz jutunk (érdemi hiányzók, sérültek, B kerettel való kiállás, stb.)"
-                        rootClassName="includes-root-class-name21"
-                      ></Includes>
-                      <Includes
-                        Label="Oddsok 1.5 - 4.00 között"
-                        rootClassName="includes-root-class-name22"
-                      ></Includes>
-                    </div>
-                  </div>
-                </div>
-                <div className="home-buy3 button">
-                  <span className="home-text063">
-                    <span className="home-text064">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
-              </div>
-              <div className="home-plan4">
                 <div className="home-details04">
                   <div className="home-header07">
                     <label className="home-name4">Green-Health</label>
@@ -423,20 +479,49 @@ const Home = (props) => {
                         rootClassName="includes-root-class-name25"
                       ></Includes>
                       <Includes
-                        Label="30 perc konzultáció"
+                        Label="30 perc (+15 gratis) konzultáció"
                         rootClassName="includes-root-class-name26"
                       ></Includes>
                     </div>
                   </div>
                 </div>
-                <div className="home-buy4 button">
-                  <span className="home-text066">
-                    <span className="home-text067">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
+                <button
+                  className="primary"
+                  onClick={() => window.dialog4.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+                <dialog id="dialog4">
+                  <h2>̶̶̶̶1̶2̶0̶.̶0̶0̶0̶ 90.000</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque varius metus non tortor lacinia molestie.
+                    Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Sed gravida, massa vel consectetur condimentum,
+                    nisl metus eleifend tortor, non commodo dolor nisi sit amet
+                    odio. Nulla facilisi.
+                  </p>
+                  <button
+                    onClick={() => window.dialog4.close()}
+                    aria-label="close"
+                    className="x"
+                  >
+                    ❌
+                  </button>
+                  <button className="buyBtn" onClick="">
+                    <span>Vásárlás</span>
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </dialog>
+                <br />
               </div>
-              <div className="home-plan5">
+              <div className="home-plan4">
                 <div className="home-details05">
                   <div className="home-header08">
                     <label className="home-name5">Green-Harmony</label>
@@ -457,60 +542,226 @@ const Home = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="home-buy5 button">
-                  <span className="home-text069">
-                    <span className="home-text070">Megnézem</span>
-                    <br></br>
-                  </span>
-                </div>
+                <button
+                  className="primary"
+                  onClick={() => window.dialog5.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+                <dialog id="dialog5">
+                  <h2>̶̶8̶0̶.̶0̶0̶0̶ 65.000</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque varius metus non tortor lacinia molestie.
+                    Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Sed gravida, massa vel consectetur condimentum,
+                    nisl metus eleifend tortor, non commodo dolor nisi sit amet
+                    odio. Nulla facilisi.
+                  </p>
+                  <button
+                    onClick={() => window.dialog5.close()}
+                    aria-label="close"
+                    className="x"
+                  >
+                    ❌
+                  </button>
+                  <button className="buyBtn" onClick="">
+                    <span>Vásárlás</span>
+                  </button>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                </dialog>
+                <br />
               </div>
             </main>
           </div>
         </main>
+        <header className="home-header02">
+          <header className="home-left">
+            <span className="section-head">Kurzusaink</span>
+          </header>
+        </header>
+        <div className="home-plans-container">
+          <main className="home-plans">
+            <div className="home-plan5">
+              <div className="home-details04">
+                <div className="home-header07">
+                <label className="home-name3">Konzultáció</label>
+                  </div>
+                </div>
+                <div className="home-buy-details3">
+                  <div className="home-features3">
+                    <span className="home-heading06">
+                      A profitábilis sportfogadás nem csak néhány kattintás,
+                      hanem sokkal összetettebb. Fontos tényező például a pénz
+                      menedzselése, a megfelelő tétválasztás, a tétemelés
+                      gyakorisága és időzítése, stb. (Részletek a konzultáción.)
+                    </span>
+                    <span className="home-heading06">Kinek ajánljuk?</span>
+
+                    <div className="home-list3">
+                      <Includes
+                        Label="úgy érzed, hogy nem sikerült profitálnod hosszútávon a sportfogadásból."
+                        rootClassName="includes-root-class-name21"
+                      ></Includes>
+                      <Includes
+                        Label="még mindig a gól-gól meg a szöglet fogadásokat erőlteted."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="még mindig azt hiszed, hogy csapatsportból lehet hosszútávon profitálni."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="úgy érzed a cashouton sokat dilemmázol, és többször jössz ki belőle rosszul."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="régóta vagy sportfogadó, sosem árt frissíteni tudásod!"
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="ha a GY.I.K. érdekel jobban kiboncolva, kivesézve."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="nem régóta vagy sportfogadó."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="úgy érzed most jött el a pillanat, hogy kipróbáld magad ebben a világban és pár zöldfülű hibát szeretnél elkerülni."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="bajban vagy a tétemeléssel, és a befektetett tőkéd kezelésével."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                      <Includes
+                        Label="szeretnél egy olyan személlyel beszélgetni, aki életvitelszerűen él sportfogadásból."
+                        rootClassName="includes-root-class-name22"
+                      ></Includes>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  className="primary"
+                  onClick={() => window.dialog6.showModal()}
+                >
+                  <span>Megnézem</span>
+                </button>
+
+              <dialog id="dialog6">
+                <h2>̶̶̶̶1̶2̶0̶.̶0̶0̶0̶ 90.000</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque varius metus non tortor lacinia molestie.
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  Sed gravida, massa vel consectetur condimentum, nisl metus
+                  eleifend tortor, non commodo dolor nisi sit amet odio. Nulla
+                  facilisi.
+                </p>
+                <button
+                  onClick={() => window.dialog6.close()}
+                  aria-label="close"
+                  className="x"
+                >
+                  ❌
+                </button>
+                <button className="buyBtn" onClick="">
+                  <span>Vásárlás</span>
+                </button>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+              </dialog>
+              <br />
+            </div>
+            <div className="home-plan6">
+              <div className="home-details05">
+                <div className="home-header08">
+                  <label className="home-name5">Study for Money</label>
+                </div>
+              </div>
+              <div className="home-buy-details5">
+                <div className="home-features5">
+                  <span className="home-heading08">Mit tartalmaz?</span>
+                  <div className="home-list5">
+                    <Includes
+                      Label="Egy olyan tananyagot, amely egy átfogó tudást biztosít arról, amiből Tippprofesszorunk évek óta profitál. "
+                      rootClassName="includes-root-class-name31"
+                    ></Includes>
+                    <Includes
+                      Label="A sportfogadás tematikáját, pszichológiáját és stratégiáját tanulhatjátok meg elméleti es gyakorlati kurzuson keresztül."
+                      rootClassName="includes-root-class-name32"
+                    ></Includes>
+                    <Includes
+                      Label="Szakmai tudást (asztalitenisz játékelemek, döntő fontosságú technikai es taktikai tényezők), sportbeli tapasztalatot (mentális háttere, pszichológiája az asztalitenisznek) és objektív elemzésének irányait (szakmai,{másképp szubjektív}+objektív skála ötvözete) is egyaránt megoszt veletek Tipprofesszorunk."
+                      rootClassName="includes-root-class-name32"
+                    ></Includes>
+                    <Includes
+                      Label="  Telegram csoportot hozunk létre az ügyfeleknek, ahol Tipprofesszorunk felügyelete alatt egymással is meg tudjátok osztani a tapasztalataitokat, ezáltal elősegítendő a gyorsabb fejlődést illetve megadva a közösséghez való tartozás élményét."
+                      rootClassName="includes-root-class-name32"
+                    ></Includes>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="primary"
+                onClick={() => window.dialog5.showModal()}
+              >
+                <span>Megnézem</span>
+              </button>
+
+              <dialog id="dialog7">
+                <h2>̶̶8̶0̶.̶0̶0̶0̶ 65.000</h2>
+                <p>
+                  Kinek ajánljuk? * Azoknak, akik kellő mennyiségű időt és
+                  energiát tudnak szánni a program teljesítésére (idő, energia,
+                  stb.). * Azoknak, akik tisztában vannak azzal, hogy ez a
+                  tanulási folyamat hosszabb időt vesz igénybe, de szélesebb
+                  körű tudást biztosít. * Azoknak, akik készen állnak pénzt
+                  keresni másképp, akár többszázezreket, milliókat.
+                </p>
+                <button
+                  onClick={() => window.dialog7.close()}
+                  aria-label="close"
+                  className="x"
+                >
+                  ❌
+                </button>
+                <button className="buyBtn" onClick="">
+                  <span>Vásárlás</span>
+                </button>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+              </dialog>
+              <br />
+            </div>
+          </main>
+        </div>
         <div className="home-help">
-          <span className="home-text072">
+          <span className="home-text069">
             <span>Segítségre van szükséged?</span>
             <br></br>
           </span>
           <div className="home-contact-support">
-            <p className="home-text075">Lépj velünk kapcsolatba  -&gt;</p>
+            <p className="home-text072">Lépj velünk kapcsolatba  -&gt;</p>
           </div>
         </div>
       </section>
-      <section id="packages" className="home-section06">
-        <FlipCard></FlipCard>
-      </section>
-      <section className="home-section07">
-        <section className="home-note">
-          <div className="home-image2">
-            <img
-              alt="image"
-              src="/SectionImages/consultation-800h.png"
-              className="home-image3"
-            />
-            <main className="home-main1">
-              <main className="home-heading09">
-                <header className="home-header09">
-                  <h2 className="home-heading10 section-heading">
-                    Konzultáció
-                  </h2>
-                </header>
-                <div className="home-checkmarks">
-                  <Mark Label="Úgy érzed nem sikerült profitálnod hosszútávon a sportfogadásból?"></Mark>
-                  <Mark Label="Még mindig azt hiszed, hogy csapatsportból lehet hosszútávon profitálni?"></Mark>
-                  <Mark Label="Úgy érzed most jött el a pillanat, hogy kipróbáld magad ebben a világban és pár zöldfülű hibát szeretnél elkerülni?"></Mark>
-                  <Mark Label="Szeretnél egy olyan személlyel beszélgetni, aki életvitelszerűen él sportfogadásból?"></Mark>
-                  <Mark Label="Úgy érzed a cashouton sokat dilemmázol, és többször jössz ki belőle rosszul?"></Mark>
-                  <Mark Label="Bajban vagy a tétemeléssel, és a befektetett tőkéd kezelésével?"></Mark>
-                  <Mark Label="Még mindig a gól-gól meg a szöglet fogadásokat erőlteted?"></Mark>
-                  <Mark Label="Régóta / nem régóta vagy sportfogadó?"></Mark>
-                  <Mark Label="Érdekel a GYIK darabjaira szedve?"></Mark>
-                </div>
-              </main>
-            </main>
-          </div>
-        </section>
-      </section>
+    </div>
       <section id="forwho" className="home-section08">
         <h2 className="home-text076">Kinek ajánljuk szolgáltatásainkat?</h2>
         <p className="home-paragraph2">
