@@ -36,15 +36,10 @@ const Home = (props) => {
                   </span>
                   <br></br>
                   <span>
-                    =
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                    =<p className="colorful-text">Befektetés</p>
                   </span>
                 </h1>
-                <h1 className="home-text003">Befektetés</h1>
+                
                 <span className="home-caption">
                   Csapatunk változást hoz annak érdekében, hogy a sportfogadás
                   többé ne csak pénz és időpazarlás, hanem fontos bevételi
