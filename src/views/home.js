@@ -154,56 +154,37 @@ const Home = (props) => {
         </p>
       </section>
       <section className="home-section02">
-        <div className="home-container1 cardBorder">
-          <h1 className="home-text036">
-            <span className="home-text037">Csak dőlj hátra!</span>
-            <br></br>
-          </h1>
-          <span className="home-text039">
-            Tipprofesszorunk és Tippdoktorunk leveszik a terhet a válladról, nem
+      <div class="row">
+        <div class="card">
+            <h1>Csak dőlj hátra!</h1>
+            <p>Tipprofesszorunk és Tippdoktorunk leveszik a terhet a válladról, nem
             kell többé a statisztikákat és eredményeket bújnod, csak az
-            elkészített terveket követni. Ők azért dolgoznak, hogy neked már ne
-            kelljen!
-          </span>
+            elkészített terveket követni. <br></br><br></br> Ők azért dolgoznak, hogy neked már ne
+            kelljen!</p>
         </div>
-        <div className="home-container2 cardBorder">
-          <h1 className="home-text040">
-            <span className="home-text041">Ne legyen több zöldfülű hiba!</span>
-            <br></br>
-          </h1>
-          <span className="home-text043">
-            Tipprofesszor és Tippdoktor körültekintő munkájának köszönhetően a
-            fogadásból adódó stressz a lehető legalacsonyabb legyen. Profi
+      </div>
+      <div class="row">
+        <div class="card">
+            <h1>Ne legyen több zöldfülű hiba!</h1>
+            <p>Tipprofesszor és Tippdoktor körültekintő munkájának köszönhetően a
+            fogadásból adódó stressz a lehető legalacsonyabb legyen. <br></br><br></br> Profi
             csapatunkkal folyamatosan azon dolgozunk, hogy minden apró részletet
-            észrevegyünk és a hibafaktor minimumra csökkenjen.
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
-          </span>
+            észrevegyünk és a hibafaktor minimumra csökkenjen.</p>
         </div>
-        <div className="home-container3 cardBorder">
-          <h1 className="home-text044">
-            <span className="home-text045">Láss át rajtunk!</span>
-            <br></br>
-          </h1>
-          <span className="home-text047">
-            <span>
-              Az átláthatóság nagyon fontos számunkra, így a statisztikáinkat az
+      </div>
+      <div class="row">
+        <div class="card">
+            <h1>Láss át rajtunk!</h1>
+            <p>Az átláthatóság nagyon fontos számunkra, így a statisztikáinkat az
               oldal indulásától kezdve folyamatosan nyomon követheted. A jó és
               rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert
-              nincs szükségünk rá!
-            </span>
-            <br></br>
-            <span>
+              nincs szükségünk rá!<br></br><br></br>
               Ha ezek ellenére sem hiszel a statisztikáinknak, gyere, és nézd
               vissza! Telegram csoportunkban korábbi teljesítményünk
               visszatekinthető. Keress fel minket Instagram-on, vagy
-              Facebook-on!
-            </span>
-          </span>
+              Facebook-on!</p>
         </div>
+      </div>
       </section>
       <section id="telegram" className="home-section03">
         <main className="home-content1">

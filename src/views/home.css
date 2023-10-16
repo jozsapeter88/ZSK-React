@@ -259,7 +259,7 @@ button.primary:hover span:after {
 .home-section01 {
   flex: 1;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -332,9 +332,9 @@ button.primary:hover span:after {
 }
 
 .home-section02 {
-  gap: var(--dl-space-space-sixunits);
-  flex: 1;
-  width: 1200px;
+  gap: var(--dl-space-space-threeunits);
+  width: 1500px;
+  height: 100vh;
   display: flex;
   padding-top: 120px;
   border-color: #51515A;
@@ -342,6 +342,7 @@ button.primary:hover span:after {
   flex-direction: row;
   padding-bottom: 120px;
   justify-content: center;
+  align-items: center;
 }
 
 .home-container1 {
@@ -424,8 +425,8 @@ button.primary:hover span:after {
 
 .home-section03 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
+  height: 50vh;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -485,7 +486,7 @@ button.primary:hover span:after {
 }
 
 .home-image1 {
-  top: -100px;
+  top: -180px;
   right: 0px;
   width: 470px;
   height: 600px;
@@ -1381,6 +1382,7 @@ button.primary:hover span:after {
 .home-section08 {
   flex: 1;
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 110px;
@@ -1560,6 +1562,52 @@ button.primary:hover span:after {
 .home-paragraph4 {
   width: 100%;
   max-width: 480px;
+}
+
+.card {
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+  line-height: 2;
+  box-shadow: 0 0 20px #F4D03F;
+}
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: linear-gradient(to right, #F4D03F 0%, #F4D03F 51%, #F4D03F 100%);;
+  height: 520px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card:hover::before {
+  transition-delay: 0.2s;
+
+  transform: scale(40);
+}
+
+.card:hover {
+  color: #000000;
+
+}
+
+.card p {
+  padding: 10px 0;
 }
 
 .home-cards {
@@ -1902,6 +1950,7 @@ button.primary:hover span:after {
   gap: var(--dl-space-space-fiveunits);
   flex: 1;
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -2624,57 +2673,57 @@ button.primary:hover span:after {
   background-color: aliceblue;
 }
 
-  /*Dialog Styles*/
-  dialog {
-    padding: 1rem 3rem;
-    background: rgba(255, 255, 255, 0.671);
-    max-width: 500px;
-    padding-top: 2rem;
-    border-radius: 20px;
-    border: 0;
-    /* box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1); */
-    animation: fadeIn 1s ease both;
-  }
+/*Dialog Styles*/
+dialog {
+  padding: 1rem 3rem;
+  background: rgba(255, 255, 255, 0.671);
+  max-width: 500px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  /* box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1); */
+  animation: fadeIn 1s ease both;
+}
 
-  dialog::backdrop {
-    animation: fadeIn 1s ease both;
-    background: rgba(255, 255, 255, 0.4);
-    z-index: 2;
-    backdrop-filter: blur(20px);
-  }
+dialog::backdrop {
+  animation: fadeIn 1s ease both;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  backdrop-filter: blur(20px);
+}
 
-  dialog .x {
-    filter: grayscale(1);
-    border: none;
-    background: none;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    transition: ease filter, transform 0.3s;
-    cursor: pointer;
-    transform-origin: center;
-  }
+dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
 
-  dialog .x:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
-  }
+dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
 
-  dialog h2 {
-    font-weight: 600;
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
+dialog h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
 
-  dialog p {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    padding: 0.5rem 0;
-  }
+dialog p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
 
-  dialog p a:visited {
-    color: rgb(var(--vs-primary));
-  }
+dialog p a:visited {
+  color: rgb(var(--vs-primary));
+}
 
 @media(max-width: 1600px) {
   .home-heading {
@@ -2728,7 +2777,7 @@ button.primary:hover span:after {
 
   .home-image {
     height: 320px;
-    width:500px;
+    width: 500px;
   }
 }
 
@@ -2756,26 +2805,26 @@ button.primary:hover span:after {
     padding: 30;
   }
 
-    .home-section02 {
-      padding-left: 30;
-      padding-right: 30;
-    }
-  
-    .home-image1 {
-      position: relative;
-      top: 0;
-    }
+  .home-section02 {
+    padding-left: 30;
+    padding-right: 30;
+  }
 
-    .home-image {
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-      width: 600px;
-      height: 350px;
-    }
-  
-    .home-text076 {
-      width: 80%;
-    }
+  .home-image1 {
+    position: relative;
+    top: 0;
+  }
+
+  .home-image {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 600px;
+    height: 350px;
+  }
+
+  .home-text076 {
+    width: 80%;
+  }
 
   .home-paragraph2 {
     width: 80%;
@@ -3387,27 +3436,27 @@ button.primary:hover span:after {
 
 @media(max-width: 700px) {
 
-.home-heading {
-  font-size: 40px;
-  width: 500px;
-}
+  .home-heading {
+    font-size: 40px;
+    width: 500px;
+  }
 
-.home-caption {
-  width: 500px;
-}
+  .home-caption {
+    width: 500px;
+  }
 
-.home-image {
-  width: 500px;
-  height: auto;
-}
+  .home-image {
+    width: 500px;
+    height: auto;
+  }
 
-.colorful-text {
-  font-size: 40px;
-}
+  .colorful-text {
+    font-size: 40px;
+  }
 
-.home-main {
-  max-width: 500px;
-}
+  .home-main {
+    max-width: 500px;
+  }
 
 }
 
