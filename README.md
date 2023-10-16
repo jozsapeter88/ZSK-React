@@ -1,1 +1,1 @@
-# ZSK-React
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/jozsapeter88/ZSK-React" /> <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/jozsapeter88/ZSK-Reactr" /> <img alt="" src="https://img.shields.io/github/repo-size/jozsapeter88/ZSK-React" /> <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/jozsapeter88/ZSK-React" /> <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/jozsapeter88/ZSK-React" />
