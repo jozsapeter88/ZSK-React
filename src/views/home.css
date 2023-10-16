@@ -127,8 +127,7 @@ button.primary:hover span:after {
 }
 
 .home-section {
-  width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   border-color: #51515A;
@@ -137,6 +136,7 @@ button.primary:hover span:after {
   flex-direction: column;
   justify-content: center;
   border-bottom-width: 1px;
+
 }
 
 .home-hero {
@@ -247,13 +247,13 @@ button.primary:hover span:after {
 }
 
 .home-image {
-  width: auto;
-  height: 370;
+  width: 800px;
+  height: 400px;
   margin: auto;
   position: relative;
-  object-fit: cover;
   align-content: center;
   flex-direction: column;
+  padding-left: 2vh;
 }
 
 .home-section01 {
@@ -485,10 +485,10 @@ button.primary:hover span:after {
 }
 
 .home-image1 {
-  top: -69px;
-  right: -1px;
+  top: -100px;
+  right: 0px;
   width: 470px;
-  height: 550px;
+  height: 600px;
   z-index: 100;
   position: absolute;
   object-fit: cover;
@@ -2690,23 +2690,8 @@ button.primary:hover span:after {
     line-height: 24px;
   }
 
-  .home-text004 {
-    color: rgb(12, 16, 12);
-    font-size: 16px;
-    font-style: normal;
-    font-family: Poppins;
-    font-weight: 500;
-    line-height: 24px;
-  }
-
   .home-image {
-    width: 538px;
     height: 369px;
-  }
-
-  .home-image1 {
-    top: -69px;
-    right: -1px;
   }
 
   .home-plan {
@@ -2739,9 +2724,18 @@ button.primary:hover span:after {
   }
 }
 
+@media(max-width: 1400px) {
+
+  .home-image {
+    height: 320px;
+    width:500px;
+  }
+}
+
 @media(max-width: 1200px) {
   .home-hero {
     width: 670;
+    height: 100%;
     display: block;
   }
 
@@ -2749,33 +2743,39 @@ button.primary:hover span:after {
     width: 664px;
   }
 
-  .home-image {
-    width: 670;
-    height: 400px;
-    padding: 0;
-    margin-top: 40;
-    object-fit: contain;
-    margin-bottom: 40;
-    padding-bottom: 60px;
+  .home-main {
+    align-items: center;
+    width: 1200px;
+  }
+
+  .home-caption {
+    width: 650px;
   }
 
   .home-paragraph {
     padding: 30;
   }
 
-  .home-section02 {
-    padding-left: 30;
-    padding-right: 30;
-  }
+    .home-section02 {
+      padding-left: 30;
+      padding-right: 30;
+    }
+  
+    .home-image1 {
+      position: relative;
+      top: 0;
+    }
 
-  .home-image1 {
-    top: -72px;
-    right: 3px;
-  }
-
-  .home-text076 {
-    width: 80%;
-  }
+    .home-image {
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      width: 600px;
+      height: 350px;
+    }
+  
+    .home-text076 {
+      width: 80%;
+    }
 
   .home-paragraph2 {
     width: 80%;
@@ -2855,16 +2855,15 @@ button.primary:hover span:after {
     text-align: left;
   }
 
-  .home-buttons {
-    width: 100%;
-  }
-
   .home-get-started1 {
     flex: 1;
   }
 
   .home-image {
-    width: 500px;
+    width: auto;
+    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
   .home-section01 {
@@ -2926,6 +2925,10 @@ button.primary:hover span:after {
     position: static;
     align-self: flex-end;
     object-fit: none;
+  }
+
+  .home-image {
+    width: 600px;
   }
 
   .home-plans {
@@ -3086,19 +3089,11 @@ button.primary:hover span:after {
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
 
-  .home-heading {
-    font-size: 40px;
-  }
-
   .home-caption {
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-family: Poppins;
     line-height: 24px;
-  }
-
-  .home-get-started1 {
-    display: none;
   }
 
   .home-section01 {
@@ -3390,7 +3385,33 @@ button.primary:hover span:after {
   }
 }
 
-@media(max-width: 479px) {
+@media(max-width: 700px) {
+
+.home-heading {
+  font-size: 40px;
+  width: 500px;
+}
+
+.home-caption {
+  width: 500px;
+}
+
+.home-image {
+  width: 500px;
+  height: auto;
+}
+
+.colorful-text {
+  font-size: 40px;
+}
+
+.home-main {
+  max-width: 500px;
+}
+
+}
+
+@media(max-width: 500px) {
   .home-main {
     width: auto;
   }
@@ -3400,17 +3421,8 @@ button.primary:hover span:after {
     align-items: flex-start;
   }
 
-  .home-heading {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .home-buttons {
-    width: 60%;
-  }
-
   .home-image {
-    width: 400;
+    width: 480px;
   }
 
   .home-section01 {

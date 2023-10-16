@@ -224,7 +224,7 @@ const Home = (props) => {
           </header>
           <img
             alt="image"
-            src="/SectionImages/telegram1-900h.png"
+            src="/SectionImages/telegram_grafika.png"
             className="home-image1"
           />
         </main>
