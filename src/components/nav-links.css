@@ -1,5 +1,5 @@
 .nav-links-nav-links {
-  gap: var(--dl-space-space-threeunits);
+  gap: var(--dl-space-space-twounits);
   display: flex;
   position: relative;
   align-items: flex-start;

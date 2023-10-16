@@ -27,6 +27,14 @@ const Navbar = (props) => {
             </span>
           </div>
         </a>
+        <a href="#courses" className="navbar-link">
+          <div className="navbar-packages get-started">
+            <span className="navbar-text">
+              <span className="navbar-text1">Kurzusok</span>
+              <br className=""></br>
+            </span>
+          </div>
+        </a>
         <div id="mobile-menu" className="navbar-mobile-menu">
           <div className="navbar-branding">
             <img

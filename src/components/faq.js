@@ -12,10 +12,12 @@ const FAQ = (props) => {
   const [isVisible3, setIsVisible3] = useState(false)
   const [isVisible5, setIsVisible5] = useState(false)
   const [isVisible4, setIsVisible4] = useState(false)
-  const [isVisible1, setIsVisible1] = useState(false)
+  const [isVisible1, setIsVisible1] = useState(true)
   const [isVisible6, setIsVisible6] = useState(false)
+
+  console.log(isVisible1)
   return (
-    <div className={`faq-accordion ${props.rootClassName} `}>
+    <div className={`faq-accordion`}>
       <div
         id="1"
         data-role="accordion-container"
