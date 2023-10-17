@@ -5,23 +5,24 @@ import PropTypes from 'prop-types'
 import './faq.css'
 
 const FAQ = (props) => {
-  const [isVisible7, setIsVisible7] = useState(false)
-  const [isVisible9, setIsVisible9] = useState(false)
-  const [isVisible8, setIsVisible8] = useState(false)
-  const [isVisible2, setIsVisible2] = useState(false)
-  const [isVisible3, setIsVisible3] = useState(false)
-  const [isVisible5, setIsVisible5] = useState(false)
-  const [isVisible4, setIsVisible4] = useState(false)
-  const [isVisible1, setIsVisible1] = useState(true)
-  const [isVisible6, setIsVisible6] = useState(false)
+  const [expandedAccordion, setExpandedAccordion] = useState(null);
 
-  console.log(isVisible1)
+  const handleAccordionClick = (accordionId) => {
+    if (expandedAccordion === accordionId) {
+      // Clicked accordion is already expanded, so collapse it
+      setExpandedAccordion(null);
+    } else {
+      // Clicked accordion is not expanded, so expand it
+      setExpandedAccordion(accordionId);
+    }
+  };
+  
   return (
     <div className={`faq-accordion`}>
       <div
         id="1"
         data-role="accordion-container"
-        onClick={() => setIsVisible1(!isVisible1)}
+        onClick={() => handleAccordionClick(1)}
         className="faq-element accordion-element"
       >
         <div className="faq-details">
@@ -36,7 +37,7 @@ const FAQ = (props) => {
               />
             </span>
           </span>
-          {isVisible1 && (
+          {expandedAccordion === 1 && (
             <span data-role="accordion-content" className="faq-text04">
               <span className="">Simplepay-en keresztül, bankkártyával.</span>
               <br className=""></br>
@@ -62,7 +63,7 @@ const FAQ = (props) => {
       <div
         id="2"
         data-role="accordion-container"
-        onClick={() => setIsVisible2(!isVisible2)}
+        onClick={() => handleAccordionClick(2)}
         className="faq-element1 accordion-element"
       >
         <div className="faq-details1">
@@ -70,7 +71,7 @@ const FAQ = (props) => {
             <span className="">Mikor érdemes kezdeni?</span>
             <br className=""></br>
           </span>
-          {isVisible2 && (
+          {expandedAccordion === 2 && (
             <span data-role="accordion-content" className="faq-text11">
               <span className="">
                 Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
@@ -99,7 +100,7 @@ const FAQ = (props) => {
       <div
         id="3"
         data-role="accordion-container"
-        onClick={() => setIsVisible3(!isVisible3)}
+        onClick={() => handleAccordionClick(3)}
         className="faq-element2 accordion-element"
       >
         <div className="faq-details2">
@@ -107,7 +108,7 @@ const FAQ = (props) => {
             <span className="">Csomag vásárlás után egyből él a tagságom?</span>
             <br className=""></br>
           </span>
-          {isVisible3 && (
+          {expandedAccordion === 3 && (
             <span data-role="accordion-content" className="faq-text18">
               <span className="">
                 Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy Telegram
@@ -136,12 +137,12 @@ const FAQ = (props) => {
       <div
         id="4"
         data-role="accordion-container"
-        onClick={() => setIsVisible4(!isVisible4)}
+        onClick={() => handleAccordionClick(4)}
         className="faq-element3 accordion-element"
       >
         <div className="faq-details3">
           <span className="faq-text22">Hol fogom kapni a tippeket?</span>
-          {isVisible4 && (
+          {expandedAccordion === 4 && (
             <span data-role="accordion-content" className="faq-text23">
               Telegram alkalmazásban, egy privát csoportban.
             </span>
@@ -159,7 +160,7 @@ const FAQ = (props) => {
       <div
         id="5"
         data-role="accordion-container"
-        onClick={() => setIsVisible5(!isVisible5)}
+        onClick={() => handleAccordionClick(5)}
         className="faq-element4 accordion-element"
       >
         <div className="faq-details4">
@@ -174,7 +175,7 @@ const FAQ = (props) => {
               />
             </span>
           </span>
-          {isVisible5 && (
+          {expandedAccordion === 5 && (
             <span data-role="accordion-content" className="faq-text28">
               A Telegram egy alkalmazás, amit bármilyen készülékre letölthetsz.
               Az alkalmazás letöltéséhez az adott áruházban (App Store/Google
@@ -200,7 +201,7 @@ const FAQ = (props) => {
       <div
         id="6"
         data-role="accordion-container"
-        onClick={() => setIsVisible6(!isVisible6)}
+        onClick={() => handleAccordionClick(6)}
         className="faq-element5 accordion-element"
       >
         <div className="faq-details5">
@@ -208,7 +209,7 @@ const FAQ = (props) => {
             <span className="">Garancia van?</span>
             <br className=""></br>
           </span>
-          {isVisible6 && (
+          {expandedAccordion === 6 && (
             <span data-role="accordion-content" className="faq-text32">
               <span className="">
                 Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati
@@ -231,7 +232,7 @@ const FAQ = (props) => {
       <div
         id="7"
         data-role="accordion-container"
-        onClick={() => setIsVisible7(!isVisible7)}
+        onClick={() => handleAccordionClick(7)}
         className="faq-element6 accordion-element"
       >
         <div className="faq-details6">
@@ -239,7 +240,7 @@ const FAQ = (props) => {
             <span className="">Mi az a teljes hónap?</span>
             <br className=""></br>
           </span>
-          {isVisible7 && (
+          {expandedAccordion === 7 && (
             <span data-role="accordion-content" className="faq-text38">
               <span className="">
                 Nálunk rendszerben zajlik a befizetés, minden hónap tizedikén
@@ -261,12 +262,12 @@ const FAQ = (props) => {
       <div
         id="8"
         data-role="accordion-container"
-        onClick={() => setIsVisible8(!isVisible8)}
+        onClick={() => handleAccordionClick(8)}
         className="faq-element7 accordion-element"
       >
         <div className="faq-details7">
           <span className="faq-text41">Másik napon elő se tudok fizetni?</span>
-          {isVisible8 && (
+          {expandedAccordion === 8 && (
             <span data-role="accordion-content" className="faq-text42">
               De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk
               neked.
@@ -285,14 +286,14 @@ const FAQ = (props) => {
       <div
         id="9"
         data-role="accordion-container"
-        onClick={() => setIsVisible9(!isVisible9)}
+        onClick={() => handleAccordionClick(9)}
         className="faq-element8 accordion-element"
       >
         <div className="faq-details8">
           <span className="faq-text43">
             Milyen tőke szükséges az indulásomhoz?
           </span>
-          {isVisible9 && (
+          {expandedAccordion === 9 && (
             <span data-role="accordion-content" className="faq-text44">
               Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
               kivételt képez a Silver-Pong csomagunk, amit az előbb említett

@@ -2044,9 +2044,9 @@ button.primary:hover span:after {
 
 .home-section18 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
+  flex: 2;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
@@ -2054,9 +2054,12 @@ button.primary:hover span:after {
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   justify-content: center;
   border-top-width: 1px;
+ 
+
+  
 }
 
 .home-header15 {
@@ -2081,6 +2084,9 @@ button.primary:hover span:after {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
 }
 
 .home-accordion1 {
