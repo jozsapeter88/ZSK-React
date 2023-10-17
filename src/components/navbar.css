@@ -12,16 +12,13 @@
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-fiveunits);
 }
-.navbar-branding-logo {
-  width: 240px;
-  height: 240px;
-  box-sizing: content-box;
-}
+
 .navbar-nav-content {
-  gap: var(--dl-space-space-twounits);
+  gap: var(--dl-space-space-threeunits);
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -30,6 +27,7 @@
 }
 .navbar-packages {
   text-decoration: none;
+  font-size: 24px;
 }
 .navbar-text {
   color: rgba(255, 255, 255, 1);

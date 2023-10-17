@@ -9,11 +9,6 @@ import './navbar.css'
 const Navbar = (props) => {
   return (
     <nav className={`navbar-navbar ${props.rootClassName} `}>
-      <img
-        alt="logo"
-        src={props.BrandingLogo}
-        className="navbar-branding-logo"
-      />
       <div className="navbar-nav-content">
         <NavLinks
           rootClassName="nav-links-root-class-name"

@@ -18,7 +18,7 @@
   -webkit-text-fill-color: transparent;
   width: 400px;
   height: 64px;
-  text-align: start;
+  text-align: center;
   vertical-align: bottom;
   font-style: normal;
   font-weight: 500;
@@ -27,6 +27,12 @@
   line-height: 64px;
   color: rgb(255, 255, 255);
   background-image: -webkit-linear-gradient(top, yellow, green);
+}
+
+.home-branding-logo {
+  width: 400px;
+  height: 400px;
+  box-sizing: content-box;
 }
 
 button.buyBtn {
@@ -133,7 +139,7 @@ button.primary:hover span:after {
 }
 
 .home-section {
-  height: 80vh;
+  height: auto;
   display: flex;
   align-items: center;
   border-color: #51515A;
@@ -169,8 +175,9 @@ button.primary:hover span:after {
   width: 664px;
   height: 500;
   display: flex;
-  align-items: flex-start;
+  align-items:center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .home-header {
@@ -187,6 +194,9 @@ button.primary:hover span:after {
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
+  align-items: center;
+  text-align:center;
+
 }
 
 .home-text003 {
@@ -212,6 +222,7 @@ button.primary:hover span:after {
   font-size: 20px;
   font-family: Poppins;
   line-height: 30px;
+  text-align:center;
 }
 
 .home-buttons {
@@ -2737,18 +2748,16 @@ button.primary:hover span:after {
 }
 
 .home-slide-to-top {
-  flex: 0 0 auto;
-  width: fit-content;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  z-index: 1000;
+  align-self: flex-end;
+  box-shadow: 5px 5px 10px 0px #cde890;
 }
 
 .home-link5 {
   display: contents;
 }
 
-.home-icon20 {
+/*.home-icon20 {
   width: 24px;
   height: 24px;
   opacity: 0.8;
@@ -2756,6 +2765,20 @@ button.primary:hover span:after {
   transition: opacity 0.3 ease-in-out;
   text-decoration: none;
   background-color: aliceblue;
+}*/
+.home-icon20 {
+  right: 50px;
+  width: 70px;
+  bottom: 62px;
+  height: 66px;
+  position: fixed;
+  padding: var(--dl-space-space-halfunit);
+  align-self: center;
+  opacity: 0.8;
+  transition: opacity 0.3 ease-in-out;
+  box-shadow: 5px 5px 10px 0px #cde890;;
+  border-radius: var(--dl-radius-radius-round);
+  background: #cde890;
 }
 
 /*Dialog Styles*/
@@ -2813,8 +2836,21 @@ dialog p a:visited {
 @media(max-width: 1600px) {
   .home-heading {
     width: 670px;
+    text-align:center;
   }
 
+  .home-section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-color: #51515A;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-width: 1px;
+  
+  }
   .home-text003 {
     color: rgb(12, 16, 12);
     font-size: 16px;
@@ -2843,18 +2879,20 @@ dialog p a:visited {
   .home-slide-to-top {
     z-index: 1000;
     align-self: flex-end;
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    box-shadow: 5px 5px 10px 0px #cde890;
+    
   }
 
   .home-icon20 {
-    right: 151px;
+    right: 100px;
     width: 70px;
     bottom: 62px;
     height: 66px;
     padding: var(--dl-space-space-halfunit);
     align-self: center;
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    box-shadow: 5px 5px 10px 0px #cde890;
     border-radius: var(--dl-radius-radius-round);
+    background: #cde890;
   }
 }
 
@@ -2864,6 +2902,18 @@ dialog p a:visited {
     height: 320px;
     width: 500px;
   }
+  .home-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border-color: #51515A;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-width: 1px;
+  
+  }
 }
 
 @media(max-width: 1200px) {
@@ -2872,8 +2922,25 @@ dialog p a:visited {
     height: 100%;
     display: block;
   }
-
+  .home-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border-color: #51515A;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-width: 1px;
+  
+  }
+  .home-branding-logo {
+    width: 400px;
+    height: 400px;
+    box-sizing: content-box;
+  }
   .home-heading {
+    text-align:center;
     width: 664px;
   }
 
@@ -2884,6 +2951,7 @@ dialog p a:visited {
 
   .home-caption {
     width: 650px;
+    text-align:center;
   }
 
   .home-paragraph {
@@ -2982,11 +3050,11 @@ dialog p a:visited {
   }
 
   .home-heading {
-    text-align: left;
+    text-align:center;
   }
 
   .home-caption {
-    text-align: left;
+    text-align: center;
   }
 
   .home-get-started1 {
@@ -3232,6 +3300,7 @@ dialog p a:visited {
     font-size: 16px;
     font-family: Poppins;
     line-height: 24px;
+    text-align:center;
   }
 
   .home-section01 {
@@ -3528,10 +3597,12 @@ dialog p a:visited {
   .home-heading {
     font-size: 40px;
     width: 500px;
+    text-align:center;
   }
 
   .home-caption {
     width: 500px;
+    text-align:center;
   }
 
   .home-image {

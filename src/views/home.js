@@ -22,7 +22,15 @@ const Home = (props) => {
       </Helmet>
       <Navbar rootClassName="navbar-root-class-name"></Navbar>
       <section id="top" className="home-section">
+      <div className="home-logo">
+          <img
+        alt="logo"
+        src={'/Branding/Logo_szines_feketen.png'}
+        className="home-branding-logo"
+      />
+      </div>
         <div className="home-hero">
+         
           <div className="home-content">
             <main className="home-main">
               <header className="home-header">
@@ -37,7 +45,7 @@ const Home = (props) => {
                   </span>
                   <br></br>
                   <span>
-                    =<p className="colorful-text">Befektetés</p>
+                    =<p className="colorful-text home-heading">Befektetés</p>
                   </span>
                 </h1>
                 
