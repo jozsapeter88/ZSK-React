@@ -151,6 +151,50 @@ button.primary:hover span:after {
 
 }
 
+.team-about {
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.team-2 {
+  margin-top: 7vh;
+  margin-bottom: 20vh;
+}
+
+.team-left-column {
+  flex: 3;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.team-right-column {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.right-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tipprofesszor-logo {
+  margin-top: 8vh;
+}
+
+.tippdoktor-logo {
+  margin-top: 7vh;
+}
+
 .home-hero {
   width: 100%;
   height: auto;
@@ -2977,8 +3021,8 @@ dialog p a:visited {
   .home-image {
     padding-top: 2vh;
     padding-bottom: 2vh;
-    width: 600px;
-    height: 350px;
+    width: 500px;
+    height: 300px;
   }
 
   .home-text076 {
@@ -3027,6 +3071,48 @@ dialog p a:visited {
     font-family: Poppins;
     line-height: 28px;
   }
+
+  .team-about {
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  .team-2 {
+    margin-bottom: 15vh;
+  }
+
+  .team-left-column {
+    margin-left: 5vh;
+  }
+
+  .tippdoktor-logo {
+    margin-top: 2vh;
+  }
+}
+
+@media(max-width: 1150px) {
+
+.team-about {
+margin-left: 10vh;
+margin-right: 10vh;
+}
+
+.team-left-column {
+  margin-left: 10vh;
+}
+
+.team-right-column {
+  margin-right: 5vh;
+}
+
+.tipprofesszor-logo {
+  margin-top: 11vh;
+}
+
+.tippdoktor-logo {
+  margin-top: 5vh;
+}
+
 }
 
 @media(max-width: 991px) {
@@ -3284,10 +3370,36 @@ dialog p a:visited {
   .home-copyright1 {
     display: flex;
   }
+
   .home-section08 {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  .team-left-column {
+    font-size: 16px;
+  }
+
+.tipprofesszor-logo {
+  width: 250px;
+  height: 250px;
+  margin-top: 7vh;
+}
+
+.tippdoktor-logo {
+  width: 250px;
+  height: 250px;
+  margin-top: 0;
+}
+
+.team-2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-3 {
+  margin-top: 2vh;
+}
 }
 
 @media(max-width: 767px) {
@@ -3596,6 +3708,15 @@ dialog p a:visited {
     font-weight: 500;
     line-height: 24px;
   }
+
+  .team-3 {
+    margin-top: 7vh;
+  }
+
+  .tippdoktor-logo {
+    margin-top: 4vh;
+  }
+
 }
 
 @media(max-width: 700px) {
@@ -3624,7 +3745,82 @@ dialog p a:visited {
     max-width: 500px;
   }
 
+  .tippdoktor-logo {
+    margin-top: 4vh;
+  }
+
+
 }
+
+@media(max-width: 630px) {
+
+.team-left-column {
+  margin-left: 12vh;
+}
+
+.team-right-column {
+  margin-right: 8vh;
+}
+
+.team-3 {
+  margin-top: 5vh;
+}
+
+.tippdoktor-logo {
+  margin-top: 8vh;
+}
+
+}
+
+@media(max-width: 630px) {
+
+  .team-left-column {
+    margin-left: 14vh;
+  }
+  
+  .team-right-column {
+    margin-right: 10vh;
+  }
+  
+  .team-3 {
+    margin-top: 5vh;
+  }
+
+  .team-about {
+    margin-left: 14vh;
+    margin-right: 14vh;
+  }
+  
+  }
+
+  @media(max-width: 550px) {
+
+    .team-left-column {
+      margin-left: 18vh;
+    }
+    
+    .team-right-column {
+      margin-right: 14vh;
+    }
+
+    .tippdoktor-logo {
+      margin-top: 9vh;
+    }
+
+    .tipprofesszor-logo {
+      margin-top: 10vh;
+    }
+  
+    .team-about {
+      margin-left: 18vh;
+      margin-right: 18vh;
+    }
+    
+    .tippdoktor-logo {
+      margin-top: 16vh;
+    }
+
+    }
 
 @media(max-width: 500px) {
   .home-main {
@@ -3730,7 +3926,7 @@ dialog p a:visited {
 
   .home-paragraph2 {
     width: 100%;
-    heigth: 100%;
+    height: 100%;
   }
 
   .home-text096 {
@@ -3766,6 +3962,40 @@ dialog p a:visited {
     font-weight: 700;
     line-height: 24px;
   }
+
+  .team-left-column {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  
+  .team-right-column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tippdoktor-logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 14vh;
+  }
+
+  .tipprofesszor-logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 10vh;
+  }
+
+  .team-about {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .team-2 {
+    width: 30vh;
+  }
+  
+
+}
 
   @media(max-width: 450px) {
     .home-header {
@@ -3891,7 +4121,7 @@ dialog p a:visited {
   
     .home-paragraph2 {
       width: 100%;
-      heigth: 100%;
+      height: 100%;
     }
   
     .home-text096 {
@@ -3948,4 +4178,3 @@ dialog p a:visited {
       opacity: 1;
     }
   }
-}

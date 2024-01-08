@@ -22,13 +22,13 @@ const Home = (props) => {
       </Helmet>
       <Navbar rootClassName="navbar-root-class-name"></Navbar>
       <section id="top" className="home-section">
-      <div className="home-logo">
+      {/* <div className="home-logo">
           <img
         alt="logo"
         src={'/Branding/Logo_szines_feketen.png'}
         className="home-branding-logo"
       />
-      </div>
+      </div> */}
         <div className="home-hero">
          
           <div className="home-content">
@@ -86,39 +86,34 @@ const Home = (props) => {
       </section>
       <section id="about" className="home-section01">
         <h2 className="home-text008">Kik alkotják csapatunk?</h2>
-        <p className="home-paragraph">
-          <span>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
-          </span>
-          <span>
-            {' '}
-            TippProfesszor és TippDoktor körülbelül 8 éve ismerkedett meg,
-            amikor egy csapatban játszottak, most pedig újra egy csapatot
-            erősítenek, a Zseton Klinikát
-          </span>
-          <br></br>
-          <br></br>
-          <span>
-            {' '}
-            Tippmesterünk több, mint 10 éve profitál sportfogadásból, az utóbbi
-            években pedig az egyéni sportágakra specializálódva üzletszerűen
-            foglalkozik vele. Mindemellett a profi asztalitenisz világában is
-            gyerekkora óta aktívan részt vesz, aminek köszönhetően belső
-            tapasztalatokra is tud alapozni a tippek megalkotásakor.
-          </span>
-          <br></br>
-          <span>
-            {' '}
-            Tippkuktánk a Zseton Klinika megálmodója, emellett aktív sportoló és
-            hobbi szinten pingpongozik, a sportfogadás profitábilis oldalával
-            pedig tippmesterünk által ismerkedett meg. Miért válassz minket?
-          </span>
+        <div className="home-paragraph">
+      <div className="team-about">
+        TippProfesszor és TippDoktor körülbelül 8 éve ismerkedett meg, amikor egy csapatban játszottak, most pedig újra egy csapatot erősítenek, a Zseton Klinikát!
+      </div>
+  <div className="team">
+    <div className="team-left-column">
+      <br></br>
+      <br></br>
+      <div className="team-2">
+        Két sportdiplomával rendelkező Tipprofesszorunk több, mint 10 éve profitál sportfogadásból,
+        az utóbbi években pedig az egyéni sportágakra specializálódva üzletszerűen foglalkozik vele.
+        Mindemellett a profi asztalitenisz világában is gyerekkora óta aktívan vesz részt, aminek köszönhetően nem csak az objektív elemekre,
+        hanem a rendkívül lényeges szubjektív tényezőkre is alapoz a tippek megalkotásakor.
+      </div>
+      <br></br>
+      <div className="team-3">
+        Tippdoktorunk a Zsetonklinika megálmodója, emellett aktív sportoló és hobbi szinten pingpongozik,
+         a sportfogadás profitábilis oldalával pedig Tipprofesszorunk által ismerkedett meg.
+      </div>
+    </div>
+    <div className="team-right-column">
+      <img src="/SectionImages/tipprofesszor.png" alt="tipprofesszor" height="300px" width="300px" className="tipprofesszor-logo"></img>
+      <img src="/SectionImages/tippdoktor.png" alt="tippdoktor" height="300px" width="300px" className="tippdoktor-logo"></img>
+    </div>
+  </div>
           <br className="home-text016"></br>
           <br className="home-text017"></br>
+          <div className='why-us'>
           <span className="home-text018">Miért pont mi?</span>
           <br className="home-text019"></br>
           <br className="home-text020"></br>
@@ -157,10 +152,9 @@ const Home = (props) => {
             Mi kell még? Egy boldogító igen. egy jó döntés választ el a
             profitábilis sportfogadástól.
           </span>
-          <br className="home-text033"></br>
-          <br className="home-text034"></br>
+          </div>
           <br></br>
-        </p>
+        </div>
       </section>
       <section className="home-section02">
       <div class="row">
