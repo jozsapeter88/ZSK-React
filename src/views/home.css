@@ -31,15 +31,14 @@
 }
 
 .colorful-text2 {
-  background: -webkit-linear-gradient(yellow, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-family: Poppins;
   font-size: 16px;
   color: rgb(255, 255, 255);
-  background-image: -webkit-linear-gradient(top, yellow, green);
+  background-image: -webkit-linear-gradient(left, rgb(255, 251, 0), rgb(65, 204, 0));
 }
 
 .home-branding-logo {
@@ -740,6 +739,33 @@ button.primary:hover span:after {
 }
 
 .home-plan:hover {
+  border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
+  transition: border 0.5s, box-shadow 0.5s;
+}
+
+.home-plan0 {
+  gap: var(--dl-space-space-threeunits);
+  flex: 1;
+  height: 80vh;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+  justify-content: flex-start;
+  background-color: #292929;
+  align-items: center;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.5s ease;
+}
+
+.home-plan0:hover {
   border: 2px solid gold;
   box-shadow: 0 0 10px gold;
   transition: border 0.5s, box-shadow 0.5s;
@@ -2809,6 +2835,14 @@ button.primary:hover span:after {
   z-index: 1000;
   align-self: flex-end;
   box-shadow: 5px 5px 10px 0px #cde890;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.home-slide-to-top.visible {
+  display: block;
+opacity: 1;
 }
 
 .home-link5 {
