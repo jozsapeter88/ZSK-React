@@ -2849,15 +2849,6 @@ opacity: 1;
   display: contents;
 }
 
-/*.home-icon20 {
-  width: 24px;
-  height: 24px;
-  opacity: 0.8;
-  position: fixed;
-  transition: opacity 0.3 ease-in-out;
-  text-decoration: none;
-  background-color: aliceblue;
-}*/
 .home-icon20 {
   right: 50px;
   width: 70px;
@@ -2941,8 +2932,8 @@ dialog p a:visited {
     flex-direction: column;
     justify-content: center;
     border-bottom-width: 1px;
-  
   }
+
   .home-text003 {
     color: rgb(12, 16, 12);
     font-size: 16px;

@@ -4,15 +4,11 @@ import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
 import Includes from '../components/includes'
-import FlipCard from '../components/flip-card'
-import Mark from '../components/mark'
 import Card from '../components/card'
 import Accordion from '../components/accordion'
-import Review from '../components/review'
-import Article from '../components/article'
 import './home.css'
-import FAQ from '../components/faq'
 import BackToTopButton from '../components/backtotop'
+
 
 const Home = (props) => {
   return (
@@ -988,130 +984,12 @@ const Home = (props) => {
           ></Card>
         </main>
       </section>
-      <section className="home-section11">
-        <div className="home-note1">
-          <div className="home-image4">
-            <img
-              alt="image"
-              src="/SectionImages/iphone%2014%20pro%20max-1200w.png"
-              className="home-image5"
-            />
-          </div>
-          <div className="home-content2">
-            <div className="home-caption1">
-              <span className="section-head">Tempor incididunt</span>
-            </div>
-            <div className="home-heading12">
-              <div className="home-header11">
-                <h2 className="section-heading">
-                  Tips to get care, answers and advice faster
-                </h2>
-              </div>
-              <Accordion rootClassName="accordion-root-class-name"></Accordion>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-section13">
-        <div className="home-cube">
-          <div className="home-top side"></div>
-          <div className="home-front side"></div>
-          <div className="home-left2 side"></div>
-        </div>
-        <main className="home-banner">
-          <div className="home-header12">
-            <h2 className="section-heading">
-              Planical makes online doctor visits easier
-            </h2>
-            <p className="home-description section-description">
-              Lorem ipsum dolor sit amet!
-            </p>
-          </div>
-          <div className="home-buttons2">
-            <div className="home-get-started2 button">
-              <span className="home-text117">Get started</span>
-            </div>
-            <div className="home-book-demo button">
-              <span className="home-text118">Book a demo</span>
-            </div>
-          </div>
-        </main>
-      </section>
-      <section className="home-section14">
-        <header className="home-header13">
-          <header className="home-left3">
-            <span className="section-head">Vélemények</span>
-            <h2 className="home-heading15 section-heading">
-              Amiket ügyfeleink mondanak rólunk
-            </h2>
-          </header>
-          <div className="home-right2">
-            <p className="home-paragraph5 section-description">
-              Számunkra nagyon fontos ügyfeleink visszajelzése, mert így
-              tudhatjuk, hogy jól dolgozunk.
-            </p>
-          </div>
-        </header>
-        <main className="home-cards1">
-          <div className="home-container5">
-            <Review rootClassName="review-root-class-name"></Review>
-            <Review
-              Quote="“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.\u2028\u2028Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.”"
-              rootClassName="review-root-class-name"
-            ></Review>
-          </div>
-          <div className="home-container6">
-            <Review
-              Quote="“Illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
-              rootClassName="review-root-class-name"
-            ></Review>
-            <Review
-              Quote="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.”"
-              rootClassName="review-root-class-name"
-            ></Review>
-          </div>
-          <div className="home-container7">
-            <Review
-              Quote="“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
-              rootClassName="review-root-class-name"
-            ></Review>
-            <Review
-              Quote="“Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.”"
-              rootClassName="review-root-class-name"
-            ></Review>
-          </div>
-        </main>
-        <div className="home-view-more">
-          <p className="home-text119">View more</p>
-        </div>
-      </section>
-      <section className="home-section16">
-        <header className="home-header14">
-          <span className="section-head">Articles about us</span>
-          <h2 className="home-heading16 section-heading">
-            We’re the app on everyone’s lips
-          </h2>
-        </header>
-        <main className="home-cards2">
-          <Article rootClassName="article-root-class-name"></Article>
-          <Article
-            Header="techeu"
-            SpecialHeader="eu"
-            rootClassName="article-root-class-name"
-          ></Article>
-          <Article
-            Header="sifted/"
-            rootClassName="article-root-class-name"
-          ></Article>
-        </main>
-      </section>
       <section id="faq" className="home-section18">
         <header className="home-header15">
           <span className="section-head">Gyakran Ismételt Kérdések</span>
         </header>
         <main className="home-accordion">
-          {/* Replace the existing section with the FAQ component */}
-          <FAQ />
+          <Accordion />
         </main>
       </section>
       <footer className="home-footer">

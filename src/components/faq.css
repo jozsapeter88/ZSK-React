@@ -1,22 +1,30 @@
 .faq-accordion {
   width: 100%;
   display: flex;
-  
-  transition: 0.3s;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   bottom: 150px;
-  
 }
 
 .faq-element {
   width: 100%;
   max-width: 800px;
+  overflow: hidden;
+  /* Ensure content overflow is hidden */
+  transition: max-height 0.3s ease;
+  /* Add a smooth transition to max-height */
+  max-height: 60px;
+  /* Set a maximum height for the closed state */
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
+.faq-element.expanded {
+  max-height: 500px; /* Set a maximum height for the expanded state */
+}
+
 .faq-details {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -25,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -34,6 +43,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text04 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -41,20 +51,24 @@
   line-height: 24px;
   user-select: text;
 }
+
 .faq-icons {
   position: relative;
 }
+
 .faq-icon {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element1 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details1 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -63,6 +77,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text08 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -72,6 +87,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text11 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -79,17 +95,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon02 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element2 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details2 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -98,6 +117,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text15 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -107,6 +127,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text18 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -114,17 +135,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon04 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element3 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details3 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -133,6 +157,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text22 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -142,6 +167,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text23 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -149,17 +175,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon06 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element4 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details4 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -168,6 +197,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text24 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -177,6 +207,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text26 {
   color: #ffffff;
   font-size: 20px;
@@ -185,6 +216,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text28 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -192,17 +224,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon08 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element5 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details5 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -211,6 +246,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text29 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -220,6 +256,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text32 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -227,17 +264,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon10 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element6 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details6 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -246,6 +286,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text35 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -255,6 +296,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text38 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -262,17 +304,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon12 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element7 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details7 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -281,6 +326,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text41 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -290,6 +336,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text42 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -297,17 +344,20 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon14 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
+
 .faq-element8 {
   width: 100%;
   max-width: 800px;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
+
 .faq-details8 {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
@@ -316,6 +366,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .faq-text43 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -325,6 +376,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .faq-text44 {
   color: rgb(204, 204, 204);
   width: 100%;
@@ -332,6 +384,7 @@
   line-height: 28px;
   user-select: text;
 }
+
 .faq-icon16 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-xsmall);
@@ -347,6 +400,7 @@
     font-weight: 500;
     line-height: 28px;
   }
+
   .faq-text02 {
     color: #ffffff;
     font-size: 20px;
@@ -355,66 +409,81 @@
     font-weight: 500;
     line-height: 28px;
   }
+
   .faq-text04 {
     color: rgb(204, 204, 204);
     font-family: Poppins;
     line-height: 24px;
   }
+
   .faq-text11 {
     color: rgb(204, 204, 204);
     font-family: Poppins;
     line-height: 28px;
   }
 }
+
 @media(max-width: 767px) {
   .faq-text {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text01 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text03 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text08 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text15 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text22 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text24 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text25 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text27 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text29 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text35 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text41 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq-text43 {
     font-size: 16px;
     line-height: 24px;

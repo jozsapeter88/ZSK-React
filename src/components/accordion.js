@@ -6,92 +6,206 @@ import './accordion.css'
 
 const Accordion = (props) => {
   return (
-    <div className={`accordion-accordion ${props.rootClassName} `}>
-      <div data-role="accordion-container" className="accordion-element">
-        <div className="accordion-details">
-          <span className="accordion-text">{props.text}</span>
-          <span data-role="accordion-content" className="accordion-text1">
-            {props.text1}
-          </span>
-        </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          data-role="accordion-icon"
-          className="accordion-icon"
-        >
-          <path
-            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-            className=""
-          ></path>
-        </svg>
+    <div className={`accordion-accordion ${props.rootClassName} accordion-section`}>
+      <section>
+    <div class="container">
+      <div class="accordion">
+        <div class="accordion-item" id="question1">
+          <a class="accordion-link" href="#question1">
+            <div class="flex">
+              <h3>Hogyan lehet befizetni?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p> Simplepay-en keresztül, bankkártyával.</p>
+          </div>
+          <hr></hr>
       </div>
-      <div
-        data-role="accordion-container"
-        className="accordion-element1 accordion-element"
-      >
-        <div className="accordion-details1">
-          <span className="accordion-text2">{props.text2}</span>
-          <span data-role="accordion-content" className="accordion-text3">
-            {props.text3}
-          </span>
-        </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          data-role="accordion-icon"
-          className="accordion-icon2"
-        >
-          <path
-            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-            className=""
-          ></path>
-        </svg>
+        <div class="accordion-item" id="question2">
+          <a class="accordion-link" href="#question2">
+            <div class="flex">
+              <h3>Mikor érdemes kezdeni?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Azonnal, és miért? Nem érdemes habozni, mert lehet, hogy egy
+                kiugró szériáról maradsz le éppen.</p>
+          </div>
+          <hr></hr>
       </div>
-      <div
-        data-role="accordion-container"
-        className="accordion-element2 accordion-element"
-      >
-        <div className="accordion-details2">
-          <span className="accordion-text4">{props.text4}</span>
-          <span data-role="accordion-content" className="accordion-text5">
-            {props.text5}
-          </span>
-        </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          data-role="accordion-icon"
-          className="accordion-icon4"
-        >
-          <path
-            d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-            className=""
-          ></path>
-        </svg>
+        <div class="accordion-item" id="question3">
+          <a class="accordion-link" href="#question3">
+            <div class="flex">
+              <h3>Csomag vásárlás után egyből él a tagságom?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Amint sikeresen feldolgoztuk a tranzakciót, kapsz egy Telegram
+                linket tőlünk, amivel csatlakozni tudsz a csoporthoz.</p>
+          </div>
+          <hr></hr>
       </div>
+        <div class="accordion-item" id="question4">
+          <a class="accordion-link" href="#question4">
+            <div>
+              <h3>Hol fogom kapni a tippeket?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Telegram alkalmazásban, egy privát csoportban.</p>
+          </div>
+          <hr></hr>
+      </div>
+      <div class="accordion-item" id="question5">
+          <a class="accordion-link" href="#question5">
+            <div>
+              <h3>Mi az a Telegram?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>A Telegram egy alkalmazás, amit bármilyen készülékre letölthetsz.
+              Az alkalmazás letöltéséhez az adott áruházban (App Store/Google
+              Play) a Telegram applikációra kell rákeresned, majd azt letölteni.
+              A letöltést követően a telefonszámod megadásával regisztrálhatsz.</p>
+          </div>
+          <hr></hr>
+      </div>
+      <div class="accordion-item" id="question6">
+          <a class="accordion-link" href="#question6">
+            <div>
+              <h3>Garancia van?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Van! A megjelölt csomagoknál, méghozzá akkor, ha a találati
+                arány nem éri el a 60%-ot. Ez azokra az előfizetőkre vonatkozik,
+                akik teljes hónapra fizettek elő.</p>
+          </div>
+          <hr></hr>
+      </div>
+      <div class="accordion-item" id="question7">
+          <a class="accordion-link" href="#question7">
+            <div>
+              <h3>Mi az a teljes hónap?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Nálunk rendszerben zajlik a befizetés, minden hónap tizedikén
+                délig várjuk az előfizetések megújítását.</p>
+          </div>
+          <hr></hr>
+      </div>
+      <div class="accordion-item" id="question8">
+          <a class="accordion-link" href="#question8">
+            <div>
+              <h3>Másik napon elő se tudok fizetni?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>De, méghozzá úgy, hogy a csomag árát időarányosan kiszámoljuk
+              neked.</p>
+          </div>
+          <hr></hr>
+      </div>
+      <div class="accordion-item" id="question9">
+          <a class="accordion-link" href="#question9">
+            <div>
+              <h3>Milyen tőke szükséges az indulásomhoz?</h3>
+              <ul>
+                {/* <li>#Figma</li>
+                <li>#Sketch</li>
+                <li>#Adobe</li>
+                <li>#Invision</li>
+                <li>#Protopie</li> */}
+              </ul>
+            </div>
+            <i class="icon ion-md-arrow-forward"></i>
+            <i class="icon ion-md-arrow-down"></i>
+          </a>
+          <div class="answer">
+            <p>Mi azt javasoljuk, hogy legalább 150.000 forintos tőkével indulj,
+              kivételt képez a Silver-Pong csomagunk, amit az előbb említett
+              tőke összegyűjtésére hoztunk létre neked.</p>
+          </div>
+          <hr></hr>
+      </div>
+     </div>
+    </div>
+  </section>
     </div>
   )
-}
-
-Accordion.defaultProps = {
-  text2: 'Nemo enim ipsam voluptatem quia voluptas',
-  text1:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
-  text: 'Aliquam quaerat voluptatem',
-  text4: 'Magnam aliquam quaerat voluptatem',
-  text5:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
-  text3:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud',
-  rootClassName: '',
-}
-
-Accordion.propTypes = {
-  text2: PropTypes.string,
-  text1: PropTypes.string,
-  text: PropTypes.string,
-  text4: PropTypes.string,
-  text5: PropTypes.string,
-  text3: PropTypes.string,
-  rootClassName: PropTypes.string,
 }
 
 export default Accordion
