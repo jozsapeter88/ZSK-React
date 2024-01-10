@@ -3828,15 +3828,15 @@ dialog p a:visited {
 
   .home-heading {
     align-self: center;
-   }
+  }
 
   .home-caption {
-   align-self: center;
+    align-self: center;
   }
 
   .home-image {
     margin: 0;
-   }
+  }
 
   .why-us {
     margin-left: 0;
@@ -4020,7 +4020,7 @@ dialog p a:visited {
 @media(max-width: 450px) {
 
 
-  
+
   .home-header {
     width: 449px;
     align-items: flex-start;
@@ -4030,11 +4030,12 @@ dialog p a:visited {
     width: 450px;
   }
 
-    .home-image {
-      padding-right: 2vh;
-      padding-left: 3vh;
-  
-    }
+  .home-image {
+    padding-right: 2vh;
+    padding-left: 3vh;
+
+  }
+
   .home-buttons {
     font-size: 12px;
   }
@@ -4175,46 +4176,59 @@ dialog p a:visited {
     text-align: center;
   }
 
-.tippdoktor-logo {
-  padding-left: 0vh;
-  margin-right: 1vh;
-  margin-top: 12.5vh;
-}
-
-.tipprofesszor-logo {
-  padding-left: 0vh;
-  margin-right: 1vh
-}
-
-.team-left-column {
-  width: 25vh;
-}
-
-.team-2 {
-  width: 25vh;
-}
-
-.home-section03 {
-  padding-top: 20vh;  
-  padding-bottom: 20vh;
-  height: 20vh;
-}
-
-}
-
-@media(max-width: 420px) {
-
-  .home-image {
-    padding-left: 6vh;
-    padding-right: 5vh;
+  .tippdoktor-logo {
+    padding-left: 0vh;
+    margin-right: 1vh;
+    margin-top: 12.5vh;
   }
 
-  .home-section {
-    padding-bottom: 17vh;
+  .tipprofesszor-logo {
+    padding-left: 0vh;
+    margin-right: 1vh
   }
 
   .team-left-column {
-    width: 20vh;
+    width: 25vh;
+  }
+
+  .team-2 {
+    width: 25vh;
+  }
+
+  .home-section03 {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    height: 20vh;
+  }
+
+}
+
+@media(max-width: 414px) {
+
+  .home-image {
+    width: 95%;
+  }
+
+  .home-heading {
+    font-size: 34px;
+  }
+
+  .home-caption {
+    width: 350px;
+  }
+
+  .home-buttons {
+    display: inline;
+  }
+
+  .home-section {
+    width: 95%;
+    align-self: center;
+    align-items: center;
+  }
+
+  .team-left-column {
+    width: 22vh;
   }
 
   .team-2 {
@@ -4226,23 +4240,27 @@ dialog p a:visited {
   }
 
   .tipprofesszor-logo {
-    margin-top: 15vh;
+    margin-top: 22vh;
+  }
+
+  .tippdoktor-logo {
+    margin-top: 22vh;
   }
 
   .home-plan {
-    width: 80%;
+    width: 95%;
   }
 
   .home-plan0 {
-    width: 80%;
+    width: 95%;
   }
 
   .home-plan1 {
-    width: 80%;
+    width: 95%;
   }
 
   .home-plan2 {
-    width: 80%;
+    width: 95%;
   }
 
   .home-text076 {
