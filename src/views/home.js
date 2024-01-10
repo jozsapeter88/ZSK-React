@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import Navbar from '../components/navbar'
-import Includes from '../components/includes'
-import Card from '../components/card'
-import Accordion from '../components/accordion'
-import './home.css'
-import BackToTopButton from '../components/backtotop'
-
+import Navbar from "../components/navbar";
+import Includes from "../components/includes";
+import Card from "../components/card";
+import Accordion from "../components/accordion";
+import "./home.css";
+import BackToTopButton from "../components/backtotop";
 
 const Home = (props) => {
   return (
@@ -227,14 +226,19 @@ const Home = (props) => {
             </header>
             <div className="home-plans-container">
               <main className="home-plans">
-                <div className="home-plan0" style={{ height: "95vh"}}>
+                <div className="home-plan0" style={{ height: "95vh" }}>
                   <div className="home-details">
                     <div className="home-header03">
                       <label className="home-name">Ping-Gold</label>
                     </div>
                   </div>
                   <div className="home-buy-details">
-                  <img src="/SectionImages/pinggold.png" alt="pinggold" width="150px" height="150px"></img>
+                    <img
+                      src="/SectionImages/pinggold.png"
+                      alt="pinggold"
+                      width="150px"
+                      height="150px"
+                    ></img>
                     <div className="home-features">
                       <span className="home-heading03">Tartalmazza:</span>
                       <div className="home-list">
@@ -273,13 +277,14 @@ const Home = (props) => {
                     <span>Megnézem</span>
                   </button>
 
-                  <dialog id="dialog" style={{width: "100vh"}}>
+                  <dialog id="dialog" style={{ width: "100vh" }}>
                     <h2>50.000 ft</h2>
                     <p>
-                      Ez az összeállítás azoknak szól, akik hosszú távon szeretnének a
-                      sportfogadással foglalkozni, úgy, hogy az profitot is
-                      termeljen. 
-                      <br></br><br></br>Ebben az összeállításban Tipprofesszorunk által
+                      Ez az összeállítás azoknak szól, akik hosszú távon
+                      szeretnének a sportfogadással foglalkozni, úgy, hogy az
+                      profitot is termeljen.
+                      <br></br>
+                      <br></br>Ebben az összeállításban Tipprofesszorunk által
                       analizált objektív és szubjektív statisztikákra és
                       emellett aktuális formaelemzésekre alapuló tippekhez
                       férhetnek hozzá.
@@ -303,14 +308,19 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan1" style={{ height: "95vh"}}>
+                <div className="home-plan1" style={{ height: "95vh" }}>
                   <div className="home-details01">
                     <div className="home-header04">
                       <label className="home-name1">Silver-Pong</label>
                     </div>
                   </div>
                   <div className="home-buy-details">
-                  <img src="/SectionImages/silverpong.png" alt="silverpong" width="150px" height="150px"></img>
+                    <img
+                      src="/SectionImages/silverpong.png"
+                      alt="silverpong"
+                      width="150px"
+                      height="150px"
+                    ></img>
                     <div className="home-features1">
                       <span className="home-heading04">Tartalmazza:</span>
                       <div className="home-list1">
@@ -340,24 +350,27 @@ const Home = (props) => {
                     <span>Megnézem</span>
                   </button>
 
-                  <dialog id="dialog1" style={{width: "100vh"}}>
+                  <dialog id="dialog1" style={{ width: "100vh" }}>
                     <h2>30.000 ft</h2>
                     <p>
                       Ez a csomag azoknak szól, akik kisebb tőkével
                       rendelkeznek, de kipróbálnák magukat az asztalitenisz
-                      világában. 
-                      <br></br><br></br>Ezekben az összeállításokban Tippdoktorunk
-                      által analizált statisztikákra és aktuális
-                      formaelemzésekre alapuló tippjei szerint fogadhatnak, Tippmesterünk koordinációja mellett. 
-                      <br></br><br></br>Tökéletes kezdőcsomag
-                      ahhoz, hogy idővel szintet lépve a Ping-Gold tagjai
-                      lehessenek. 
-                      <br></br><br></br>E csomag fő célja, hogy fenntartsa a
-                      lehetőséget a kisebb tőkével rendelkező potenciális
-                      ügyfeleknek, a későbbi Ping-Gold csomaghoz való
-                      csatlakozáshoz. 
-                      <br></br><br></br>Ebből kifolyólag, ebben az előfizetésben
-                      maximum 2 hónapot lehet tölteni!
+                      világában.
+                      <br></br>
+                      <br></br>Ezekben az összeállításokban Tippdoktorunk által
+                      analizált statisztikákra és aktuális formaelemzésekre
+                      alapuló tippjei szerint fogadhatnak, Tippmesterünk
+                      koordinációja mellett.
+                      <br></br>
+                      <br></br>Tökéletes kezdőcsomag ahhoz, hogy idővel szintet
+                      lépve a Ping-Gold tagjai lehessenek.
+                      <br></br>
+                      <br></br>E csomag fő célja, hogy fenntartsa a lehetőséget
+                      a kisebb tőkével rendelkező potenciális ügyfeleknek, a
+                      későbbi Ping-Gold csomaghoz való csatlakozáshoz.
+                      <br></br>
+                      <br></br>Ebből kifolyólag, ebben az előfizetésben maximum
+                      2 hónapot lehet tölteni!
                     </p>
                     <button
                       onClick={() => window.dialog1.close()}
@@ -378,13 +391,18 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan2" style={{ height: "95vh"}}>
+                <div className="home-plan2" style={{ height: "95vh" }}>
                   <div className="home-details02">
                     <div className="home-header05">
                       <label className="home-name2">Safety-Days</label>
                     </div>
                   </div>
-                  <img src="/SectionImages/safetydays.png" alt="safetydays" width="150px" height="150px"></img>
+                  <img
+                    src="/SectionImages/safetydays.png"
+                    alt="safetydays"
+                    width="150px"
+                    height="150px"
+                  ></img>
                   <div className="home-buy-details2">
                     <div className="home-features2">
                       <span className="home-heading05">Tartalmazza:</span>
@@ -419,22 +437,25 @@ const Home = (props) => {
                     <span>Megnézem</span>
                   </button>
 
-                  <dialog id="dialog2" style={{width: "100vh"}}>
+                  <dialog id="dialog2" style={{ width: "100vh" }}>
                     <h2>50.000</h2>
                     <p>
                       Ez a csomag azoknak szól, akik lassabban és
                       biztonságosabban, hosszú távon szeretnének a
                       sportfogadással foglalkozni, úgy, hogy az profitot is
-                      termeljen. 
-                      <br></br><br></br>Ebben az összeállításban Tipprofesszorunk és
+                      termeljen.
+                      <br></br>
+                      <br></br>Ebben az összeállításban Tipprofesszorunk és
                       Tippdoktorunk által közösen analizált statisztikákra és
                       aktuális formaelemzésekre alapuló tippjeire fogadhatnak.
-                      <br></br><br></br>Mivel napi 1 tipp ajánlás érkezik a délelőtt folyamán, így
-                      akinek esetleg kevesebb ideje van a hétköznapokban a
-                      sportfogadással foglalkozni, annak ez a csomag tökéletes
-                      választás lehet. 
-                      <br></br><br></br>Ettől függetlenül kiegészítő csomagként
-                      ajánljuk bármelyik asztalitenisz csoportunk mellé.
+                      <br></br>
+                      <br></br>Mivel napi 1 tipp ajánlás érkezik a délelőtt
+                      folyamán, így akinek esetleg kevesebb ideje van a
+                      hétköznapokban a sportfogadással foglalkozni, annak ez a
+                      csomag tökéletes választás lehet.
+                      <br></br>
+                      <br></br>Ettől függetlenül kiegészítő csomagként ajánljuk
+                      bármelyik asztalitenisz csoportunk mellé.
                     </p>
                     <button
                       onClick={() => window.dialog2.close()}
@@ -457,15 +478,20 @@ const Home = (props) => {
                 </div>
               </main>
               <main className="home-plans1">
-              <div className="home-plan" style={{height:"70vh"}}>
+                <div className="home-plan" style={{ height: "70vh" }}>
                   <div className="home-details04">
                     <div className="home-header07">
                       <label className="home-name">Green-Health</label>
                     </div>
                   </div>
-                  <div className=''>
-                <img src="/SectionImages/greenhealth.png" alt="penzdoki" width="300px" height="300px"></img>
-                </div>
+                  <div className="">
+                    <img
+                      src="/SectionImages/greenhealth.png"
+                      alt="penzdoki"
+                      width="300px"
+                      height="300px"
+                    ></img>
+                  </div>
                   <div className="home-buy-details4">
                     <div className="home-features4">
                       <span className="home-heading07">Tartalmazza:</span>
@@ -518,15 +544,20 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan" style={{height:"70vh"}}>
+                <div className="home-plan" style={{ height: "70vh" }}>
                   <div className="home-details05">
                     <div className="home-header08">
                       <label className="home-name">Green-Harmony</label>
                     </div>
                   </div>
-                  <div className=''>
-                <img src="/SectionImages/greenharmony.png" alt="penzdoki" width="300px" height="300px"></img>
-                </div>
+                  <div className="">
+                    <img
+                      src="/SectionImages/greenharmony.png"
+                      alt="penzdoki"
+                      width="300px"
+                      height="300px"
+                    ></img>
+                  </div>
                   <div className="home-buy-details5">
                     <div className="home-features5">
                       <span className="home-heading08">Tartalmazza:</span>
@@ -579,15 +610,20 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan" style={{height:"70vh"}}>
+                <div className="home-plan" style={{ height: "70vh" }}>
                   <div className="home-details05">
                     <div className="home-header08">
                       <label className="home-name">Gold-Harmony</label>
                     </div>
                   </div>
-                  <div className=''>
-                <img src="/SectionImages/goldharmony.png" alt="penzdoki" width="300px" height="300px"></img>
-                </div>
+                  <div className="">
+                    <img
+                      src="/SectionImages/goldharmony.png"
+                      alt="penzdoki"
+                      width="300px"
+                      height="300px"
+                    ></img>
+                  </div>
                   <div className="home-buy-details5">
                     <div className="home-features5">
                       <span className="home-heading08">Tartalmazza:</span>
@@ -652,14 +688,19 @@ const Home = (props) => {
           </header>
           <div className="home-plans-container">
             <main className="home-plans">
-              <div className="home-plan" style={{ height: "60vh"}}>
+              <div className="home-plan" style={{ height: "60vh" }}>
                 <div className="home-details04">
                   <div className="home-header07">
                     <label className="home-name">PénzDoki kurzus</label>
                   </div>
                 </div>
-                <div className='home-header-image'>
-                <img src="/SectionImages/penzdoki.png" alt="penzdoki" width="300px" height="300px"></img>
+                <div className="home-header-image">
+                  <img
+                    src="/SectionImages/penzdoki.png"
+                    alt="penzdoki"
+                    width="300px"
+                    height="300px"
+                  ></img>
                 </div>
                 <div className="home-buy-details3">
                   <div className="home-features3">
@@ -692,13 +733,12 @@ const Home = (props) => {
                       a szolgáltatás, létrehoztunk egy Telegram beszélgetős
                       csoportot, ahol a{" "}
                       <span className="colorful-text2"> Pénzdoki kurzust </span>
-                      elvégzett társakkal meg
-                      tudjátok beszélni meglátásaitokat, elemzéseiteket és több
-                      szem többet lát alapon, akár közösen is fogadhattok,
-                      profitálhattok. Nem mellesleg a csoportban
-                      Tipprofesszorunk is félaktívan résztvesz majd, ő is ki
-                      tudja egészíteni meglátásaitokat, kérdéseiteket fel
-                      tudjátok tenni neki. A kurzus sikeres elvégzése után,
+                      elvégzett társakkal meg tudjátok beszélni meglátásaitokat,
+                      elemzéseiteket és több szem többet lát alapon, akár
+                      közösen is fogadhattok, profitálhattok. Nem mellesleg a
+                      csoportban Tipprofesszorunk is félaktívan résztvesz majd,
+                      ő is ki tudja egészíteni meglátásaitokat, kérdéseiteket
+                      fel tudjátok tenni neki. A kurzus sikeres elvégzése után,
                       postázásra kerül a névre szóló Zsetonklinika diplomád.
                     </div>
 
@@ -747,14 +787,19 @@ const Home = (props) => {
                 </dialog>
                 <br />
               </div>
-              <div className="home-plan" style={{ height: "60vh"}}>
+              <div className="home-plan" style={{ height: "60vh" }}>
                 <div className="home-details04">
                   <div className="home-header07">
                     <label className="home-name">Konzultáció</label>
                   </div>
                 </div>
-                <div className='home-header-image'>
-                <img src="/SectionImages/konzultacio.png" alt="penzdoki" width="300px" height="300px"></img>
+                <div className="home-header-image">
+                  <img
+                    src="/SectionImages/konzultacio.png"
+                    alt="penzdoki"
+                    width="300px"
+                    height="300px"
+                  ></img>
                 </div>
                 <div className="home-buy-details3">
                   <div className="home-features3">
@@ -820,7 +865,7 @@ const Home = (props) => {
                 </dialog>
                 <br />
               </div>
-              <div className="home-plan" style={{ height: "60vh"}}>
+              <div className="home-plan" style={{ height: "60vh" }}>
                 <div className="home-details05">
                   <div className="home-header08">
                     <label className="home-name">
@@ -828,15 +873,18 @@ const Home = (props) => {
                     </label>
                   </div>
                 </div>
-                <div className=''>
-                <img src="/SectionImages/jatekosallomany.png" alt="penzdoki" width="300px" height="300px"></img>
+                <div className="">
+                  <img
+                    src="/SectionImages/jatekosallomany.png"
+                    alt="penzdoki"
+                    width="300px"
+                    height="300px"
+                  ></img>
                 </div>
                 <div className="home-buy-details5">
                   <div className="home-features5">
                     <span className="home-heading08"></span>
-                    <div className="home-list5">
-                      
-                    </div>
+                    <div className="home-list5"></div>
                   </div>
                 </div>
                 <button
@@ -846,13 +894,22 @@ const Home = (props) => {
                   <span>Megnézem</span>
                 </button>
 
-                <dialog id="dialog10" style={{width: "100vh"}}>
+                <dialog id="dialog10" style={{ width: "100vh" }}>
                   <h2>500.000 / 250.000</h2>
                   <p>
-                  Azoknak, akik sikeresen diplomát szereztek a Pénzdoki kurzusunkon!
-                  <br></br><br></br>Tipprofesszorunk és Tippdoktorunk közösen kielemezték a liga (majdnem) összes játékosát! Egy komplex szempontrendszer alapján, amit Tipprofesszorunk dolgozott ki az eddig látott 6-8 ezer asztalitenisz mérkőzés során. Végigmentek a játékosok legtöbb tulajdonságán, olyanokon is, amelyekre más nem gondolna.
-
-                  <br></br><br></br>Több hónapnyi kőkemény munka, energia, fogadási stratégián alapuló szempontok és tűpontos, extrafontos információk várnak rád, ha elkötelezed magad!
+                    Azoknak, akik sikeresen diplomát szereztek a Pénzdoki
+                    kurzusunkon!
+                    <br></br>
+                    <br></br>Tipprofesszorunk és Tippdoktorunk közösen
+                    kielemezték a liga (majdnem) összes játékosát! Egy komplex
+                    szempontrendszer alapján, amit Tipprofesszorunk dolgozott ki
+                    az eddig látott 6-8 ezer asztalitenisz mérkőzés során.
+                    Végigmentek a játékosok legtöbb tulajdonságán, olyanokon is,
+                    amelyekre más nem gondolna.
+                    <br></br>
+                    <br></br>Több hónapnyi kőkemény munka, energia, fogadási
+                    stratégián alapuló szempontok és tűpontos, extrafontos
+                    információk várnak rád, ha elkötelezed magad!
                   </p>
                   <button
                     onClick={() => window.dialog10.close()}
@@ -1001,8 +1058,7 @@ const Home = (props) => {
                     src="/Branding/logo.png"
                     className="home-branding"
                   />
-                  <span className="home-text165">
-                  </span>
+                  <span className="home-text165"></span>
                 </div>
                 <div className="home-socials">
                   <a
@@ -1100,15 +1156,13 @@ const Home = (props) => {
             </h1>
           </main>
           <section className="home-copyright1">
-            <span className="home-text184">
-              © 2022 latitude. All Rights Reserved.
-            </span>
+            <span className="home-text184"></span>
           </section>
         </div>
       </footer>
       <BackToTopButton />
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

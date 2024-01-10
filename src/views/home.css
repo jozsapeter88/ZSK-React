@@ -3115,19 +3115,19 @@ dialog p a:visited {
     margin-top: 10vh;
   }
 
-  .home-plan{
+  .home-plan {
     width: 40vh;
   }
 
-  .home-plan0{
+  .home-plan0 {
     width: 40vh;
   }
 
-  .home-plan1{
+  .home-plan1 {
     width: 40vh;
   }
 
-  .home-plan2{
+  .home-plan2 {
     width: 40vh;
   }
 
@@ -3826,6 +3826,18 @@ dialog p a:visited {
 
 @media(max-width: 500px) {
 
+  .home-heading {
+    align-self: center;
+   }
+
+  .home-caption {
+   align-self: center;
+  }
+
+  .home-image {
+    margin: 0;
+   }
+
   .why-us {
     margin-left: 0;
     margin-right: 0;
@@ -3979,12 +3991,14 @@ dialog p a:visited {
   .tippdoktor-logo {
     width: 200px;
     height: 200px;
-    margin-top: 14vh;
+    padding-right: 2vh;
+    margin-top: 9vh;
   }
 
   .tipprofesszor-logo {
     width: 200px;
     height: 200px;
+    padding-right: 2vh;
     margin-top: 10vh;
   }
 
@@ -3997,10 +4011,16 @@ dialog p a:visited {
     width: 30vh;
   }
 
+  .team-3 {
+    width: 30vh;
+  }
 
 }
 
 @media(max-width: 450px) {
+
+
+  
   .home-header {
     width: 449px;
     align-items: flex-start;
@@ -4010,10 +4030,11 @@ dialog p a:visited {
     width: 450px;
   }
 
-  .home-image {
-    width: 400px;
-  }
-
+    .home-image {
+      padding-right: 2vh;
+      padding-left: 3vh;
+  
+    }
   .home-buttons {
     font-size: 12px;
   }
@@ -4153,6 +4174,86 @@ dialog p a:visited {
     line-height: 40px;
     text-align: center;
   }
+
+.tippdoktor-logo {
+  padding-left: 0vh;
+  margin-right: 1vh;
+  margin-top: 12.5vh;
+}
+
+.tipprofesszor-logo {
+  padding-left: 0vh;
+  margin-right: 1vh
+}
+
+.team-left-column {
+  width: 25vh;
+}
+
+.team-2 {
+  width: 25vh;
+}
+
+.home-section03 {
+  padding-top: 20vh;  
+  padding-bottom: 20vh;
+  height: 20vh;
+}
+
+}
+
+@media(max-width: 420px) {
+
+  .home-image {
+    padding-left: 6vh;
+    padding-right: 5vh;
+  }
+
+  .home-section {
+    padding-bottom: 17vh;
+  }
+
+  .team-left-column {
+    width: 20vh;
+  }
+
+  .team-2 {
+    width: 23vh;
+  }
+
+  .team-3 {
+    width: 23vh;
+  }
+
+  .tipprofesszor-logo {
+    margin-top: 15vh;
+  }
+
+  .home-plan {
+    width: 80%;
+  }
+
+  .home-plan0 {
+    width: 80%;
+  }
+
+  .home-plan1 {
+    width: 80%;
+  }
+
+  .home-plan2 {
+    width: 80%;
+  }
+
+  .home-text076 {
+    padding-bottom: 0vh;
+  }
+
+  .home-text096 {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+
 }
 
 @keyframes fadeIn {
