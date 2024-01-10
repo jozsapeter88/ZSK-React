@@ -65,7 +65,7 @@ const Home = (props) => {
                 <a href="#faq" className="home-link1">
                   <div className="home-get-started1 button">
                     <span className="home-text005">
-                      <span>Gyakori kérdések</span>
+                      <span>Gyakori kérdése</span>
                       <br></br>
                     </span>
                   </div>
@@ -152,7 +152,8 @@ const Home = (props) => {
         </div>
       </section>
       <section className="home-section02">
-        <div class="row">
+        <Card />
+        {/* <div class="row">
           <div class="card">
             <h1>Csak dőlj hátra!</h1>
             <p>
@@ -190,7 +191,7 @@ const Home = (props) => {
               Facebook-on!
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
       <section id="telegram" className="home-section03">
         <main className="home-content1">

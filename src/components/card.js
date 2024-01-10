@@ -1,38 +1,59 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './card.css'
+import "./card.css";
 
 const Card = (props) => {
   return (
-    <section className={`card-card ${props.rootClassName} `}>
-      <div className="card-icon">
-        <img alt={props.IconAlt} src={props.Icon} className="card-icon1" />
-      </div>
-      <main className="card-content">
-        <h1 className="card-header">{props.Header}</h1>
-        <p className="card-description">{props.Description}</p>
-      </main>
-    </section>
-  )
-}
+    <>
+      <figure class="image-block">
+        <h1> Csak dőlj hátra!</h1>
+        <img src="/SectionImages/doljhatra.png" alt="" />
+        <figcaption>
+          <p>
+            Tipprofesszorunk és Tippdoktorunk leveszik a terhet a válladról, nem
+            kell többé a statisztikákat és eredményeket bújnod, csak az
+            elkészített terveket követni. <br></br>
+            <br></br> Ők azért dolgoznak, hogy neked már ne kelljen!
+          </p>
+          {/* <button>More Info</button> */}
+        </figcaption>
+      </figure>
+      <figure class="image-block">
+        <h1> Ne legyen több zöldfülű hiba!</h1>
+        <img src="/SectionImages/zoldfulu.png" alt="" />
+        <figcaption>
+          <p>
+            Tipprofesszor és Tippdoktor körültekintő munkájának köszönhetően a
+            fogadásból adódó stressz a lehető legalacsonyabb legyen. <br></br>
+            <br></br> Profi csapatunkkal folyamatosan azon dolgozunk, hogy
+            minden apró részletet észrevegyünk és a hibafaktor minimumra
+            csökkenjen.
+          </p>
+          {/* <button>More Info</button> */}
+        </figcaption>
+      </figure>
+      <figure class="image-block">
+        <h1> Láss át rajtunk!</h1>
+        <img src="/SectionImages/lass.png" alt="" />
+        <figcaption>
+          <p>
+            {" "}
+            Az átláthatóság nagyon fontos számunkra, így a statisztikáinkat az
+            oldal indulásától kezdve folyamatosan nyomon követheted. A jó és
+            rossz szériáink is látszanak, nem árulunk zsákbamacskát, mert nincs
+            szükségünk rá!<br></br>
+            <br></br>
+            Ha ezek ellenére sem hiszel a statisztikáinknak, gyere, és nézd
+            vissza! Telegram csoportunkban korábbi teljesítményünk
+            visszatekinthető. Keress fel minket Instagram-on, vagy Facebook-on!
+          </p>
+          {/* <button>More Info</button> */}
+        </figcaption>
+      </figure>
+    </>
+  );
+};
 
-Card.defaultProps = {
-  Description:
-    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-  rootClassName: '',
-  Icon: '/Icons/group%201316-200w.png',
-  IconAlt: 'image',
-  Header: 'Sima Mosbacher',
-}
-
-Card.propTypes = {
-  Description: PropTypes.string,
-  rootClassName: PropTypes.string,
-  Icon: PropTypes.string,
-  IconAlt: PropTypes.string,
-  Header: PropTypes.string,
-}
-
-export default Card
+export default Card;
