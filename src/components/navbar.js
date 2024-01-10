@@ -14,6 +14,13 @@ const Navbar = (props) => {
           rootClassName="nav-links-root-class-name"
           className=""
         ></NavLinks>
+                          <img
+                    alt="image"
+                    src="/Branding/logo.png"
+                    className=""
+                    height="150px"
+                    width="150px"
+                  />
         <a href="#packages" className="navbar-link">
           <div className="navbar-packages get-started">
             <span className="navbar-text">

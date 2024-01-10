@@ -226,13 +226,14 @@ const Home = (props) => {
             </header>
             <div className="home-plans-container">
               <main className="home-plans">
-                <div className="home-plan0" style={{ height: "80vh"}}>
+                <div className="home-plan0" style={{ height: "95vh"}}>
                   <div className="home-details">
                     <div className="home-header03">
                       <label className="home-name">Ping-Gold</label>
                     </div>
                   </div>
                   <div className="home-buy-details">
+                  <img src="/SectionImages/pinggold.png" alt="pinggold" width="150px" height="150px"></img>
                     <div className="home-features">
                       <span className="home-heading03">Tartalmazza:</span>
                       <div className="home-list">
@@ -240,7 +241,6 @@ const Home = (props) => {
                           Label="több éve profitot termelő, asztalitenisz tippek"
                           rootClassName="includes-root-class-name39"
                         ></Includes>
-                        <Includes rootClassName="includes-root-class-name40"></Includes>
                         <Includes
                           Label="Tipprofesszorunk által heti/napi forma elemzés"
                           rootClassName="includes-root-class-name41"
@@ -302,13 +302,14 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan1">
+                <div className="home-plan1" style={{ height: "95vh"}}>
                   <div className="home-details01">
                     <div className="home-header04">
                       <label className="home-name1">Silver-Pong</label>
                     </div>
                   </div>
-                  <div className="home-buy-details1">
+                  <div className="home-buy-details">
+                  <img src="/SectionImages/silverpong.png" alt="silverpong" width="150px" height="150px"></img>
                     <div className="home-features1">
                       <span className="home-heading04">Tartalmazza:</span>
                       <div className="home-list1">
@@ -316,17 +317,16 @@ const Home = (props) => {
                           Label="asztalitenisz tippek"
                           rootClassName="includes-root-class-name69"
                         ></Includes>
-                        <Includes rootClassName="includes-root-class-name70"></Includes>
                         <Includes
                           Label="Tippdoktorunk által ajánlott tippek"
                           rootClassName="includes-root-class-name71"
                         ></Includes>
                         <Includes
-                          Label="átlagosan napi 2-3 tipp"
+                          Label="átlagosan napi 2 tipp"
                           rootClassName="includes-root-class-name72"
                         ></Includes>
                         <Includes
-                          Label="oddsok 1.50 - 3.00 között, átlagosan 1.70"
+                          Label="oddsok 1.50 - 3.00 között, átlagosan 1.65"
                           rootClassName="includes-root-class-name73"
                         ></Includes>
                       </div>
@@ -377,12 +377,13 @@ const Home = (props) => {
                   </dialog>
                   <br />
                 </div>
-                <div className="home-plan2">
+                <div className="home-plan2" style={{ height: "95vh"}}>
                   <div className="home-details02">
                     <div className="home-header05">
                       <label className="home-name2">Safety-Days</label>
                     </div>
                   </div>
+                  <img src="/SectionImages/safetydays.png" alt="safetydays" width="150px" height="150px"></img>
                   <div className="home-buy-details2">
                     <div className="home-features2">
                       <span className="home-heading05">Tartalmazza:</span>
@@ -405,10 +406,6 @@ const Home = (props) => {
                         ></Includes>
                         <Includes
                           Label="legkésőbb délután 1-ig küldjük a tippet"
-                          rootClassName="includes-root-class-name49"
-                        ></Includes>
-                        <Includes
-                          Label="pénzvisszatérítési garancia másképp"
                           rootClassName="includes-root-class-name49"
                         ></Includes>
                       </div>
@@ -1000,11 +997,10 @@ const Home = (props) => {
                 <div className="home-header16">
                   <img
                     alt="image"
-                    src="/Branding/Logo_szines_feketen.png"
+                    src="/Branding/logo.png"
                     className="home-branding"
                   />
                   <span className="home-text165">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </span>
                 </div>
                 <div className="home-socials">

@@ -10,10 +10,7 @@ const NavLinks = (props) => {
       <a href="#about" className="nav-links-link nav-link">
         Rólunk
       </a>
-      <a href="#telegram" className="nav-links-link1 nav-link">
-        <span className="">Telegram</span>
-        <br className=""></br>
-      </a>
+
       <a href="#forwho" className="nav-links-link2 nav-link">
         <span className="">Kinek ajánljuk?</span>
         <br className=""></br>

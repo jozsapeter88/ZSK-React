@@ -151,7 +151,7 @@ button.primary:hover span:after {
 }
 
 .home-section {
-  height: auto;
+  height: 80vh;
   display: flex;
   align-items: center;
   border-color: #51515A;
