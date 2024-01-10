@@ -1,3 +1,10 @@
+.card-container {
+  display: flex;
+  justify-content: space-around; /* or space-between, depending on your preference */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 5vh;
+}
+
 figure {
   position: relative;
   display: flex;
@@ -88,4 +95,10 @@ figure figcaption button {
   color: white;
   font-size: 14px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .card-container {
+    justify-content: center; /* Center the cards when they are stacked */
+  }
 }

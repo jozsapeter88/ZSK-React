@@ -424,16 +424,9 @@ button.primary:hover span:after {
 
 .home-section02 {
   gap: var(--dl-space-space-threeunits);
-  width: 1500px;
-  height: 100vh;
-  display: flex;
   padding-top: 120px;
   border-color: #51515A;
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
   padding-bottom: 120px;
-  justify-content: center;
-  align-items: center;
 }
 
 .home-container1 {
@@ -3004,11 +2997,6 @@ dialog p a:visited {
     padding: 30;
   }
 
-  .home-section02 {
-    padding-left: 30;
-    padding-right: 30;
-  }
-
   .home-image1 {
     position: relative;
     top: 0;
@@ -3179,11 +3167,6 @@ dialog p a:visited {
     width: 800px;
     height: auto;
     padding: 0;
-  }
-
-  .home-section02 {
-    gap: var(--dl-space-space-unit);
-    width: 100%;
   }
 
   .home-text036 {
@@ -3442,11 +3425,6 @@ dialog p a:visited {
     width: 660;
     height: auto;
     line-height: 24px;
-  }
-
-  .home-section02 {
-    gap: var(--dl-space-space-fourunits);
-    padding-bottom: 120;
   }
 
   .home-text036 {
@@ -3869,11 +3847,6 @@ dialog p a:visited {
     height: 100%;
   }
 
-  .home-section02 {
-    gap: var(--dl-space-space-unit);
-    height: 2079px;
-  }
-
   .home-text036 {
     font-size: 22;
   }
@@ -4050,19 +4023,6 @@ dialog p a:visited {
   .home-paragraph {
     width: 100%;
     height: 100%;
-  }
-
-  .home-section02 {
-    align-items: baseline;
-    padding-top: 30px;
-    flex-direction: row;
-    display: block;
-    margin-top: 30px;
-    height: auto;
-  }
-
-  .home-section02 {
-    height: auto;
   }
 
   .home-section03 {
