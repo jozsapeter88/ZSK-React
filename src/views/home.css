@@ -2867,14 +2867,12 @@ dialog p a:visited {
   }
 
   .home-section {
-    height: auto;
     display: flex;
     align-items: center;
     border-color: #51515A;
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     flex-direction: column;
-    justify-content: center;
     border-bottom-width: 1px;
   }
 
@@ -3080,7 +3078,6 @@ dialog p a:visited {
     margin: 10vh;
   }
 
-
   .team-about {
     margin-left: 10vh;
     margin-right: 10vh;
@@ -3106,10 +3103,37 @@ dialog p a:visited {
 
 @media(max-width: 991px) {
 
+  .home-paragraph2 {
+    margin-bottom: 0;
+  }
+
+  .home-text076 {
+    margin-bottom: 10vh;
+  }
+
+  .home-text096 {
+    margin-top: 10vh;
+  }
+
+  .home-plan{
+    width: 40vh;
+  }
+
+  .home-plan0{
+    width: 40vh;
+  }
+
+  .home-plan1{
+    width: 40vh;
+  }
+
+  .home-plan2{
+    width: 40vh;
+  }
+
   .why-us-text .why-us-text2 {
     font-size: 16px;
   }
-
 
   .home-section {
     height: auto;
@@ -3219,36 +3243,9 @@ dialog p a:visited {
     flex-direction: column;
   }
 
-  .home-plan {
-    width: 70%;
-  }
-
-  .home-plan1 {
-    width: 70%;
-  }
-
-  .home-plan2 {
-    width: 70%;
-  }
 
   .home-plans1 {
     flex-direction: column;
-  }
-
-  .home-plan3 {
-    width: 70%;
-  }
-
-  .home-plan4 {
-    width: 70%;
-  }
-
-  .home-plan {
-    width: 70%;
-  }
-
-  .home-section07 {
-    widht: 80%;
   }
 
   .home-image2 {
@@ -3393,6 +3390,15 @@ dialog p a:visited {
 }
 
 @media(max-width: 767px) {
+
+  .home-plans {
+    width: 40vh;
+  }
+
+  .home-plans1 {
+    width: 40vh;
+  }
+
   .home-hero {
     padding-bottom: 30;
   }
