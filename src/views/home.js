@@ -8,10 +8,12 @@ import Card from "../components/card";
 import Accordion from "../components/accordion";
 import "./home.css";
 import BackToTopButton from "../components/backtotop";
+import Wip from "../components/wip";
 
 const Home = (props) => {
   return (
     <div className="home-container">
+      <Wip />
       <Helmet>
         <title>Zseton Klinika</title>
         <meta property="og:title" content="Zseton Klinika" />
