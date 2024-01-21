@@ -375,7 +375,7 @@ button.primary:hover span:after {
 .home-paragraph {
   color: rgb(204, 204, 204);
   width: 1190px;
-  height: auto;
+  /* height: auto; */
   font-size: 24;
   align-self: center;
   text-align: left;
