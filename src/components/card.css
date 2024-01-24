@@ -54,7 +54,7 @@ figure h1 {
 
 figure img {
   height: 60%;
-  width: 80%;
+  width: 100%;
   transition: 0.25s;
 }
 
@@ -79,7 +79,7 @@ figure figcaption h3 {
 
 figure figcaption p {
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 figure figcaption button {

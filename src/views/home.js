@@ -9,24 +9,18 @@ import Accordion from "../components/accordion";
 import "./home.css";
 import BackToTopButton from "../components/backtotop";
 import Wip from "../components/wip";
+import Navbar2 from "../components/navbar2";
 
 const Home = (props) => {
   return (
+    <>
+    <div className="navbar-area">
+      {/* <Navbar rootClassName="navbar-root-class-name"></Navbar> */}
+      <Navbar2 />
+    <Wip />
+    </div>
     <div className="home-container">
-      <Wip />
-      <Helmet>
-        <title>Zseton Klinika</title>
-        <meta property="og:title" content="Zseton Klinika" />
-      </Helmet>
-      <Navbar rootClassName="navbar-root-class-name"></Navbar>
       <section id="top" className="home-section">
-        {/* <div className="home-logo">
-          <img
-        alt="logo"
-        src={'/Branding/Logo_szines_feketen.png'}
-        className="home-branding-logo"
-      />
-      </div> */}
         <div className="home-hero">
           <div className="home-content">
             <main className="home-main">
@@ -74,11 +68,11 @@ const Home = (props) => {
               </div>
             </main>
           </div>
-          <img
+          {/* <img
             alt="image"
             src="/SectionImages/heroimage-700w.png"
             className="home-image"
-          />
+          /> */}
         </div>
       </section>
       <section id="about" className="home-section01">
@@ -1164,6 +1158,7 @@ const Home = (props) => {
       </footer>
       <BackToTopButton />
     </div>
+    </>
   );
 };
 
