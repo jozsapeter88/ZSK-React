@@ -217,10 +217,9 @@ const Home = (props) => {
                       </button>
                       <button
                         className="buyBtn"
-                        disabled={isLoading}
                       >
                         <span>
-                          {isLoading ? "Kis türelmet..." : "Vásárlás"}
+                          Vásárlás
                         </span>
                       </button>
                     </dialog>
@@ -308,11 +307,9 @@ const Home = (props) => {
                       <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
                         <button
                           className="buyBtn"
-                          href
-                          disabled={isLoading}
                         >
                           <span>
-                            {isLoading ? "Kis türelmet..." : "Vásárlás"}
+                            Vásárlás
                           </span>
                         </button>
                       </a>
