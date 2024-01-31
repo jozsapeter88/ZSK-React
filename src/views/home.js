@@ -1,6 +1,4 @@
 import React from "react";
-import { loadStripe } from "@stripe/stripe-js";
-import { useState } from "react";
 import Includes from "../components/includes";
 import Card from "../components/card";
 import Accordion from "../components/accordion";
@@ -10,43 +8,7 @@ import Wip from "../components/wip";
 import Navbar2 from "../components/navbar2";
 import Intro from "../components/intro";
 
-let stripePromise;
-
-const getStripe = () => {
-  if (!stripePromise) {
-    stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
-  }
-  return stripePromise;
-};
-
 const Home = (props) => {
-  const [stripeError, setStripeError] = useState(null);
-  const [isLoading, setLoading] = useState(false);
-
-  const items = [
-    { name: "Ping-Gold", priceId: "price_1OeI3aCbgnzyaqAQmFKUKqNp" },
-    { name: "Silver-Pong", priceId: "price_1OeJJeCbgnzyaqAQtc41dayk" },
-  ];
-
-  const redirectToCheckout = async (priceId) => {
-    setLoading(true);
-
-    const stripe = await getStripe();
-    const checkoutOptions = {
-      lineItems: [{ price: priceId, quantity: 1 }],
-      mode: "payment",
-      successUrl: `${window.location.origin}/success`,
-      cancelUrl: `${window.location.origin}/cancel`,
-    };
-
-    const { error } = await stripe.redirectToCheckout(checkoutOptions);
-
-    if (error) {
-      setStripeError(error.message);
-    }
-
-    setLoading(false);
-  };
 
   return (
     <>
@@ -255,7 +217,6 @@ const Home = (props) => {
                       </button>
                       <button
                         className="buyBtn"
-                        onClick={() => redirectToCheckout(items[0].priceId)}
                         disabled={isLoading}
                       >
                         <span>
@@ -347,7 +308,6 @@ const Home = (props) => {
                       <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
                         <button
                           className="buyBtn"
-                          onClick={() => redirectToCheckout(items[1].priceId)}
                           href
                           disabled={isLoading}
                         >
