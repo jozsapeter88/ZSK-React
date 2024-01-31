@@ -99,6 +99,6 @@ figure figcaption button {
 
 @media screen and (max-width: 1300px) {
   .card-container {
-    justify-content: center; /* Center the cards when they are stacked */
+    justify-content: center;
   }
 }

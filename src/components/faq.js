@@ -1,20 +1,22 @@
 import React, { useState } from 'react'
 
-import PropTypes from 'prop-types'
-
 import './faq.css'
 
 const FAQ = (props) => {
-  const [expandedAccordion, setExpandedAccordion] = useState(null);
+  const [expandedAccordions, setExpandedAccordions] = useState([]);
 
   const handleAccordionClick = (accordionId) => {
-    if (expandedAccordion === accordionId) {
-      // Clicked accordion is already expanded, so collapse it
-      setExpandedAccordion(null);
+    // Check if the clicked accordion is already expanded
+    if (expandedAccordions.includes(accordionId)) {
+      // Collapse the clicked accordion
+      setExpandedAccordions(expandedAccordions.filter((id) => id !== accordionId));
     } else {
-      // Clicked accordion is not expanded, so expand it
-      setExpandedAccordion(accordionId);
+      // Expand the clicked accordion
+      setExpandedAccordions([...expandedAccordions, accordionId]);
     }
+  
+    // Returning false to prevent the default behavior
+    return false;
   };
   
   return (
@@ -22,8 +24,8 @@ const FAQ = (props) => {
       <div
         id="1"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(1)}
-        className="faq-element accordion-element"
+        onClick={() => !handleAccordionClick(1)}
+        className={`faq-element accordion-element ${expandedAccordions.includes(1) ? 'expanded' : ''}`}
       >
         <div className="faq-details">
           <span className="faq-text">
@@ -63,8 +65,8 @@ const FAQ = (props) => {
       <div
         id="2"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(2)}
-        className="faq-element1 accordion-element"
+        onClick={() => !handleAccordionClick(2)}
+        className={`faq-element1 accordion-element ${expandedAccordions.includes(2) ? 'expanded' : ''}`}
       >
         <div className="faq-details1">
           <span className="faq-text08">
@@ -100,8 +102,8 @@ const FAQ = (props) => {
       <div
         id="3"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(3)}
-        className="faq-element2 accordion-element"
+        onClick={() => !handleAccordionClick(3)}
+        className={`faq-element2 accordion-element ${expandedAccordions.includes(3) ? 'expanded' : ''}`}
       >
         <div className="faq-details2">
           <span className="faq-text15">
@@ -137,8 +139,8 @@ const FAQ = (props) => {
       <div
         id="4"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(4)}
-        className="faq-element3 accordion-element"
+        onClick={() => !handleAccordionClick(4)}
+        className={`faq-element3 accordion-element ${expandedAccordions.includes(4) ? 'expanded' : ''}`}
       >
         <div className="faq-details3">
           <span className="faq-text22">Hol fogom kapni a tippeket?</span>
@@ -160,8 +162,8 @@ const FAQ = (props) => {
       <div
         id="5"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(5)}
-        className="faq-element4 accordion-element"
+        onClick={() => !handleAccordionClick(5)}
+        className={`faq-element4 accordion-element ${expandedAccordions.includes(5) ? 'expanded' : ''}`}
       >
         <div className="faq-details4">
           <span className="faq-text24">
@@ -201,8 +203,8 @@ const FAQ = (props) => {
       <div
         id="6"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(6)}
-        className="faq-element5 accordion-element"
+        onClick={() => !handleAccordionClick(6)}
+        className={`faq-element5 accordion-element ${expandedAccordions.includes(6) ? 'expanded' : ''}`}
       >
         <div className="faq-details5">
           <span className="faq-text29">
@@ -232,8 +234,8 @@ const FAQ = (props) => {
       <div
         id="7"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(7)}
-        className="faq-element6 accordion-element"
+        onClick={() => !handleAccordionClick(7)}
+        className={`faq-element6 accordion-element ${expandedAccordions.includes(7) ? 'expanded' : ''}`}
       >
         <div className="faq-details6">
           <span className="faq-text35">
@@ -262,8 +264,8 @@ const FAQ = (props) => {
       <div
         id="8"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(8)}
-        className="faq-element7 accordion-element"
+        onClick={() => !handleAccordionClick(8)}
+        className={`faq-element7 accordion-element ${expandedAccordions.includes(8) ? 'expanded' : ''}`}
       >
         <div className="faq-details7">
           <span className="faq-text41">Másik napon elő se tudok fizetni?</span>
@@ -286,8 +288,8 @@ const FAQ = (props) => {
       <div
         id="9"
         data-role="accordion-container"
-        onClick={() => handleAccordionClick(9)}
-        className="faq-element8 accordion-element"
+        onClick={() => !handleAccordionClick(9)}
+        className={`faq-element8 accordion-element ${expandedAccordions.includes(9) ? 'expanded' : ''}`}
       >
         <div className="faq-details8">
           <span className="faq-text43">
@@ -314,12 +316,4 @@ const FAQ = (props) => {
   )
 }
 
-FAQ.defaultProps = {
-  rootClassName: '',
-}
-
-FAQ.propTypes = {
-  rootClassName: PropTypes.string,
-}
-
-export default FAQ
+export default FAQ;
