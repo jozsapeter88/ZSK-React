@@ -180,7 +180,6 @@ const Home = (props) => {
                         </div>
                       </div>
                     </div>
-
                     <button
                       className="primary"
                       onClick={() => window.dialog.showModal()}
@@ -215,6 +214,7 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
+                      <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
                       <button
                         className="buyBtn"
                       >
@@ -222,6 +222,7 @@ const Home = (props) => {
                           Vásárlás
                         </span>
                       </button>
+                      </a>
                     </dialog>
                   </div>
                   <div className="home-plan1" style={{ height: "95vh" }}>
@@ -545,7 +546,7 @@ const Home = (props) => {
                         <span className="home-heading08">Tartalmazza:</span>
                         <div className="home-list5">
                           <Includes
-                            Label="Ping-Pong csomag"
+                            Label="Ping-Gold csomag"
                             rootClassName="includes-root-class-name31"
                           ></Includes>
                           <Includes
