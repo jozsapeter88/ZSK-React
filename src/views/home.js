@@ -196,7 +196,7 @@ const Home = (props) => {
                         transform: "translate(-50%, -50%)",
                       }}
                     >
-                      <h2>50.000 ft</h2>
+                      <h2>75.000 ft</h2>
                       <p>
                         Ez az összeállítás azoknak szól, akik hosszú távon
                         szeretnének a sportfogadással foglalkozni, úgy, hogy az
@@ -214,7 +214,7 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
+                      {/* <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
                       <button
                         className="buyBtn"
                       >
@@ -222,7 +222,7 @@ const Home = (props) => {
                           Vásárlás
                         </span>
                       </button>
-                      </a>
+                      </a> */}
                     </dialog>
                   </div>
                   <div className="home-plan1" style={{ height: "95vh" }}>
@@ -305,7 +305,7 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
+                      {/* <a href="https://buy.stripe.com/test_3cs5oo7gzb8l50c4gh">
                         <button
                           className="buyBtn"
                         >
@@ -313,7 +313,7 @@ const Home = (props) => {
                             Vásárlás
                           </span>
                         </button>
-                      </a>
+                      </a> */}
                     </dialog>
                   </div>
                   <div className="home-plan2" style={{ height: "95vh" }}>
@@ -371,7 +371,7 @@ const Home = (props) => {
                         transform: "translate(-50%, -50%)",
                       }}
                     >
-                      <h2>50.000</h2>
+                      <h2>40.000</h2>
                       <p>
                         Ez a csomag azoknak szól, akik lassabban és
                         biztonságosabban, hosszú távon szeretnének a
@@ -397,9 +397,9 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <button className="buyBtn">
+                      {/* <button className="buyBtn">
                         <span>Vásárlás</span>
-                      </button>
+                      </button> */}
                     </dialog>
                   </div>
                 </main>
@@ -462,9 +462,9 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <button className="buyBtn">
+                      {/* <button className="buyBtn">
                         <span>Vásárlás</span>
-                      </button>
+                      </button> */}
                     </dialog>
                   </div>
                   <div className="home-plan" style={{ height: "70vh" }}>
@@ -522,9 +522,9 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <button className="buyBtn">
+                      {/* <button className="buyBtn">
                         <span>Vásárlás</span>
-                      </button>
+                      </button> */}
                     </dialog>
                   </div>
                   <div className="home-plan" style={{ height: "70vh" }}>
@@ -582,9 +582,9 @@ const Home = (props) => {
                       >
                         ❌
                       </button>
-                      <button className="buyBtn">
+                      {/* <button className="buyBtn">
                         <span>Vásárlás</span>
-                      </button>
+                      </button> */}
                     </dialog>
                   </div>
                 </main>
@@ -701,9 +701,9 @@ const Home = (props) => {
                     >
                       ❌
                     </button>
-                    <button className="buyBtn2 buyBtn">
+                    {/* <button className="buyBtn2 buyBtn">
                       <span>Vásárlás</span>
-                    </button>
+                    </button> */}
                   </dialog>
                 </div>
                 <div className="home-plan" style={{ height: "60vh" }}>
@@ -744,8 +744,7 @@ const Home = (props) => {
                       transform: "translate(-50%, -50%)",
                     }}
                   >
-                    <h2 className="linethrough">120.000</h2>
-                    <h2>90.000</h2>
+                    <h2>40.000 / 30 perc</h2>
                     <p className="paddingBottom">
                       A profitábilis sportfogadás nem csak néhány kattintás,
                       annál sokkal összetettebb. Fontos tényező például a pénz
@@ -781,9 +780,9 @@ const Home = (props) => {
                     >
                       ❌
                     </button>
-                    <button className="buyBtn2 buyBtn">
+                    {/* <button className="buyBtn2 buyBtn">
                       <span>Vásárlás</span>
-                    </button>
+                    </button> */}
                   </dialog>
                 </div>
                 <div className="home-plan" style={{ height: "60vh" }}>
@@ -824,8 +823,7 @@ const Home = (props) => {
                       transform: "translate(-50%, -50%)",
                     }}
                   >
-                    <h2 className="linethrough">500.000</h2>
-                    <h2>250.000</h2>
+                    <h2>500.000 / 250.000</h2>
                     <p>
                       Azoknak, akik sikeresen diplomát szereztek a Pénzdoki
                       kurzusunkon!
@@ -848,9 +846,9 @@ const Home = (props) => {
                     >
                       ❌
                     </button>
-                    <button className="buyBtn">
+                    {/* <button className="buyBtn">
                       <span>Vásárlás</span>
-                    </button>
+                    </button> */}
                   </dialog>
                 </div>
               </main>
