@@ -4,10 +4,7 @@ import "./accordion.css";
 
 const Accordion = (props) => {
   return (
-    <div
-      className={`accordion-accordion ${props.rootClassName} accordion-section`}
-    >
-      <section>
+      <span>
         <div class="container">
           <div class="accordion">
             <div class="accordion-item" id="question1">
@@ -218,8 +215,7 @@ const Accordion = (props) => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </span>
   );
 };
 

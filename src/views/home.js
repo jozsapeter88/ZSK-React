@@ -963,9 +963,9 @@ const Home = (props) => {
           <header className="home-header15">
             <span className="section-head">Gyakran Ismételt Kérdések</span>
           </header>
-          <main className="home-accordion">
+          <span className="home-accordion">
             <Accordion />
-          </main>
+          </span>
         </section>
         <footer className="home-footer">
           <div className="home-content3">
