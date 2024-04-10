@@ -752,6 +752,7 @@ button.primary:hover span:after {
   border: 2px solid transparent;
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.5s ease;
+  height: 95vh;
 }
 
 .home-plan0:hover {
@@ -862,6 +863,7 @@ button.primary:hover span:after {
   border: 2px solid transparent;
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.3s ease;
+  height: 95vh;
 }
 
 .home-plan1:hover {
@@ -970,6 +972,7 @@ button.primary:hover span:after {
     linear-gradient(#292929, #292929) padding-box,
     linear-gradient(90deg, #16A085 0%, #F4D03F 50%, #F4D03F 100%) border-box;
   transition: box-shadow 0.3s ease;
+  height: 95vh;
 }
 
 

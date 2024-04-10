@@ -137,7 +137,7 @@ const Home = (props) => {
               </header>
               <div className="home-plans-container">
                 <main className="home-plans">
-                  <div className="home-plan0" style={{ height: "95vh" }}>
+                  <div className="home-plan0">
                     <div className="home-details">
                       <div className="home-header03">
                         <label className="home-name">Ping-Gold</label>
@@ -225,7 +225,7 @@ const Home = (props) => {
                       </a> */}
                     </dialog>
                   </div>
-                  <div className="home-plan1" style={{ height: "auto" }}>
+                  <div className="home-plan1">
                     <div className="home-details01">
                       <div className="home-header04">
                         <label className="home-name1">Silver-Pong</label>
@@ -316,7 +316,7 @@ const Home = (props) => {
                       </a> */}
                     </dialog>
                   </div>
-                  <div className="home-plan2" style={{ height: "auto" }}>
+                  <div className="home-plan2">
                     <div className="home-details02">
                       <div className="home-header05">
                         <label className="home-name2">Safety-Days</label>
