@@ -14,7 +14,7 @@
 }
 
 .colorful-text {
-  background: -webkit-linear-gradient(yellow, green);
+  background: -webkit-linear-gradient(#FFF01E, #00FF82);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 400px;
@@ -27,7 +27,7 @@
   font-size: 64px;
   line-height: 64px;
   color: rgb(255, 255, 255);
-  background-image: -webkit-linear-gradient(top, yellow, green);
+  background-image: -webkit-linear-gradient(top, #FFF01E, #00FF82);
 }
 
 .colorful-text2 {
@@ -107,7 +107,7 @@ button.primary {
   padding-bottom: 24px;
   text-transform: uppercase;
   background-size: 200% auto;
-  background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
+  background-image: linear-gradient(to right, #00FF82 0%, #FFF01E 51%, #00FF82 100%);
   font-weight: 700;
 }
 
@@ -2496,10 +2496,10 @@ button.primary:hover span:after {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 120px;
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
+  padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: center;
 }
@@ -2774,7 +2774,7 @@ button.primary:hover span:after {
 .home-slide-to-top {
   z-index: 1000;
   align-self: flex-end;
-  box-shadow: 5px 5px 10px 0px #cde890;
+  box-shadow: 5px 5px 10px 0px #FFF01E;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   cursor: pointer;
@@ -2800,7 +2800,7 @@ button.primary:hover span:after {
   opacity: 0.5;
   transition: opacity 0.3 ease-in-out;
   border-radius: var(--dl-radius-radius-round);
-  background: #cde890;
+  background: #FFF01E;
 }
 
 /*Dialog Styles*/
@@ -3837,17 +3837,17 @@ dialog p a:visited {
 
 @media(max-width: 520px) {
 
-.home-heading {
-  font-size: 44px;
-}
+  .home-heading {
+    font-size: 44px;
+  }
 
-.home-image {
-  width: 500px;
-}
+  .home-image {
+    width: 500px;
+  }
 
-.home-hero {
-  padding-top: 20vh;
-}
+  .home-hero {
+    padding-top: 20vh;
+  }
 
 }
 
@@ -3896,10 +3896,6 @@ dialog p a:visited {
     width: 480px;
   }
 
-  .home-section01 {
-    /* height: 1570px; */
-  }
-
   .home-paragraph {
     width: 100%;
     height: 100%;
@@ -3937,6 +3933,9 @@ dialog p a:visited {
 
   .home-header01 {
     width: 383px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    height: 500px;
   }
 
   .home-image1 {
@@ -4286,19 +4285,23 @@ dialog p a:visited {
   }
 
   .home-plan {
-    width: 95%;
+    width: auto;
+    width: auto;
   }
 
   .home-plan0 {
-    width: 95%;
+    width: auto;
+    height: auto;
   }
 
   .home-plan1 {
-    width: 95%;
+    width: auto;
+    width: auto;
   }
 
   .home-plan2 {
-    width: 95%;
+    width: auto;
+    width: auto;
   }
 
   .home-text076 {
@@ -4360,6 +4363,7 @@ dialog p a:visited {
   dialog {
     width: 100%;
   }
+
   #dialog9 {
     width: 100%;
     font-size: 8px;

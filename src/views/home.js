@@ -116,7 +116,7 @@ const Home = (props) => {
                     src="/Icons/telegram-200h.png"
                     className="home-pasted-image"
                   />
-                  <p className="home-text051">Csatlakozom</p>
+                  <a href="https://t.me/zskfree"><p className="home-text051">Csatlakozom</p></a>
                 </div>
               </div>
             </header>
@@ -1055,7 +1055,7 @@ const Home = (props) => {
                 <span className="home-text179">© 2023 ZsetonKlinika</span>
               </section>
             </main>
-            <main className="home-subscribe">
+            {/* <main className="home-subscribe">
               <main className="home-main3">
                 <h1 className="home-heading18">Iratkozz fel hírlevelünkre</h1>
                 <div className="home-input-field">
@@ -1075,7 +1075,7 @@ const Home = (props) => {
               <h1 className="home-notice">
                 Hírlevél feliratkozással elfogadod a szabályzatunkat.
               </h1>
-            </main>
+            </main> */}
             <section className="home-copyright1">
               <span className="home-text184"></span>
             </section>
