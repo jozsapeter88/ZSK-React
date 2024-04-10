@@ -316,7 +316,7 @@ const Home = (props) => {
                       </a> */}
                     </dialog>
                   </div>
-                  <div className="home-plan2" style={{ height: "95vh" }}>
+                  <div className="home-plan2" style={{ height: "auto" }}>
                     <div className="home-details02">
                       <div className="home-header05">
                         <label className="home-name2">Safety-Days</label>
@@ -404,7 +404,7 @@ const Home = (props) => {
                   </div>
                 </main>
                 <main className="home-plans1">
-                  <div className="home-plan" style={{ height: "70vh" }}>
+                  <div className="home-plan" style={{ height: "auto" }}>
                     <div className="home-details04">
                       <div className="home-header07">
                         <label className="home-name">Green-Health</label>
@@ -467,7 +467,7 @@ const Home = (props) => {
                       </button> */}
                     </dialog>
                   </div>
-                  <div className="home-plan" style={{ height: "70vh" }}>
+                  <div className="home-plan" style={{ height: "auto" }}>
                     <div className="home-details05">
                       <div className="home-header08">
                         <label className="home-name">Green-Harmony</label>
@@ -527,7 +527,7 @@ const Home = (props) => {
                       </button> */}
                     </dialog>
                   </div>
-                  <div className="home-plan" style={{ height: "70vh" }}>
+                  <div className="home-plan" style={{ height: "auto" }}>
                     <div className="home-details05">
                       <div className="home-header08">
                         <label className="home-name">Gold-Harmony</label>
