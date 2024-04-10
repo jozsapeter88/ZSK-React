@@ -858,7 +858,9 @@ const Home = (props) => {
                 <span>Segítségre van szükséged?</span>
               </span>
               <div className="home-contact-support">
+                <a href="mailto: zsetonklinikakft@gmail.com">
                 <p className="home-text072">Lépj velünk kapcsolatba  -&gt;</p>
+                </a>
               </div>
             </div>
           </section>
@@ -982,19 +984,7 @@ const Home = (props) => {
                   </div>
                   <div className="home-socials">
                     <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link2"
-                    >
-                      <img
-                        alt="image"
-                        src="/Icons/linkedin-200h.png"
-                        className="social"
-                      />
-                    </a>
-                    <a
-                      href="https://example.com"
+                      href="https://www.instagram.com/zsetonklinika/"
                       target="_blank"
                       rel="noreferrer noopener"
                       className="home-link3"
@@ -1002,18 +992,6 @@ const Home = (props) => {
                       <img
                         alt="image"
                         src="/Icons/instagram-200h.png"
-                        className="social"
-                      />
-                    </a>
-                    <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="home-link4"
-                    >
-                      <img
-                        alt="image"
-                        src="/Icons/twitter-200h.png"
                         className="social"
                       />
                     </a>
