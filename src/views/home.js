@@ -225,7 +225,7 @@ const Home = (props) => {
                       </a> */}
                     </dialog>
                   </div>
-                  <div className="home-plan1" style={{ height: "95vh" }}>
+                  <div className="home-plan1" style={{ height: "auto" }}>
                     <div className="home-details01">
                       <div className="home-header04">
                         <label className="home-name1">Silver-Pong</label>
